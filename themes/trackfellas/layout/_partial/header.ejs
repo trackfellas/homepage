@@ -1,0 +1,17 @@
+       <header>
+            <nav class="top-bar" data-topbar role="navigation">
+                <ul class="title-area">
+                    <li class="name">
+                        <div id="logo"><h1>
+                            <a href="<%- config.root %>"><img src="/img/logo.svg" alt="Trackfellas Logo"><span id="back">Trackfellas</span></a>
+                        </h1></div>
+                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                </ul>
+                <section class="top-bar-section">
+<% for (var i in theme.menu) { %>
+          <a class="main-nav-link" href="<%- theme.menu[i] %>"><%= i %></a>
+        <% } %>
+                </section>
+            </nav>
+        </header>
