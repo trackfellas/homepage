@@ -4,22 +4,17 @@
 
 # Site
 title: Trackfellas
-subtitle: Your platform for travel routes
+subtitle: the revolutionary platform for travel routes
 description: Trackfellas is a revolutionary platform to discover, plan, book, document, rate and share travel routes.
-author: Trackfellas team
-email: team@trackfellas.com
-language:
+author: trackfellas team
+email:
+language: EN
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://trackfellas.com
 root: /
 permalink: :year/:month/:day/:title/
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-permalink_defaults:
 
 # Directory
 source_dir: source
@@ -65,7 +60,7 @@ logger_format: dev
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: D MMM YYYY
+date_format: MMM D YYYY
 time_format: H:mm:ss
 
 # Pagination
@@ -79,7 +74,7 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: landscape
+theme: trackfellas
 exclude_generator:
 
 # Deployment
