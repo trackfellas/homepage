@@ -80,7 +80,9 @@ exclude_generator:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: github
+  repo:
+  
   
 # Sitemap
 sitemap:
