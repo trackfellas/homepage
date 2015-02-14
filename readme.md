@@ -4,14 +4,13 @@ This is the readme file for the current homepage. It contains all necessary info
 
 ###To Do:
 
-create script getJSON to show preview of blog posts (will the new blog also provide a JSON stream?
+- integrate feed from latest blog posts
 
 ###File Structure
 
 / root
 contains:
 config.yml - details about the page setup, structure and its deployment.
-db.json:
 structure of the site
 /sources - single pages 
 /scaffolds - currently empty
@@ -25,6 +24,7 @@ config.yml - theme settings
 
 ###Deployment
 
-Deployment is made by "hexo deploy". git repository has to be specified in config.yml. Details are to be found here:
- http://hexo.io/docs/deployment.html
+1.		npm install
 
+2.		hexo deploy  (for that step specify git repository. Details are to be found here:
+ http://hexo.io/docs/deployment.html)
