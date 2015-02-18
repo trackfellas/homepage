@@ -22,9 +22,13 @@ contains:
 config.yml - theme settings
 /layouts - layouts and partials
 
-###Deployment
+### Installation
 
-1.		npm install
+```sh
+npm install
+```
+### Deployment
 
-2.		hexo deploy  (for that step specify git repository. Details are to be found here:
- http://hexo.io/docs/deployment.html)
+```sh
+hexo deploy
+```
