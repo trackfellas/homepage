@@ -1,0 +1,219 @@
+/************************************************
+Theme Name: Arvin - One Page Template
+Description: Blue Color Scheme
+Author: Akronyms
+Author URI: http://www.akronyms.net
+Version: 1.0
+************************************************ */
+
+/* Highlited Header Text*/
+span.arvin-highlight-text{
+	color: #eb6e56;
+}
+
+/* solid Btn*/
+.arvin-button-solid{
+	background-color: #eb6e56;
+}
+
+.arvin-button-solid:hover{
+	background-color: #eb6e56;
+}
+
+/* outline btn*/
+.arvin-button-outline-light:hover{
+	background-color: #eb6e56
+}
+
+/*Dark btn*/
+.arvin-button-outline-dark:hover{
+	background-color: #eb6e56;
+}
+
+/* round btn*/
+.arvin-btn-round{
+	background-color: #eb6e56;
+}
+
+.arvin-btn-round:hover{
+	background-color: #eb6e56;
+}
+
+/* Single Icon with text */
+.arvin-blurb-icon-only i{
+	color: #eb6e56;
+}
+
+.arvin-blurb-icon-only h3{
+	color: #eb6e56
+}
+
+/* Round Icon with text */
+.arvin-blurb-round-icon:hover .arvin-icon{
+	background-color: #eb6e56;
+}
+
+.arvin-blurb-round-icon:hover h3{
+	color: #v;
+}
+/* icon Square */
+.arvin-blurb-icon-left-square:hover .arvin-blurb-text h3{
+	color: #eb6e56;
+}
+
+.arvin-blurb-icon-left-square:hover .arvin-blurb-text h3:after{
+	background-color: #fb724e;
+}
+
+.arvin-main-menu .navbar-nav li a:hover,
+.arvin-main-menu .navbar-nav li.active a{
+    color: #eb6e56;
+}
+
+.arvin-slider .sp-selected-button {
+  background-color: #eb6e56;
+}
+
+.arvin-member-details h3{
+	color: #eb6e56;
+}
+
+.arvin-port-work-details .arvin-port-work-desc h3{
+	color: #eb6e56;
+}
+
+.arvin-portfolio-filter-btn-group ul li a.selected{
+	background-color: #eb6e56;
+}
+
+.arvin-portfolio-item .arvin-portfolio-details h3{
+	color: #eb6e56;
+}
+
+.arvin-custom-sec-text ul li i{
+	color: #eb6e56;
+}
+
+/*Blog*/
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-header h2 a:hover{
+	color: #eb6e56
+}
+
+/*Pricing Plan Details*/
+.arvin-pricing-plans .arvin-pricing-titles p span{
+	color: #eb6e56;
+}
+
+/*Signup Btn*/
+.arvin-pricing-plans a.arvin-signup-btn{
+	background-color: #eb6e56;
+}
+
+/*Read More btn*/
+.arvin-blog-post-content a{
+	color: #eb6e56;
+}
+
+.arvin-contact-section .arvin-contact-form input[type='submit']{
+	background-color: #eb6e56;
+}
+
+
+.arvin-contact-section .arvin-contact-form .arvin-input-fields input[type='submit']:hover{
+	background-color: #eb6e56;
+}
+
+.arvin-find-us-btn h3{
+	color: #eb6e56;
+}
+
+.arvin-portfolio-information .arvin-share-project ul li a:hover i{
+	color: #eb6e56;
+}
+
+/*Likes Btn*/
+.arvin-portfolio-information .arvin-share-project .arvin-project-likes p a:hover{
+	color: #eb6e56;
+}
+
+.arvin-single-post-details p.arvin-blog-post-meta a:hover{
+	color: #eb6e56
+}
+
+.arvin-single-post-details .arvin-single-post-text blockquote span.arvin-bquote-person{
+	color: #eb6e56;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share p.arviv-single-post-tags a:hover{
+	color: #eb6e56;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share .arvin-social-share ul li a:hover i{
+	color: #eb6e56;
+}
+
+.arvin-single-blog-post-meta .arvin-post-comment-count a:hover{
+	color: #eb6e56
+}
+
+.arvin-single-blog-post-meta .arvin-post-comment-count a:hover i{
+	color: #eb6e56
+}
+
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta h3.comment-user-name{
+	color: #eb6e56;
+}
+
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta a.comment-reply-btn:hover{
+	color: #eb6e56
+}
+
+/*Comment text*/
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta a.comment-reply-btn:hover i{
+	color: #eb6e56
+}
+
+.arvin-post-comment-form .arvin-comment-form input[type='submit']{
+	background-color: #eb6e56;
+}
+
+
+.arvin-post-comment-form .arvin-comment-form .arvin-input-fields input[type='submit']:hover{
+	background-color: #eb6e56;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-sidebar-single-widget h3.arvin-widget-title:after{
+	background-color: #eb6e56;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-category-widget li a:hover{
+	color: #eb6e56;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li .arvin-recent-posts h3 a{
+	color: #eb6e56;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li a.arvin-recent-posts-comment-count:hover{
+	color: #eb6e56
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li a.arvin-recent-posts-comment-count:hover i{
+	color: #eb6e56
+}
+
+.arvin-tags-widget .arvin-tag-cloud a:hover{
+	color: #eb6e56;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  border: 1px solid #eb6e56;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+  background-color: #eb6e56;
+}
+
+footer ul li a:hover i{
+	color: #eb6e56;
+}
