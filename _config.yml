@@ -82,8 +82,6 @@ exclude_generator:
 deploy:
   type: github
   repo:
-  
-  
 # Sitemap
 sitemap:
   path: sitemap.xml
