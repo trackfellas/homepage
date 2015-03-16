@@ -3,16 +3,4 @@
 <%- js('js/jquery.formchimp-min') %>
 <%- js('js/smooth-scroll.min.js') %>
 <%- js('js/app-min') %>
-<script>
-$.get("http://feedler.niklas-hofmann.de/atom.xml", function(data) {
-    var $data = $(data);
-    $(data).find('entry').each(function() 
-  {
-    var id = $(this).find('id').text();
-    var title = $(this).find('title').text();
-    $(".content-div").append("<div class='medium-4 columns text-center entry'><article>" + "<a href='"+id+"'>" + title);
-  });
-
-});
-</script>
 <%- partial('google-analytics') %>
