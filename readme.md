@@ -4,7 +4,7 @@ This is the readme file for the current homepage. It contains all necessary info
 
 ###To Do:
 
-- integrate feed from latest blog posts
+-
 
 ###File Structure
 
