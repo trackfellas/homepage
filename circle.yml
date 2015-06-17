@@ -2,7 +2,9 @@ dependencies:
   pre:
     - npm install hexo-cli mocha -g
     - npm install
-  override:
-    - mocha
   cache_directories:
     - node_modules
+
+test:
+  override:
+    - mocha
