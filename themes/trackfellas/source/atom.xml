@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Footprints]]></title>
-  <subtitle><![CDATA[a Trackfellas blog]]></subtitle>
-  <link href="/atom.xml" rel="self"/>
-  <link href="http://blog.trackfellas.com/"/>
-  <updated>2015-03-18T11:27:56.000Z</updated>
-  <id>http://blog.trackfellas.com/</id>
-  
-  <author>
-    <name><![CDATA[Trackfellas team]]></name>
-    <email><![CDATA[info@trackfellas.com]]></email>
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[Travel Route Philippines]]></title>
-    <link href="http://blog.trackfellas.com/2015/03/Travel-Route-Philippines/"/>
-    <id>http://blog.trackfellas.com/2015/03/Travel-Route-Philippines/</id>
-    <featured>http://blog.trackfellas.com/2015/03/Travel-Route-Philippines/hero-image.jpg</featured>
-    <published>2015-03-18T14:51:50.000Z</published>
+    <title><![CDATA[Footprints]]></title>
+    <subtitle><![CDATA[a Trackfellas blog]]></subtitle>
+    <link href="/atom.xml" rel="self"/>
+    <link href="http://blog.trackfellas.com/"/>
     <updated>2015-03-18T11:27:56.000Z</updated>
-    <content type="html"><![CDATA[<h1>Philippines Island Hopping Trip</h1>
+    <id>http://blog.trackfellas.com/</id>
+
+    <author>
+        <name><![CDATA[Trackfellas team]]></name>
+        <email><![CDATA[info@trackfellas.com]]></email>
+    </author>
+
+    <generator uri="http://hexo.io/">Hexo</generator>
+
+    <entry>
+        <title><![CDATA[Travel Route Philippines]]></title>
+        <link href="http://blog.trackfellas.com/2015/03/Travel-Route-Philippines/"/>
+        <id>http://blog.trackfellas.com/2015/03/Travel-Route-Philippines/</id>
+        <featured>http://blog.trackfellas.com/2015/03/Travel-Route-Philippines/hero-image.jpg</featured>
+        <published>2015-03-18T14:51:50.000Z</published>
+        <updated>2015-03-18T11:27:56.000Z</updated>
+        <content type="html"><![CDATA[<h1>Philippines Island Hopping Trip</h1>
 <p>Trackfellas presents you the best travel routes worldwide. Until we can offer you a beta version of <a href="http://trackfellas.com" target="_blank" rel="external">trackfellas.com</a>, we will feed you with travel routes on our freshly redesigned blog, with all the valuable information for your next trip.</p>
 <p><strong>We proudly present our first travel route, which brings us to the marvelous islands of the Philippines!</strong></p>
 <p>This blogpost is separated into 3 parts, general  <a href="/2015/03/Travel-Route-Philippines/" title="Trip Information">Trip Information</a>, the <a href="/2015/03/Travel-Route-Philippines-Palawan/" title="Travel Route for Palawan">Travel Route for Palawan</a> and the <a href="/2015/03/Travel-Route-Philippines-Visayas-Manila/" title="Travel Route for the Visayas and Manila">Travel Route for the Visayas and Manila</a>. Enjoy reading and keep in touch for more travel routes on our blog or follow us on facebook, twitter or google+.</p>
-<img src="/2015/03/Travel-Route-Philippines/hero-image.jpg">  
-Sun, Beach and Island Beauties somewhere in the island world of Palawan, Philippines. 
+<img src="/2015/03/Travel-Route-Philippines/hero-image.jpg">
+Sun, Beach and Island Beauties somewhere in the island world of Palawan, Philippines.
 <h2>I. Part: Travel Information</h2>
 <p>Here you find the overview of the travel route and the most important facts including ratings in brackets from 1 (horrible) to 5 (awesome) for the described three weeks trip and the Philippines itself.</p>
 <a id="more"></a>
@@ -44,8 +44,8 @@ Sun, Beach and Island Beauties somewhere in the island world of Palawan, Philipp
 <strong>Trip suited for travelers:</strong>  with kids; as single woman; as group travel; as young traveler;<br>
 <strong>Total Costs on-site:</strong>        1500 - 2000 €<br>
 <strong>+ Round flight fare:</strong>       500 - 1000 €</p>
-<div class="left"> 
-<img src="/2015/03/Travel-Route-Philippines/cost-distribution.jpg"> 
+<div class="left">
+<img src="/2015/03/Travel-Route-Philippines/cost-distribution.jpg">
 </div>
 <p><strong>Accommodation category:</strong>     Middle-class (AC, TV, private bath)<br>
 <strong>Total distance:</strong>         2800 km<br>
@@ -62,7 +62,7 @@ Sun, Beach and Island Beauties somewhere in the island world of Palawan, Philipp
 <strong>Health Care:</strong>            No mandatory vaccination, but vaccination against tetanus, diphtheria, polio, and hepatitis A is important, additionally Hepatitis B and typhus and malarone as standby-therapy makes sense; In Palawan there are no hospitals, besides in Puerto Princessa. Bring along your own first-aid kit<br>
 <strong>Travel warnings:</strong>        Don’t travel to the unsafe Muslim-dominated southwestern islands and be aware of strong monsoon during the rain season. For further detailed information check travel warnings of your government, for example of the <a href="http://travel.state.gov/content/passports/english/alertswarnings/philippines-travel-warning.html" target="_blank" rel="external">U.S. Bureau of Consular Affairs</a> and the <a href="www.pagasa.dost.gov.ph">Philippine Weather Service</a> for weather warnings for the Philippines.</p>
 <h3>Trackfella:</h3>
-<div class="left"> 
+<div class="left">
 <img src="/2015/03/Travel-Route-Philippines/trackfella-moritz.jpg">
 </div>
 <p><strong>Name:</strong>               Moritz<br>
@@ -98,42 +98,42 @@ Sun, Beach and Island Beauties somewhere in the island world of Palawan, Philipp
 <p>In the next part we will present you the travel route for the Philippines island hopping trip.<br>
 Click here for the detailed trip description through <a href="/2015/03/Travel-Route-Philippines-Palawan/" title="Palawan">Palawan</a>, the <a href="/2015/03/Travel-Route-Philippines-Visayas-Manila/" title="Visayas and Manila">Visayas and Manila</a></p>
 ]]></content>
-    <summary type="html">
-    <![CDATA[<h1>Philippines Island Hopping Trip</h1>
+        <summary type="html">
+            <![CDATA[<h1>Philippines Island Hopping Trip</h1>
 <p>Trackfellas presents you the best travel routes worldwide. Until we can offer you a beta version of <a href="http://trackfellas.com">trackfellas.com</a>, we will feed you with travel routes on our freshly redesigned blog, with all the valuable information for your next trip.</p>
 <p><strong>We proudly present our first travel route, which brings us to the marvelous islands of the Philippines!</strong></p>
 <p>This blogpost is separated into 3 parts, general  <a href="/2015/03/Travel-Route-Philippines/" title="Trip Information">Trip Information</a>, the <a href="/2015/03/Travel-Route-Philippines-Palawan/" title="Travel Route for Palawan">Travel Route for Palawan</a> and the <a href="/2015/03/Travel-Route-Philippines-Visayas-Manila/" title="Travel Route for the Visayas and Manila">Travel Route for the Visayas and Manila</a>. Enjoy reading and keep in touch for more travel routes on our blog or follow us on facebook, twitter or google+.</p>
-<img src="/2015/03/Travel-Route-Philippines/hero-image.jpg">  
-Sun, Beach and Island Beauties somewhere in the island world of Palawan, Philippines. 
+<img src="/2015/03/Travel-Route-Philippines/hero-image.jpg">
+Sun, Beach and Island Beauties somewhere in the island world of Palawan, Philippines.
 <h2>I. Part: Travel Information</h2>
 <p>Here you find the overview of the travel route and the most important facts including ratings in brackets from 1 (horrible) to 5 (awesome) for the described three weeks trip and the Philippines itself.</p>]]>
-    
-    </summary>
-    
-      <category term="Palawan" scheme="http://blog.trackfellas.com/tags/Palawan/"/>
-    
-      <category term="Philippines" scheme="http://blog.trackfellas.com/tags/Philippines/"/>
-    
-      <category term="Visayas" scheme="http://blog.trackfellas.com/tags/Visayas/"/>
-    
-      <category term="island hopping" scheme="http://blog.trackfellas.com/tags/island-hopping/"/>
-    
-      <category term="travel guide" scheme="http://blog.trackfellas.com/tags/travel-guide/"/>
-    
-      <category term="travel route" scheme="http://blog.trackfellas.com/tags/travel-route/"/>
-    
-      <category term="travel route" scheme="http://blog.trackfellas.com/categories/travel-route/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[A Trackfella goes Philippines!]]></title>
-    <link href="http://blog.trackfellas.com/2014/12/a-trackfella-goes-philippines/"/>
-    <id>http://blog.trackfellas.com/2014/12/a-trackfella-goes-philippines/</id>
-    <featured>http://blog.trackfellas.com/2014/12/a-trackfella-goes-philippines/Philippines-Trip-2014.jpg</featured>
-    <published>2014-12-14T20:14:26.000Z</published>
-    <updated>2015-03-18T11:27:56.000Z</updated>
-    <content type="html"><![CDATA[<p>As a first entry in this category I want to present you my upcoming travel to the Philippines. I planned the trip taking our last blog about <a href="http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/" target="_blank" rel="external">10 steps to plan your prefect trip</a> into account. Due to the high season during Christmas and New Years Eve in the Philippines I had to book nearly everything in advance.  As a result of the trip planning I want to show you the planned route and my itinerary.</p>
+
+        </summary>
+
+        <category term="Palawan" scheme="http://blog.trackfellas.com/tags/Palawan/"/>
+
+        <category term="Philippines" scheme="http://blog.trackfellas.com/tags/Philippines/"/>
+
+        <category term="Visayas" scheme="http://blog.trackfellas.com/tags/Visayas/"/>
+
+        <category term="island hopping" scheme="http://blog.trackfellas.com/tags/island-hopping/"/>
+
+        <category term="travel guide" scheme="http://blog.trackfellas.com/tags/travel-guide/"/>
+
+        <category term="travel route" scheme="http://blog.trackfellas.com/tags/travel-route/"/>
+
+        <category term="travel route" scheme="http://blog.trackfellas.com/categories/travel-route/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[A Trackfella goes Philippines!]]></title>
+        <link href="http://blog.trackfellas.com/2014/12/a-trackfella-goes-philippines/"/>
+        <id>http://blog.trackfellas.com/2014/12/a-trackfella-goes-philippines/</id>
+        <featured>http://blog.trackfellas.com/2014/12/a-trackfella-goes-philippines/Philippines-Trip-2014.jpg</featured>
+        <published>2014-12-14T20:14:26.000Z</published>
+        <updated>2015-03-18T11:27:56.000Z</updated>
+        <content type="html"><![CDATA[<p>As a first entry in this category I want to present you my upcoming travel to the Philippines. I planned the trip taking our last blog about <a href="http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/" target="_blank" rel="external">10 steps to plan your prefect trip</a> into account. Due to the high season during Christmas and New Years Eve in the Philippines I had to book nearly everything in advance.  As a result of the trip planning I want to show you the planned route and my itinerary.</p>
 <p><strong>Travel Route</strong></p>
 <p>To visualize my travel route I used Google Maps Engine. The tool allows to create and share maps online. Here is a screen shot of the travel route:</p>
 <img src="/2014/12/a-trackfella-goes-philippines/Philippines-Trip-2014.jpg">
@@ -152,27 +152,27 @@ Sun, Beach and Island Beauties somewhere in the island world of Palawan, Philipp
 <p>See you soon from the other side of the planet,</p>
 <p>Moritz from Trackfellas</p>
 ]]></content>
-    <summary type="html">
-    <![CDATA[<p>As a first entry in this category I want to present you my upcoming travel to the Philippines. I planned the trip taking our last blog about <a href="http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/">10 steps to plan your prefect trip</a> into account. Due to the high season during Christmas and New Years Eve in the Philippines I had to book nearly everything in advance.  As a result of the trip planning I want to show you the planned route and my itinerary.</p>
+        <summary type="html">
+            <![CDATA[<p>As a first entry in this category I want to present you my upcoming travel to the Philippines. I planned the trip taking our last blog about <a href="http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/">10 steps to plan your prefect trip</a> into account. Due to the high season during Christmas and New Years Eve in the Philippines I had to book nearly everything in advance.  As a result of the trip planning I want to show you the planned route and my itinerary.</p>
 <p><strong>Travel Route</strong></p>
 <p>To visualize my travel route I used Google Maps Engine. The tool allows to create and share maps online. Here is a screen shot of the travel route:</p>
 <img src="/2014/12/a-trackfella-goes-philippines/Philippines-Trip-2014.jpg">
 <p>The usability is quite poor as there is no possibility to create a connected route.</p>]]>
-    
-    </summary>
-    
-      <category term="Travels" scheme="http://blog.trackfellas.com/categories/Travels/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[How to plan your perfect trip in 10 steps]]></title>
-    <link href="http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/"/>
-    <id>http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/</id>
-    <featured>http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/DSC01587.jpeg</featured>
-    <published>2014-12-13T21:38:52.000Z</published>
-    <updated>2015-03-18T11:27:56.000Z</updated>
-    <content type="html"><![CDATA[<img src="/2014/12/how-to-plan-your-perfect-trip-in-10-steps/DSC01193.jpeg">
+
+        </summary>
+
+        <category term="Travels" scheme="http://blog.trackfellas.com/categories/Travels/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[How to plan your perfect trip in 10 steps]]></title>
+        <link href="http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/"/>
+        <id>http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/</id>
+        <featured>http://blog.trackfellas.com/2014/12/how-to-plan-your-perfect-trip-in-10-steps/DSC01587.jpeg</featured>
+        <published>2014-12-13T21:38:52.000Z</published>
+        <updated>2015-03-18T11:27:56.000Z</updated>
+        <content type="html"><![CDATA[<img src="/2014/12/how-to-plan-your-perfect-trip-in-10-steps/DSC01193.jpeg">
 <p>Planning an individual trip abroad is a hassle and you need some experience and lots of information. With <a href="http://trackfellas.com" target="_blank" rel="external">trackfellas</a> we want offer travelers a platform for a community-driven exchange of travel experiences and routes to close that gap between printed guidebooks and travel recommendation websites. Starting from inspiration for your next travel over trip planning and booking to route documentation, rating and sharing you will find everything you need for your perfect trip in one place. Until we are ready, here are the best travel tips for planning your individual travels in the old-fashioned way:</p>
 <a id="more"></a>
 1.  ** Find awesome travel destinations**
@@ -231,28 +231,28 @@ When you want help us growing the community and give us some credits for the tra
 <p> </p>
 <p>Photo credits: Photos by <a href="http://Unsplash.com" target="_blank" rel="external">Unsplash.com</a> and Lukas Hofmann from his photography blog <a href="http://www.phoho.de" target="_blank" rel="external">www.phoho.de</a></p>
 ]]></content>
-    <summary type="html">
-    <![CDATA[<img src="/2014/12/how-to-plan-your-perfect-trip-in-10-steps/DSC01193.jpeg">
+        <summary type="html">
+            <![CDATA[<img src="/2014/12/how-to-plan-your-perfect-trip-in-10-steps/DSC01193.jpeg">
 <p>Planning an individual trip abroad is a hassle and you need some experience and lots of information. With <a href="http://trackfellas.com">trackfellas</a> we want offer travelers a platform for a community-driven exchange of travel experiences and routes to close that gap between printed guidebooks and travel recommendation websites. Starting from inspiration for your next travel over trip planning and booking to route documentation, rating and sharing you will find everything you need for your perfect trip in one place. Until we are ready, here are the best travel tips for planning your individual travels in the old-fashioned way:</p>]]>
-    
-    </summary>
-    
-      <category term="booking" scheme="http://blog.trackfellas.com/tags/booking/"/>
-    
-      <category term="planning" scheme="http://blog.trackfellas.com/tags/planning/"/>
-    
-      <category term="route" scheme="http://blog.trackfellas.com/tags/route/"/>
-    
-      <category term="tips" scheme="http://blog.trackfellas.com/tags/tips/"/>
-    
-      <category term="trackfellas" scheme="http://blog.trackfellas.com/tags/trackfellas/"/>
-    
-      <category term="travel" scheme="http://blog.trackfellas.com/tags/travel/"/>
-    
-      <category term="trip" scheme="http://blog.trackfellas.com/tags/trip/"/>
-    
-      <category term="travel planning" scheme="http://blog.trackfellas.com/categories/travel-planning/"/>
-    
-  </entry>
-  
+
+        </summary>
+
+        <category term="booking" scheme="http://blog.trackfellas.com/tags/booking/"/>
+
+        <category term="planning" scheme="http://blog.trackfellas.com/tags/planning/"/>
+
+        <category term="route" scheme="http://blog.trackfellas.com/tags/route/"/>
+
+        <category term="tips" scheme="http://blog.trackfellas.com/tags/tips/"/>
+
+        <category term="trackfellas" scheme="http://blog.trackfellas.com/tags/trackfellas/"/>
+
+        <category term="travel" scheme="http://blog.trackfellas.com/tags/travel/"/>
+
+        <category term="trip" scheme="http://blog.trackfellas.com/tags/trip/"/>
+
+        <category term="travel planning" scheme="http://blog.trackfellas.com/categories/travel-planning/"/>
+
+    </entry>
+
 </feed>
