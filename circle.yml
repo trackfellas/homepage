@@ -1,0 +1,11 @@
+dependencies:
+  pre:
+    - npm install hexo-cli mocha -g
+    - npm install
+  cache_directories:
+    - node_modules
+
+test:
+  override:
+    - mocha
+    - hexo generate
