@@ -1,0 +1,2599 @@
+/************************************************
+Theme Name: Arvin - One Page Template
+Author: Akronyms
+Author URI: http://www.akronyms.net
+Version: 1.0
+************************************************ */
+
+/* --------------------------------------------------
+  Table of Contents
+-----------------------------------------------------
+:: General
+:: Typography
+:: Buttons
+:: Icon With Text/Blurb
+:: Sections Common Css
+:: Call To Action
+:: Menu
+::
+:: -------------------
+:: Homepage
+:: -------------------
+:: -- Home Slider
+:: -- Features Section
+:: -- Team Section
+:: -- Skills Section
+:: -- Featured Works Section
+:: -- Counter Section
+:: -- Offer Section
+:: -- Portfolio Section
+:: -- Custom Section
+:: -- Testimonial Section
+:: -- Pricing Section
+:: -- Clients Logo Section
+:: -- Process Section
+:: -- Blog Section
+:: -- Contact Section
+::
+:: -----------------------------
+:: Portfolio Single Page
+:: -----------------------------
+:: -- Single Portfolio Details Section
+:: -- Related Works Section
+::
+:: -------------------
+::Blog Single Page
+::--------------------
+:: -- Single Post Contents
+:: ----- Block Quote
+:: ----- Blog Post Comments
+:: ----- Comment Form
+::
+:: -- Sidebar Area
+:: ----- Search Bar
+:: ----- Category
+:: ----- Recent Posts
+:: ----- Flickr Widget
+:: ----- Tag Widget
+::
+:: Preloader
+:: Scroll To Top
+:: Owl Slider Pagination
+:: Footer
+::
+:: Parallx Sections
+:: -- Features Section
+:: -- Counter Section
+:: -- Contact Section
+:: -- Portfolio Single Page
+:: -- Blog Single Page
+*/
+
+/********************************************************
+*														*
+*						General 						*
+*														*
+*********************************************************/
+body {
+  position: relative;
+}
+
+html{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+textarea:focus,
+input:focus{
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+header.arvin-page-header{
+	-webkit-background-size: cover;
+	height: 330px;
+	background-size: cover;
+	position: relative;
+}
+
+.arvin-page-title{
+	position: relative;
+	z-index: 1;
+}
+
+/************************* End ***************************/
+
+
+/********************************************************
+*														*
+*						Typography 						*
+*														*
+*********************************************************/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+h1{
+	font-size: 36px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+h3{
+	font-size: 24px;
+}
+
+h4{
+	font-size: 18px;
+}
+
+h5{
+	font-size: 16px;
+}
+
+h5{
+	font-size: 14px;
+}
+
+a,p,li,input,textarea{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #818181;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+a{
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+a:hover,
+a:focus,
+a:active{
+	outline: 0;
+	text-decoration: none;
+  	border: 0;
+}
+
+.arvin-page-title h1{
+	font-size: 36px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0;
+	padding: 70px 0 0;
+	text-align: center;
+}
+/************************* End **************************/
+
+
+/********************************************************
+*														*
+*						Buttons 						*
+*														*
+*********************************************************/
+/* solid Btn*/
+.arvin-button-solid{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px 30px;
+	display: inline-block;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.arvin-button-solid:hover{
+	color: #ffffff;
+	background-color: #de5c39;
+}
+
+/* outline btn*/
+.arvin-button-outline{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px 30px;
+	display: inline-block;
+	background-color: transparent;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+/*Light btn*/
+.arvin-button-outline-light{
+	border: 1px solid #ffffff;
+}
+
+.arvin-button-outline-light:hover{
+	color: #ffffff;
+	border: 1px solid transparent;
+}
+
+/*Dark btn*/
+.arvin-button-outline-dark{
+	color: #28292e;
+	border: 1px solid #28292e;
+}
+
+.arvin-button-outline-dark:hover{
+	color: #ffffff;
+	border: 1px solid transparent;
+}
+
+
+/* round btn*/
+.arvin-btn-round{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 15px 30px;
+	color: #ffffff;
+	text-align: center;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		 -o-border-radius: 5px;
+		 	border-radius: 5px;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.arvin-btn-round:hover{
+	color: #ffffff;
+}
+/************************* End **************************/
+
+
+/********************************************************
+*														*
+*					Icon With Text/Blurb			    *
+*														*
+*********************************************************/
+
+/* Single Icon with text */
+.arvin-blurb-icon-only{
+	margin-bottom: 50px;
+}
+
+.arvin-blurb-icon-only i{
+	font-size: 30px;
+}
+
+.arvin-blurb-icon-only h3{
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.arvin-blurb-icon-only p{
+	margin-bottom: 0;
+}
+
+
+/* Round Icon with text */
+.arvin-blurb-round-icon .arvin-icon{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
+	border: 1px solid #dadada;
+	-webkit-border-radius: 50%;
+		moz-border-radius: 50%;
+		 -o-border-radius: 50%;
+		 	border-radius: 50%;
+}
+
+.arvin-blurb-round-icon .arvin-icon i{
+	line-height: 100px;
+	font-size: 36px;
+	color: #dadada;
+}
+
+.arvin-blurb-round-icon .arvin-icon{
+	-webkit-transition: all .35s linear;
+	   -moz-transition: all .35s linear;
+	    -ms-transition: all .35s linear;
+	     -o-transition: all .35s linear;
+	        transition: all .35s linear;
+}
+
+.arvin-blurb-round-icon:hover .arvin-icon{
+	border: 1px solid rgba(0,0,0,0);
+}
+
+.arvin-blurb-round-icon:hover .arvin-icon i{
+	color: #ffffff;
+}
+
+.arvin-blurb-round-icon h3{
+	text-align: center;
+	font-size: 18px;
+	color: #616161;
+	margin-top: 0;
+	margin-bottom: 15px;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+
+.arvin-blurb-round-icon p{
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/* icon Square */
+.arvin-blurb-icon-left-square{
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+/*Default/Light*/
+.arvin-blurb-icon-left-square .arvin-icon{
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	text-align: center;
+	float: left;
+	margin-right: 30px;
+	background-color: rgba(255,255,255,0.25);
+}
+
+/*Dark*/
+.arvin-blurb-icon-left-square.arvin-square-dark .arvin-icon{
+	background-color: rgba(0,0,0,0.25);
+}
+
+.arvin-blurb-icon-left-square .arvin-icon i{
+	line-height: 70px;
+	color: #ffffff;
+	font-size: 36px;
+}
+
+.arvin-blurb-icon-left-square .arvin-blurb-text{
+	float: left;
+	width: 260px;
+}
+
+.arvin-blurb-icon-left-square .arvin-blurb-text h3{
+	font-size: 16px;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	position: relative;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+
+.arvin-blurb-icon-left-square .arvin-blurb-text h3:after{
+	content: '';
+	width: 30px;
+	height: 2px;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	    -ms-transition: all .3s linear;
+	     -o-transition: all .3s linear;
+	        transition: all .3s linear;
+}
+
+.arvin-blurb-icon-left-square .arvin-blurb-text p{
+	color: #ffffff;
+}
+/************************* End **************************/
+
+
+/********************************************************
+*														*
+*					Sections Common Css 			    *
+*														*
+*********************************************************/
+.arvin-section-wrapper{
+	padding: 80px 0;
+	overflow: hidden;
+}
+
+.arvin-section-header{
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.arvin-section-header h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #313131;
+}
+
+.arvin-section-header h1 span{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.arvin-section-header .arvin-section-divider{
+	width: 100px;
+	height: 4px;
+	margin: 20px auto;
+	border-top: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+}
+
+.arvin-section-header p{
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Parallax Section*/
+.arvin-parallax-overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(40,41,46,0.65);
+}
+
+.arvin-section-header-parallax h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.arvin-section-header-parallax h1 span{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.arvin-section-header-parallax .arvin-section-divider{
+	width: 100px;
+	height: 4px;
+	margin: 20px auto;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+.arvin-section-header-parallax p{
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff
+}
+/************************* End **************************/
+
+
+/********************************************************
+*														*
+*					  Call To Action 	 			    *
+*														*
+*********************************************************/
+/* Call To Action Style 1 */
+.arvin-cta-1{
+	background-color: #28292e;
+	padding: 60px 0;
+}
+
+.arvin-cta-1 h2{
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.arvin-cta-1 p{
+	color: #ffffff;
+	margin-bottom: 0;
+}
+
+.arvin-cta-1 .arvin-cta-btn a{
+	float: right;
+	margin-top: 15px;
+	color: #ffffff;
+}
+
+/* Call To Action Style 2*/
+.arvin-cta-2{
+	background-color: #28292e;
+	text-align: center;
+}
+
+.arvin-cta-2-wrapper{
+	overflow: hidden;
+	padding: 60px 0;
+}
+
+.arvin-cta-2 h1{
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: #ffffff;
+}
+/************************* End **************************/
+
+
+/********************************************************
+*														*
+*					         Menu 	 	 			    *
+*														*
+*********************************************************/
+.arvin-main-menu{
+    background-color: #28292e;
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 0;
+    z-index: 10;
+    -webkit-transition: all .35s;
+       -moz-transition: all .35s;
+        -ms-transition: all .35s;
+         -o-transition: all .35s;
+            transition: all .35s;
+}
+
+header.arvin-page-header .arvin-main-menu{
+	position: relative;
+}
+
+.arvin-main-menu .navbar-nav{
+    float: right;
+    padding: 20px 0;
+}
+
+.arvin-main-menu .navbar-nav li a{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-transition: all .3s;
+       -moz-transition: all .3s;
+        -ms-transition: all .3s;
+         -o-transition: all .3s;
+            transition: all .3s;
+}
+
+.arvin-main-menu .navbar-nav li a:hover,
+.arvin-main-menu .navbar-nav li.active a{
+    background-color: transparent;
+}
+
+.arvin-main-menu .navbar-nav li a:focus{
+	background-color: transparent;
+}
+
+/* Minified Menu */
+.arvin-main-menu.minified{
+	background-color: #28292e;
+	padding: 0;
+	position: fixed;
+}
+
+header.arvin-page-header .arvin-main-menu.minified{
+	position: fixed;
+}
+/************************* End **************************/
+
+
+
+/********************************************************
+*														*
+*						Home Page						*
+*														*
+*********************************************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+						Home Slider
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-slider{
+	overflow: hidden;
+	background-color: #28292e;
+}
+
+.arvin-main-slides .arvin-img-overlay{
+	position: absolute;
+	background-color: rgba(40,41,46,0.25);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.arvin-main-slides h1.arvin-slider-text-big{
+	font-size: 48px;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+.arvin-main-slides .arvin-slider-text h1 span{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.arvin-main-slides p{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 30px !important;
+	color: #ffffff;
+	margin-bottom: 0;
+}
+
+/* Slider Navigation & Pagination Styling */
+.sp-arrow {
+	width: 10px;
+}
+
+.arvin-slider .sp-buttons {
+  padding-top: 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 20px;
+}
+
+.arvin-slider .sp-button {
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  margin: 4px;
+  width: 16px;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+						Features Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-features-section .container{
+	position: relative;
+	z-index: 1;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+						Team Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-team-section{
+	overflow: hidden;
+}
+
+/*Team Member img*/
+.arvin-team-slides .arvin-member-img-wrapper{
+	width: 160px;
+	height: 160px;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	margin-right: 30px;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	  	 -o-border-radius: 50%;
+	  	    border-radius: 50%;
+}
+
+.arvin-team-slides .arvin-member-img-wrapper img{
+	border: 10px solid #f5f5f5;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	  	 -o-border-radius: 50%;
+	  	    border-radius: 50%;
+}
+
+/*Team Member Details*/
+.arvin-member-details{
+	width: 340px;
+	float: left;
+	display: inline-block;
+}
+
+.arvin-member-details h3{
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.arvin-member-details span.arvin-member-desg{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	color: #4a4a4a;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+.arvin-member-details p{
+	margin-bottom: 20px;
+}
+
+/*Social Infos*/
+.arvin-member-details ul li{
+	float: left;
+	margin-right: 5px;
+}
+
+.arvin-member-details ul li a{
+	width: 25px;
+	height: 25px;
+	display: block;
+	text-align: center;
+	background-color: #f1f1f1;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+.arvin-member-details ul li a i{
+	color: #bebebe;
+	line-height: 25px;
+}
+
+.arvin-member-details ul li a:hover i{
+	color: #ffffff;
+}
+
+.arvin-member-details ul li.social-facebook a:hover{
+	background-color: #3b5998;
+}
+
+.arvin-member-details ul li.social-twitter a:hover{
+	background-color: #00aced;
+}
+
+.arvin-member-details ul li.social-gplus a:hover{
+	background-color: #dd4b39;
+}
+
+.arvin-member-details ul li.social-linkedin a:hover{
+	background-color: #007bb6;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+						Skills Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-our-skills{
+	background-color: #f5f5f5;
+}
+
+.arvin-our-skills .chart{
+	position: relative;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+
+}
+
+.arvin-our-skills span.percent{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	color: #3a3a3a;
+	display: inline-block;
+	z-index: 3;
+	margin-top: 60px;
+}
+
+.arvin-our-skills span.percent:after{
+	content: '%';
+	font-size: 36px;
+}
+
+.arvin-our-skills .chart h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #3a3a3a;
+	display: block;
+	z-index: 3;
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+
+.arvin-our-skills .chart canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.arvin-our-skills .arvin-skills-wrapper p{
+	text-align: center;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Featured Works Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-portfolio-work-item{
+	height: 280px;
+	position: relative;
+}
+
+/*Portfolio img*/
+.arvin-portfolio-work-item img{
+	height: 100%;
+}
+
+.arvin-portfolio-work-item .arvin-port-work-details{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*zoom & link btn*/
+.arvin-portfolio-work-item .arvin-work-meta{
+	position: absolute;
+	top: 0;
+	left: 0px;
+}
+
+.arvin-portfolio-work-item .arvin-work-meta li{
+	width: 35px;
+	height: 35px;
+	margin-bottom: 1px;
+	text-align: center;
+	background-color: rgba(40,41,46,0.8);
+	opacity: 0;
+	-webkit-transform: scale(0);
+	   -moz-transform: scale(0);
+	    -ms-transform: scale(0);
+	     -o-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+
+.arvin-portfolio-work-item:hover .arvin-port-work-details .arvin-work-meta li{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+}
+
+.arvin-port-work-details .arvin-work-meta li a{
+	display: block;
+}
+
+.arvin-port-work-details .arvin-work-meta li a i{
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 35px;
+}
+
+/*Portolio Name & category*/
+.arvin-port-work-details .arvin-port-work-desc{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	padding: 15px 0;
+	background-color: rgba(40,41,46,0.8);
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	   -moz-transform: translateY(100%);
+	    -ms-transform: translateY(100%);
+	     -o-transform: translateY(100%);
+	        transform: translateY(100%);
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+
+}
+
+.arvin-portfolio-work-item:hover .arvin-port-work-desc{
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	   -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	     -o-transform: translateY(0);
+	        transform: translateY(0);
+}
+
+.arvin-port-work-details .arvin-port-work-desc h3{
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.arvin-port-work-details .arvin-port-work-desc p{
+	font-size: 14px;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*Like count*/
+.arvin-port-work-details .arvin-port-work-desc .arvin-like-btn {
+	text-align: center;
+	padding: 10px 15px;
+}
+
+.arvin-port-work-details .arvin-port-work-desc .arvin-like-btn a{
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.arvin-port-work-details .arvin-port-work-desc .arvin-like-btn a i{
+	font-size: 21px;
+	color: #ffffff;
+	margin-right: 5px;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Counter Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-counter-item{
+	text-align: center;
+}
+
+.arvin-counter-item span{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.arvin-counter-item h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 10px;
+	position: relative;
+}
+
+.arvin-counter-item h3:after{
+	content: '';
+	width: 120px;
+	height: 1px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	     -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Offer Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-offer-section{
+	padding-bottom: 30px;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Portfolio Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-portfolio-section{
+	background-color: #f5f5f5;
+}
+
+/*Filter btn*/
+.arvin-portfolio-filter-btn-group{
+	margin-bottom: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.arvin-portfolio-filter-btn-group ul{
+	display: inline-block;
+}
+
+.arvin-portfolio-filter-btn-group ul li{
+	float: left;
+}
+
+.arvin-portfolio-filter-btn-group ul li a{
+	font-weight: 600;
+	padding: 10px 20px;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		 -o-border-radius: 5px;
+		 	border-radius: 5px;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.arvin-portfolio-filter-btn-group ul li a:hover{
+	color: #818181;
+}
+
+.arvin-portfolio-filter-btn-group ul li a.selected{
+	color: #ffffff;
+}
+
+/*Portfolio Items*/
+.arvin-portfolio-items{
+	overflow: hidden;
+}
+
+.arvin-portfolio-items .arvin-portfolio-item{
+	width: 25%;
+	height: 280px;
+	position: relative;
+	overflow: hidden;
+}
+
+.arvin-portfolio-items .arvin-portfolio-item img{
+	height: 100%;
+}
+
+.arvin-portfolio-items .arvin-portfolio-item .arvin-portfolio-details-wrapper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(40,41,46,0.8);
+	display: table;
+	opacity: 0;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+.arvin-portfolio-item:hover .arvin-portfolio-details-wrapper{
+	opacity: 1;
+}
+
+.arvin-portfolio-item .arvin-portfolio-details{
+	display: table-cell;
+	padding: 50px 0;
+	vertical-align: middle;
+}
+
+.arvin-portfolio-item .arvin-portfolio-details .arvin-portfolio-meta-btn{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.arvin-portfolio-details .arvin-portfolio-meta-btn ul{
+	display: inline-block;
+}
+
+.arvin-portfolio-details .arvin-portfolio-meta-btn ul li{
+	width: 35px;
+	height: 35px;
+	background-color: rgba(255,255,255,0.3);
+	float: left;
+	margin-right: 10px;
+	opacity: 0;
+	-webkit-transition: all .55s;
+	   -moz-transition: all .55s;
+	    -ms-transition: all .55s;
+	     -o-transition: all .55s;
+	        transition: all .55s;
+}
+
+.arvin-portfolio-details .arvin-portfolio-meta-btn ul li.arvin-portfolio-single-link{
+	-webkit-transform: translateX(400%);
+	   -moz-transform: translateX(400%);
+	    -ms-transform: translateX(400%);
+	     -o-transform: translateX(400%);
+	        transform: translateX(400%);
+}
+
+.arvin-portfolio-details .arvin-portfolio-meta-btn ul li.arvin-lighbox{
+	-webkit-transform: translateX(-400%);
+	   -moz-transform: translateX(-400%);
+	    -ms-transform: translateX(-400%);
+	     -o-transform: translateX(-400%);
+	        transform: translateX(-400%);
+}
+
+.arvin-portfolio-item:hover .arvin-portfolio-details .arvin-portfolio-meta-btn ul li{
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	   -moz-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	     -o-transform: translateX(0);
+	        transform: translateX(0);
+}
+
+.arvin-portfolio-details .arvin-portfolio-meta-btn ul li a{
+	display: block;
+	text-align: center;
+}
+.arvin-portfolio-details .arvin-portfolio-meta-btn ul li a i{
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 35px;
+}
+
+.arvin-portfolio-item .arvin-portfolio-details h3{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.arvin-portfolio-item .arvin-portfolio-details p{
+	font-size: 13px;
+	text-align: center;
+	color: #ffffff;
+	font-style: italic;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Custom Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-custom-sec-text p{
+	margin-bottom: 20px;
+}
+
+.arvin-custom-sec-text h3{
+	font-size: 18px;
+	color: #616161;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.arvin-custom-sec-text ul{
+	margin-left: 30px;
+}
+
+.arvin-custom-sec-text ul li{
+	margin-bottom: 10px;
+}
+
+.arvin-custom-sec-text ul li:last-child{
+	margin-bottom: 0;
+}
+
+.arvin-custom-sec-text ul li i{
+	font-size: 14px;
+	margin-right: 10px;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Testimonial Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-testimonial-section{
+	position: relative;
+	padding: 80px 0;
+	overflow: hidden;	
+	max-height: 400px;
+}
+
+.arvin-bg-video-wrapper{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-height: 100%;
+}
+
+.arvin-bg-video-wrapper video{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.arvin-testimonial-wrapper{
+	text-align: center;
+	position: relative;
+	z-index: 5;
+}
+
+.arvin-testimonial-wrapper .comment-icon{
+	font-size: 24px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.arvin-testimonial{
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.arvin-testimonial p{
+	font-size: 16px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.arvin-testimonial p.arvin-client-info{
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 0
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Pricing Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-pricing-section{
+	padding: 80px 0;
+}
+
+.arvin-pricing-plans{
+	text-align: center;
+	padding: 30px 15px;
+}
+
+/*Recommended*/
+.arvin-recommended-pricing{
+	background-color: #f5f5f5;
+}
+
+/*Pricing Plan Header*/
+.arvin-pricing-plans .arvin-pricing-titles{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.arvin-pricing-plans .arvin-pricing-titles h2{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.arvin-pricing-plans .arvin-pricing-titles p{
+	font-size: 16px;
+}
+
+.arvin-pricing-plans .arvin-pricing-titles p span{
+	font-size: 30px;
+	font-weight: 300;
+}
+
+/*Pricing Plan Details*/
+.arvin-pricing-plans .arvin-pricing-service-name{
+	margin-bottom: 20px;
+}
+
+.arvin-pricing-plans ul li{
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #dadada;
+}
+
+.arvin-pricing-plans ul li:last-child{
+	border-bottom: 0px solid;
+}
+
+/*Signup Btn*/
+.arvin-pricing-plans a.arvin-signup-btn{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 15px 30px;
+	text-align: center;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		 -o-border-radius: 5px;
+		 	border-radius: 5px;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.arvin-pricing-plans a.arvin-signup-btn:hover{
+	color: #ffffff;
+	background-color: #ff653d;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+				Clients Logo Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-client-logo-carosal{
+	background-color: #28292e;
+	padding: 60px 0;
+}
+
+.arvin-client-logo-carosal .arvin-client-logos{
+	text-align: center;
+}
+
+.arvin-client-logo-carosal .arvin-client-logos img{
+	max-height: 60px;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+				Process Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-process-item{
+	text-align: center;
+}
+
+.arvin-process-item h3{
+	font-size: 18px;
+	color: #616161;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.arvin-process-item p{
+	margin-bottom: 0;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+						Blog Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-blog-section{
+	background-color: #f5f5f5;
+}
+
+/*Blog Img*/
+.arvin-blog-items .arvin-blog-img{
+	position: relative;
+}
+
+.arvin-blog-items .arvin-blog-img img{
+	width: 100%;
+}
+
+/*Publish Date*/
+.arvin-blog-items .arvin-blog-img span.blog-publish-date{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background-color: rgba(40,41,46,0.7);
+	color: #ffffff;
+	font-size: 13px;
+	font-style: italic;
+	padding: 5px 10px 
+}
+
+/*Post Header*/
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-header-wrapper{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 10px 0;
+	background-color: rgba(40,41,46,0.7);
+	color: #ffffff;
+	width: 100%;
+	overflow: hidden;
+}
+
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-header h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-header h2 a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+/*Post meta*/
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-header p{
+	color: #ffffff;
+	font-size: 13px;
+	font-style: italic;
+}
+
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-header p a{
+	color: #eaeaea;
+	font-weight: 600;
+}
+
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-header p a:hover{
+	color: #ffffff;
+}
+
+/*Comment Count*/
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-comments{
+	font-size: 18px;
+	color: #ffffff;
+	padding: 10px 15px;
+	margin-bottom: 0;
+}
+
+.arvin-blog-items .arvin-blog-img .arvin-blog-post-comments i{
+	font-size: 18px;
+	margin-right: 5px;
+	color: #ffffff;
+}
+
+/*Post Excerpt*/
+.arvin-blog-post-content{
+	background-color: #ffffff;
+	padding: 15px 20px;
+}
+
+.arvin-blog-post-content p{
+	margin-bottom: 25px;
+}
+
+/*Read More btn*/
+.arvin-blog-post-content a{
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.arvin-blog-post-content a i{
+	margin-right: 5px;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Contact Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/*Address Side*/
+.arvin-contact-section .arvin-contact-address p{
+	color: #ffffff;
+	margin-bottom: 25px;
+}
+
+.arvin-contact-section .arvin-contact-address ul li{
+	padding-left: 40px;
+	margin-bottom: 25px;
+	color: #ffffff;
+	font-size: 14px;
+	position: relative;
+}
+
+.arvin-contact-section .arvin-contact-address ul li:last-child{
+	margin-bottom: 0;
+}
+
+.arvin-contact-section .arvin-contact-address ul li i{
+	color: #ffffff;
+	position: absolute;
+	font-size: 18px;
+	left: 0;
+	top: 3px;
+}
+
+/*Contact Form*/
+.arvin-contact-section .arvin-contact-form .arvin-input-fields{
+	margin-bottom: 20px;
+}
+
+.arvin-contact-section .arvin-contact-form .arvin-input-fields label{
+	display: block;
+	font-size: 14px;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 400;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.arvin-contact-section .arvin-contact-form .arvin-input-fields input{
+	width: 100%;
+	height: 40px;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #ffffff;
+}
+
+.arvin-contact-section .arvin-contact-form .arvin-input-fields textarea{
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	padding: 15px;
+	color: #ffffff;
+}
+
+.arvin-contact-section .arvin-contact-form input[type='submit']{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 15px 30px;
+	text-align: center;
+	display: inline-block;
+	outline: 0;
+	border: 0px solid;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		 -o-border-radius: 5px;
+		 	border-radius: 5px;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+
+.arvin-contact-section .arvin-contact-form .arvin-input-fields input[type='submit']:hover{
+	color: #ffffff;
+	background-color: #de5c39;
+}
+
+.error {
+  background-color: #df3030;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding: 15px 15px 15px 50px;
+  position: relative;
+}
+
+.error:before{
+	content: "\e08b";
+	font-family: 'Simple-Line-Icons';
+	color: #ffffff;
+	position: absolute;
+	font-size: 16px;
+	top: 14px;
+	left: 25px;
+}
+
+.success{
+  background-color: #19bd9b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding: 15px 15px 15px 50px;
+  position: relative;
+}
+
+.success:before{
+	content: "\e080";
+	font-family: 'Simple-Line-Icons';
+	color: #ffffff;
+	position: absolute;
+	font-size: 16px;
+	top: 14px;
+	left: 25px;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Google Maps Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-find-us-btn{
+	padding: 50px;
+	background-color: #28292e;
+	overflow: hidden;
+}
+
+.arvin-find-us-btn h3{
+	font-size: 24px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#map img {
+	max-width: none;
+}
+
+.arvin-on-google-maps #map{
+    width: 100%;
+    height: 500px;
+    background-color: #CCC;
+}
+/************************* End **************************/
+
+
+
+
+
+
+/********************************************************
+*														*
+*        			Portfolio Single Page				*
+*														*
+*********************************************************/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+			Single Portfolio Details Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-portfolio-information{
+	overflow: hidden;
+}
+
+.arvin-portfolio-information h2.arvin-portfolio-title{
+	font-size: 18px;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	display: block;
+	border-bottom: 1px solid #dadada;
+}
+
+.arvin-portfolio-information p.arvin-portfolio-details{
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #dadada;
+}
+
+.arvin-portfolio-information .arvin-single-portfolio-meta{
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #dadada;
+}
+
+/*Portfolio Meta*/
+.arvin-portfolio-information .arvin-single-portfolio-meta ul li{
+	margin-bottom: 10px;
+}
+
+.arvin-portfolio-information .arvin-single-portfolio-meta ul li span{
+	font-weight: 700;
+	color: #676767;
+}
+
+.arvin-portfolio-information .arvin-single-portfolio-meta .arvin-view-project-btn{
+	margin-top: 20px;
+	padding: 10px 20px
+}
+
+/*Share btn's*/
+.arvin-portfolio-information .arvin-share-project{
+	padding-left: 0;
+}
+
+.arvin-portfolio-information .arvin-share-project .arvin-social-share p{
+	font-weight: 700;
+	color: #676767;
+	margin-bottom: 15px;
+}
+
+.arvin-portfolio-information .arvin-share-project ul li{
+	float: left;
+	margin-right: 15px;
+}
+
+.arvin-portfolio-information .arvin-share-project ul li:last-child{
+	margin-right: 0;
+}
+
+.arvin-portfolio-information .arvin-share-project ul li a{
+	font-size: 19px;
+}
+
+.arvin-portfolio-information .arvin-share-project ul li a i{
+	font-size: 19px;
+	color: #818181;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+.arvin-portfolio-information .arvin-share-project ul li a:hover i{
+}
+
+.arvin-portfolio-information .arvin-share-project .arvin-project-likes p a{
+	color: #818181;
+	float: right;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+/*Likes Btn*/
+.arvin-portfolio-information .arvin-share-project .arvin-project-likes p a:hover{
+}
+
+.arvin-portfolio-information .arvin-share-project .arvin-project-likes p a i{
+	font-size: 16px;
+	margin-right: 5px
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+				Related Works Section
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-related-works{
+	background-color: #f5f5f5;
+}
+/************************* End **************************/
+
+
+
+
+
+
+
+/********************************************************
+*														*
+*        			   Blog Single Page 				*
+*														*
+*********************************************************/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+				Single Post COntents
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-single-post-wrapper{
+	overflow: hidden;
+}
+
+/*Blog Post img*/
+.arvin-single-post-wrapper .arvin-single-post-img-wrapper{
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.arvin-single-post-wrapper .arvin-single-post-img-wrapper img{
+	width: 100%;
+}
+
+/*Post publish Date*/
+.arvin-single-post-wrapper .arvin-single-post-img-wrapper span.blog-publish-date{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background-color: rgba(40,41,46,0.5);
+	color: #ffffff;
+	font-size: 13px;
+	font-style: italic;
+	padding: 5px 10px 
+}
+
+/*Single Full Post*/
+.arvin-single-post-details{
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+/*Post Title*/
+.arvin-single-post-details h2.blog-post-title{
+	font-size: 24px;
+	color: #333;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+/*Post author meta*/
+.arvin-single-post-details p.arvin-blog-post-meta{
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.arvin-single-post-details p.arvin-blog-post-meta a{
+	font-weight: 600;
+	font-style: italic;
+	color: #818181;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+/*Post Details*/
+.arvin-single-post-details .arvin-single-post-text{
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.arvin-single-post-details .arvin-single-post-text p{
+	margin-bottom: 30px;
+}
+
+.arvin-single-post-details .arvin-single-post-text p:last-child{
+	margin-bottom: 0
+}
+
+/* ------------------------------------
+			Block Quote
+------------------------------------ */
+.arvin-single-post-details .arvin-single-post-text blockquote{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	color: #676767;
+	margin: 0 30px 30px 30px;
+	border: 0px solid;
+	position: relative;
+	padding: 0 30px;
+}
+
+.arvin-single-post-details .arvin-single-post-text blockquote:before{
+	content: '\f10d';
+	font-family:'FontAwesome';
+	font-size: 18px;
+	color: #dadada;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.arvin-single-post-details .arvin-single-post-text blockquote:after{
+	content: '\f10e';
+	font-family:'FontAwesome';
+	font-size: 18px;
+	color: #dadada;
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+}
+
+.arvin-single-post-details .arvin-single-post-text blockquote span.arvin-bquote-person{
+	display: block;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 10px;
+	font-weight: 600;
+}
+/************************* End **************************/
+
+
+/*-------------- Blog Post Meta --------------*/
+.arvin-single-post-wrapper .arvin-single-blog-post-meta{
+	padding: 30px 15px;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+/*Share Post*/
+.arvin-single-blog-post-meta .arvin-post-tag-share {
+	padding-left: 0;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share p.arviv-single-post-tags span{
+	font-size: 14px;
+	font-weight: 700;
+	color: #676767;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share p.arviv-single-post-tags a{
+	color: #818181;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share p.arviv-single-post-tags a:hover{
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share .arvin-social-share p{
+	font-weight: 700;
+	color: #676767;
+	margin-bottom: 15px;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share .arvin-social-share ul li{
+	float: left;
+	margin-right: 15px;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share .arvin-social-share ul li:last-child{
+	margin-right: 0;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share .arvin-social-share ul li a{
+	font-size: 16px;
+}
+
+.arvin-single-blog-post-meta .arvin-post-tag-share .arvin-social-share ul li a i{
+	font-size: 16px;
+	color: #818181;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+/*Comment Number*/
+.arvin-single-blog-post-meta .arvin-post-comment-count{
+	overflow: hidden;
+}
+
+.arvin-single-blog-post-meta .arvin-post-comment-count a{
+	color: #818181;
+	float: right;
+	font-weight: 700;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.arvin-single-blog-post-meta .arvin-post-comment-count a i{
+	color: #818181;
+	font-size: 16px;
+	margin-right: 5px;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+
+/* ------------------------------------
+			Blog Post Comments
+------------------------------------ */
+.arvin-single-post-wrapper .arvin-single-post-comments{
+	overflow: hidden;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.arvin-single-post-wrapper .arvin-single-post-comments h3{
+	font-size: 18px;
+	color: #818181;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+/*Comment item wrapper*/
+.arvin-single-post-wrapper .arvin-single-post-comments .arvin-post-comments-wrapper{
+	overflow: hidden;
+}
+
+.arvin-post-comments-wrapper .arvin-post-comments{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+/*Comment item reply*/
+.arvin-post-comments-wrapper .arvin-post-comments.arvin-commnet-reply{
+	margin-left: 35px;
+}
+
+/*Comment item reply of reply*/
+.arvin-post-comments-wrapper .arvin-post-comments.arvin-commnet-reply-reply{
+	margin-left: 70px;
+}
+
+/*Comment user img*/
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-author-img{
+	text-align: center;
+	height: 70px;
+	overflow: hidden;
+}
+
+/*Comment user text*/
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text{
+	padding-right: 0;
+}
+
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta{
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta h3.comment-user-name{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	width: 45%;
+	display: inline-block;
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta p.commnet-post-date{
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	display: inline-block;
+	float: left;
+	margin-bottom: 0;
+	text-align: right;
+	width: 40%;
+}
+
+/*Comment reply btn*/
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta a.comment-reply-btn{
+	font-size: 12px;
+	color: #818181;
+	float: left;
+	display: inline-block;
+	text-align: right;
+	width: 15%;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.arvin-post-comments-wrapper .arvin-post-comments .arvin-comment-text .arvin-comment-meta a.comment-reply-btn i{
+	font-size: 14px;
+	color: #818181;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+/* ------------------------------------
+			Comment Form
+------------------------------------ */
+.arvin-single-post-wrapper .arvin-post-comment-form{
+	overflow: hidden;
+}
+
+.arvin-single-post-wrapper .arvin-post-comment-form h3{
+	font-size: 18px;
+	color: #818181;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+.arvin-post-comment-form .arvin-comment-form .arvin-input-fields{
+	margin-bottom: 20px;
+}
+
+.arvin-post-comment-form .arvin-comment-form .arvin-input-fields label{
+	display: block;
+	font-size: 14px;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 400;
+	color: #818181;
+	margin-bottom: 10px;
+}
+
+.arvin-post-comment-form .arvin-comment-form .arvin-input-fields input{
+	width: 100%;
+	height: 40px;
+	background-color: transparent;
+	border: 1px solid #dadada;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #818181;
+}
+
+.arvin-post-comment-form .arvin-comment-form .arvin-input-fields textarea{
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #dadada;
+	padding: 15px;
+	color: #818181;
+}
+
+.arvin-post-comment-form .arvin-comment-form input[type='submit']{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 15px 30px;
+	text-align: center;
+	display: inline-block;
+	outline: 0;
+	border: 0px solid;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		 -o-border-radius: 5px;
+		 	border-radius: 5px;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+
+.arvin-post-comment-form .arvin-comment-form .arvin-input-fields input[type='submit']:hover{
+	color: #ffffff;
+	background-color: #ff653d;
+}
+/************************* End **************************/
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+					Sidebar Area
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.arvin-sidebar-widget-wrapper{
+	overflow: hidden;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-sidebar-single-widget{
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-sidebar-single-widget:last-child{
+	margin-bottom: 0;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-sidebar-single-widget h3.arvin-widget-title{
+	font-size: 18px;
+	color: #333333;
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-sidebar-single-widget h3.arvin-widget-title:after{
+	content: '';
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* ------------------------------------
+			Search Bar widget
+------------------------------------ */
+.arvin-sidebar-widget-wrapper .arvin-searchbar form{
+	width: 100%;
+	height: 40px;
+	background-color: transparent;
+	border: 1px solid #dadada;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-searchbar form input[type='text']{
+	width: 80%;
+	height: 40px;
+	display: inline-block;
+	padding: 0 15px;
+	outline: 0;
+	border: 0;
+	background-color: transparent;
+	color: #818181;
+	float: left;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-searchbar form input[type='submit']{
+	width: 15%;
+	float: right;
+	height: 40px;
+	display: inline-block;
+	outline: 0;
+	border: 0;
+	background-color: transparent;
+	background: url("../images/controls/search.png") no-repeat;
+	background-position: 20px center;
+}
+
+/* ------------------------------------
+			Category
+------------------------------------ */
+.arvin-sidebar-widget-wrapper .arvin-category-widget li{
+	padding: 10px 0;
+	border-bottom: 1px solid #dadada;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-category-widget li:last-child{
+	border-bottom: 0px solid;
+}
+
+.arvin-sidebar-widget-wrapper .arvin-category-widget li a{
+	color: #818181;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+/* ------------------------------------
+			Recent Posts
+------------------------------------ */
+.arvin-recent-post-widget .arvin-recent-post-wrapper{
+	overflow: hidden;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li{
+	padding: 20px 0;
+	border-bottom: 1px solid #dadada;
+	overflow: hidden;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li:last-child{
+	border-bottom: 0px solid;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li .arvin-recent-posts{
+	width: 80%;
+	float: left;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li .arvin-recent-posts h3{
+	font-size: 16px;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li .arvin-recent-posts h3 a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li .arvin-recent-posts p{
+	font-size: 12px;
+	color: #818181;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li a.arvin-recent-posts-comment-count{
+	width: 20%;
+	float: left;
+	font-size: 16px;
+	color: #818181;
+	font-weight: 700;
+	text-align: right;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+.arvin-recent-post-widget .arvin-recent-post-wrapper ul li a.arvin-recent-posts-comment-count i{
+	font-size: 18px;
+	color: #818181;
+	margin-right: 5px;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+
+/* ------------------------------------
+			Flickr Widget
+------------------------------------ */
+.arvin-flickr-photo-widget #flickr-gallery{
+	overflow: hidden;
+}
+
+.arvin-flickr-photo-widget #flickr-gallery li{
+	width: 70px;
+	height: 70px;
+	margin: 0 10px 20px;
+	float: left;
+	list-style: none;
+}
+
+.arvin-flickr-photo-widget #flickr-gallery li img{
+	width: 100%;
+}
+
+/* ------------------------------------
+			Tag Widget
+------------------------------------ */
+.arvin-tags-widget .arvin-tag-cloud{
+	overflow: hidden;
+}
+
+.arvin-tags-widget .arvin-tag-cloud a{
+	color: #818181;
+	font-size: 13px;
+	font-style: italic;
+	-webkit-transition: all .35s;
+	   -moz-transition: all .35s;
+	    -ms-transition: all .35s;
+	     -o-transition: all .35s;
+	        transition: all .35s;
+}
+/************************* End ***************************/
+
+
+
+/********************************************************
+*														*
+*					       Preloader  					*
+*														*
+*********************************************************/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.status {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("../images/controls/preloader.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    margin: -70px 0 0 -70px;
+}
+/************************* End ***************************/
+
+
+/********************************************************
+*														*
+*				       Scroll To Top 					*
+*														*
+*********************************************************/
+#scrollUp {
+    bottom: 242px;
+    right: 50%;
+    height: 35px;  /* Height of image */
+    width: 35px; /* Width of image */
+    position: absolute !important;
+    background: url("../images/controls/top.png") no-repeat;
+    -webkit-transform: translateX(50%);
+       -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+         -o-transform: translateX(50%);
+            transform: translateX(50%);
+}
+/************************* End ***************************/
+
+
+/********************************************************
+*														*
+*			       Owl Slider Pagination 				*
+*														*
+*********************************************************/
+.owl-theme .owl-controls {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background-color: transparent;
+  border-radius: 0px;
+  display: block;
+  height: 10px;
+  margin: 5px 5px;
+  opacity: 1;
+  width: 10px;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+  border: 1px solid rgba(0,0,0,0);
+
+}
+/************************* End ***************************/
+
+
+
+/********************************************************
+*														*
+*					       Footer  						*
+*														*
+*********************************************************/
+footer{
+	background-color: #28292e;
+	padding: 60px;
+	overflow: hidden;
+}
+
+footer .arvin-footer-content{
+	text-align: center;
+}
+
+footer .arvin-footer-logo{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+footer p{
+	text-align: center;
+	color: #818181;
+	font-size: 11px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+footer ul {
+	display: inline-block;
+}
+
+footer ul li{
+	float: left;
+	margin-right: 15px;
+}
+
+footer ul li:last-child{
+	margin-right: 0;
+}
+
+footer ul li a{
+	font-size: 21px;
+}
+
+footer ul li a i{
+	font-size: 21px;
+	color: #818181;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+/************************* End ***************************/
+
+
+
+/********************************************************
+*														*
+*					Parallx Sections 					*
+*														*
+*********************************************************/
+/*Features Section*/
+.arvin-features-section{
+	background: url("../images/img/feature-work-3.jpg") no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+/*Counter Section*/
+.arvin-counter-section{
+	background: url("../images/parallax-bg-img-2.jpg");
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	padding: 60px 0;
+	overflow: hidden;
+}
+
+/*Contact Section*/
+.arvin-contact-section{
+	background: url("../images/parallax-img-3.JPG");
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	padding: 80px 0;
+	overflow: hidden;
+}
+
+/*Portfolio Single Page*/
+header.arvin-portfolio-single-page{
+	background: url("../images/img/feature-work-5.jpg");
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+/*Blog Single Page*/
+header.arvin-blog-single-page{
+	background: url("../images/img/portfolio-img-b-6.jpg");
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+/************************* End **************************
