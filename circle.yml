@@ -1,6 +1,8 @@
 dependencies:
-  override:
+  pre:
     - npm install hexo-cli -g
     - npm install
+  override:
+    - npm help
   cache_directories:
     - node_modules
