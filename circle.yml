@@ -1,0 +1,6 @@
+dependencies:
+  override:
+    - npm install -g hexo
+    - npm install
+  cache_directories:
+    - node_modules
