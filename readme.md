@@ -2,33 +2,37 @@
 
 This is the readme file for the current homepage. It contains all necessary information to install and serve the current trackfellas.com page.
 
-###To Do:
-
--
-
-###File Structure
-
-/ root
-contains:
-config.yml - details about the page setup, structure and its deployment.
-structure of the site
-/sources - single pages 
-/scaffolds - currently empty
-
-
-/themes/trackfellas
-contains:
-/sources - images, css, js
-config.yml - theme settings
-/layouts - layouts and partials
 
 ### Installation
 
+
 ```sh
 npm install
+```
+```sh
+bower install
+```
+```sh
+gulp
+```
+```sh
+hexo generate
 ```
 ### Deployment
 
 ```sh
 hexo deploy
+```
+
+
+### Other
+
+```sh
+gulp develop
+```
+watches for changing in the scss files.
+
+For production just run:
+```sh
+gulp
 ```
