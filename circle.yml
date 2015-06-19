@@ -1,9 +1,12 @@
 dependencies:
   pre:
-    - npm install hexo-cli mocha -g
+    - npm install hexo-cli mocha bower gulp -g
     - npm install
+    - bower update
+    - gulp
   cache_directories:
     - node_modules
+    - themes/trackfellas/bower_components
 
 test:
   override:
