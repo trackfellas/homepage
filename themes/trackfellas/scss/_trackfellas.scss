@@ -1,0 +1,185 @@
+html {
+	max-width: 1920px;
+}
+section {
+	padding: 3.75rem 2rem 3.75rem 2rem;
+	p {
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+	padding-left: 1.5rem;
+	};
+	h2 {
+	margin-bottom: 2rem;
+	}
+	h3 {
+	padding-left: 1.5rem;
+	margin-top: 1.5rem;
+	}
+}
+
+.line-dark {
+	text-transform: uppercase;
+	padding-bottom: 0.625rem;
+	border-bottom: 1px solid $nikagrau;
+	margin-bottom: 2.5rem;
+}
+
+.line-light {
+	text-transform: uppercase;
+	padding-bottom: 0.625rem;
+	border-bottom: 1px solid $white;
+	margin-bottom: 2.5rem;
+}
+
+#about h3 {
+	color: $nikagrau;
+
+		p {
+	margin-top: 1rem;
+}
+}
+
+footer {
+	padding: 1rem;
+	color: $white;
+
+	li a {
+	margin: .1rem;
+	color: white;
+	font-size: 70%
+	}
+}
+
+.footer {
+	background: $nikabraun;
+}
+
+#team {
+	background: $blau;
+}
+
+#team h2,h3,h4 {
+	color: $white;
+}
+
+#signup {
+	background: $rot;
+}
+
+.white  {
+	color: $white;
+}
+#signup h2,h3 {
+	color: $white;
+}
+
+.teampic {
+	height: 12rem;
+	width: 12rem;
+	margin-bottom: 1.25rem;
+	border-radius:80%;
+}
+.social-team {
+	height:1.5rem;
+	width:auto;
+}
+.social {
+	margin-bottom:-16px;
+	height:1.8rem;
+	width:auto;
+}
+li > a > img {
+	height:5.5rem;
+	width:auto;
+	margin: 0.5rem;
+}
+
+#logo {
+	margin-top: 0rem;
+	margin-bottom:-0rem;
+	width:20rem;
+}
+
+.move {
+	margin-top:1.25rem;
+}
+
+#back {
+	position:absolute;
+	z-index:-10;
+}
+
+.sma {
+	height: 6rem;
+	width: 6rem;
+}
+@media #{$medium-only} {
+	#stoerer {
+	margin-top: -106%;
+	margin-left: 75%;
+	height: 8rem;
+	width: auto;
+}
+}
+@media #{$large-up} {
+	#stoerer {
+	margin-top: -106%;
+	margin-left: 80%;
+	height: 10rem;
+	width: auto;
+}
+}
+@media #{$small-only} {
+	#stoerer {
+	margin-top: -100%;
+	margin-left: 70%;
+	height: 6rem;
+	width: auto;
+	}
+	.entry {
+	height: 20rem;
+	}
+	#logo {
+	margin-top: 0rem;
+	margin-bottom:-0.5rem;
+	width:15rem;
+}
+}
+.blogpic {
+	height: auto;
+	width: 17rem;
+}
+
+@media #{$medium-up} { 
+	.entry {
+	border-right: 1px solid $nikagrau;
+	height: 20rem;
+}
+	#logo {
+	margin-top: 0.625rem;
+	margin-bottom:-0.550rem;
+	width:18rem;
+}
+
+}
+
+.mc-loading button {
+	background: #2c3e50 url("../img/loading.gif") center center no-repeat;
+	text-indent: -9999px;
+}
+.mc-response {
+	margin: 25px 0;
+	-webkit-animation: fadeIn .6s ease both;
+	animation: fadeIn .6s ease both;
+}
+
+.mc-success {
+	color: $blau;
+}
+
+.mc-error form {
+	color: white;
+	-webkit-animation: formError .4s ease both;
+	animation: formError .4s ease both;
+}
+
