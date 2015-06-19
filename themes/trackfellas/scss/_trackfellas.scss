@@ -16,7 +16,6 @@ section {
 	margin-top: 1.5rem;
 	}
 }
-
 .line-dark {
 	text-transform: uppercase;
 	padding-bottom: 0.625rem;
@@ -150,7 +149,7 @@ li > a > img {
 	width: 17rem;
 }
 
-@media #{$medium-up} { 
+@media #{$medium-up} {
 	.entry {
 	border-right: 1px solid $nikagrau;
 	height: 20rem;
@@ -182,4 +181,3 @@ li > a > img {
 	-webkit-animation: formError .4s ease both;
 	animation: formError .4s ease both;
 }
-
