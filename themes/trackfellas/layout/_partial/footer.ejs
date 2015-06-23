@@ -1,29 +1,17 @@
-<div class="footer">
-    <footer>
-        <div class="row">
-            <div class="small-4 columns">
-                <ul class="no-bullet">
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#team">Team</a></li>
-                </ul>
-            </div>
-            <div class="small-4 columns">
-                <ul class="no-bullet text-center">
-                    <li><a href="index.html#blog">Blog</a></li>
-                    <li><a href="index.html#signup">Sign Up</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="small-4 columns">
-                <ul class="no-bullet text-right">
-                    <li><a href="/privacy.html">Privacy Policy</a></li>
-                    <li><a href="/impressum.html">Impressum</a></li>
-                </ul>
-            </div>
-        </div>
+<footer>
+<div class="big-content">
+        <ul class="small-block-grid-2 medium-block-grid-4 text-center">
+                <li><a data-scroll href="<%- url_for('/') %>#about">About</a></li>
+                <li><a href="<%- url_for('routes.html') %>">Routes</a></li>
+                <li><a data-scroll href="<%- url_for('/') %>#team">Team</a></li>
+                <li><a data-scroll href="<%- url_for('/') %>#blog">Blog</a></li>
+                <li><a data-scroll href="<%- url_for('/') %>#signup">Sign up</a></li>
+                <li><a data-scroll href="<%- url_for('/') %>#contact">Contact</a></li>
+                <li><a href="<%- url_for('privacy.html') %>">Privacy</li>
+                <li><a href="<%- url_for('impressum.html') %>">Impressum</a></li>
+        </ul>
         <p class="text-center">
             <small>Copyright Trackfellas 2015</small>
         </p>
-
+        </div>
     </footer>
-</div>

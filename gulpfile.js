@@ -23,6 +23,7 @@ gulp.task('scripts', function() {
     gulp.src([
       './themes/trackfellas/bower_components/jquery/dist/jquery.js',
       './themes/trackfellas/bower_components/foundation/js/foundation.js',
+      './themes/trackfellas/bower_components/slick.js/slick/slick.js',
       './themes/trackfellas/js/jquery.formchimp-min.js',
       './themes/trackfellas/js/smooth-scroll.min.js',
       './themes/trackfellas/js/app.js'])
@@ -33,6 +34,7 @@ gulp.task('scripts', function() {
 /* Watch Files For Changes */
 gulp.task('watch', function() {
     gulp.watch('themes/trackfellas/scss/*.scss', ['sass']);
+    gulp.watch('themes/trackfellas/js/*.js', ['scripts']);
 });
 
 gulp.task('default', ['sass', 'scripts']);
