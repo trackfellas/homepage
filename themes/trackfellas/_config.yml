@@ -16,7 +16,7 @@ fancybox: false
 # Miscellaneous
 google_analytics: true
 favicon: /favicon.png
-twitter:
+twitter: trackfellas
 google_plus:
 fb_admins:
 fb_app_id:
