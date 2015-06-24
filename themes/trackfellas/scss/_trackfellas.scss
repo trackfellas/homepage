@@ -1,21 +1,110 @@
+// general content elements:
+
+@mixin content-sec {
+    margin: 0 auto;
+    padding: 3.375rem 0rem 1rem 0rem;
+h1 {
+    margin-bottom: 1.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+h2 {
+    margin-bottom: 1.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    p {
+    margin-bottom: 1.875rem;
+    }
+}
+ul.accordion {
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+}
+.accordion-navigation {
+    padding-bottom: .1875rem;
+}
+.big-content {
+  @include grid-column(
+    $columns:10,
+    $last-column:true,
+    $center:true,
+    $offset:1,
+    $collapse:false,
+    $float:right
+  );
+  @include content-sec;
+}
+
+.normal-content {
+  @include grid-column(
+    $columns:8,
+    $last-column:true,
+    $center:true,
+    $offset:2,
+    $collapse:false,
+    $float:right
+  );
+  @include content-sec;
+}
+
+.small-content {
+  @include grid-column(
+    $columns:6,
+    $last-column:true,
+    $center:true,
+    $offset:3,
+    $collapse:false,
+    $float:right
+  );
+  @include content-sec;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+// Basic stuff
 html {
 	max-width: 1920px;
 }
-section {
-	padding: 3.75rem 2rem 3.75rem 2rem;
-	p {
-	margin-top: 0.5rem;
-	margin-bottom: 1.5rem;
-	padding-left: 1.5rem;
-	};
-	h2 {
-	margin-bottom: 2rem;
-	}
-	h3 {
-	padding-left: 1.5rem;
-	margin-top: 1.5rem;
-	}
+iframe {
+    height: 20rem;
+    width: 100%;
 }
+footer {
+    background: $nikabraun;
+    color: $white;
+    padding-top: 1rem;
+
+    li a {
+    color: white;
+    margin: 0;
+    padding: 0;
+    }
+}
+
+strong {
+    font-family: RobotoRegular;
+    font-size: 1.25;
+}
+#logo {
+    margin: 0 0 0 0;
+    height:5rem;
+}
+.nav-wrapper {
+    min-width: 100%;
+    background: rgba(255,255,255,0.85);
+}
+
+.top-bar-section {
+    margin: 0 0 0 0;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: #555555;
+    background: transparent;
+    border-bottom: 1px solid $rot;
+}
+
+// Index page
 .line-dark {
 	text-transform: uppercase;
 	padding-bottom: 0.625rem;
@@ -32,29 +121,6 @@ section {
 
 #about h3 {
 	color: $nikagrau;
-
-		p {
-	margin-top: 1rem;
-}
-}
-
-footer {
-	padding: 1rem;
-	color: $white;
-
-	li a {
-	margin: .1rem;
-	color: white;
-	font-size: 70%
-	}
-}
-
-.footer {
-	background: $nikabraun;
-}
-
-#team {
-	background: $blau;
 }
 
 #team h2,h3,h4 {
@@ -71,12 +137,20 @@ footer {
 #signup h2,h3 {
 	color: $white;
 }
-
+#team {
+    background: $blau;
+}
 .teampic {
 	height: 12rem;
 	width: 12rem;
 	margin-bottom: 1.25rem;
 	border-radius:80%;
+}
+.routepic {
+    margin: 1rem auto;
+    width: 11rem;
+    border-radius: 80%;
+    border: 3px solid white;
 }
 .social-team {
 	height:1.5rem;
@@ -87,97 +161,838 @@ footer {
 	height:1.8rem;
 	width:auto;
 }
-li > a > img {
-	height:5.5rem;
-	width:auto;
-	margin: 0.5rem;
-}
-
-#logo {
-	margin-top: 0rem;
-	margin-bottom:-0rem;
-	width:20rem;
-}
-
-.move {
-	margin-top:1.25rem;
-}
-
-#back {
-	position:absolute;
-	z-index:-10;
-}
 
 .sma {
 	height: 6rem;
 	width: 6rem;
 }
-@media #{$medium-only} {
-	#stoerer {
-	margin-top: -106%;
-	margin-left: 75%;
-	height: 8rem;
-	width: auto;
-}
-}
-@media #{$large-up} {
-	#stoerer {
-	margin-top: -106%;
-	margin-left: 80%;
-	height: 10rem;
-	width: auto;
-}
-}
-@media #{$small-only} {
-	#stoerer {
-	margin-top: -100%;
-	margin-left: 70%;
-	height: 6rem;
-	width: auto;
-	}
-	.entry {
-	height: 20rem;
-	}
-	#logo {
-	margin-top: 0rem;
-	margin-bottom:-0.5rem;
-	width:15rem;
-}
-}
+
+#stoerer {
+    margin-top: -50%;
+    margin-left: 70%;
+    height: 5.5rem;
+    width: auto;
+    }
+
+.entry {
+    height: 20rem;
+    }
 .blogpic {
-	height: auto;
-	width: 17rem;
+    height: 15rem;
+    max-width: 17rem;
+    padding: 2rem;
 }
 
-@media #{$medium-up} {
-	.entry {
-	border-right: 1px solid $nikagrau;
-	height: 20rem;
+// other special pages:
+
+.impressum  {
+    padding-top: 0rem;
+    h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    }
+    h1 {
+        margin-bottom: 2rem;
+    }
 }
-	#logo {
-	margin-top: 0.625rem;
-	margin-bottom:-0.550rem;
-	width:18rem;
+// Ridiculously Responsive Social Sharing Buttons
+// Team: @dbox, @joshuatuscan
+// Site: http://www.kurtnoble.com/labs/rrssb
+// Twitter: @therealkni
+
+//        ___           ___
+//       /__/|         /__/\        ___
+//      |  |:|         \  \:\      /  /\
+//      |  |:|          \  \:\    /  /:/
+//    __|  |:|      _____\__\:\  /__/::\
+//   /__/\_|:|____ /__/::::::::\ \__\/\:\__
+//   \  \:\/:::::/ \  \:\~~\~~\/    \  \:\/\
+//    \  \::/~~~~   \  \:\  ~~~      \__\::/
+//     \  \:\        \  \:\          /__/:/
+//      \  \:\        \  \:\         \__\/
+//       \__\/         \__\/
+
+
+// How to use: Add/remove buttons from config settings and $social-list.
+
+// Config settings
+$rrssb-txt: #fff !default;
+$rrssb-email: #0a88ff !default;
+$rrssb-facebook: #306199 !default;
+$rrssb-tumblr: #32506d !default;
+$rrssb-linkedin: #007bb6 !default;
+$rrssb-twitter: #26c4f1 !default;
+$rrssb-googleplus: #e93f2e !default;
+$rrssb-reddit: #8bbbe3 !default;
+$rrssb-youtube: #df1c31 !default;
+$rrssb-pinterest: #b81621 !default;
+$rrssb-pocket: #ED4054 !default;
+$rrssb-github: #444 !default;
+$rrssb-instagram: #517fa4 !default;
+
+// Set the border radius for the buttons
+$rrssb-border-radius: 2px !default;
+
+$rrssb-main-font: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+// Variable list for all social button colors to be iterated over.
+$social-list: (
+    rrssb-email             $rrssb-email,
+    rrssb-facebook          $rrssb-facebook,
+    rrssb-tumblr            $rrssb-tumblr,
+    rrssb-linkedin          $rrssb-linkedin,
+    rrssb-twitter           $rrssb-twitter,
+    rrssb-googleplus        $rrssb-googleplus,
+    rrssb-youtube           $rrssb-youtube,
+    rrssb-reddit            $rrssb-reddit,
+    rrssb-pinterest         $rrssb-pinterest,
+    rrssb-pocket            $rrssb-pocket,
+    rrssb-github            $rrssb-github,
+    rrssb-instagram         $rrssb-instagram
+);
+
+@mixin transition($expression) {
+    -webkit-transition: $expression;
+    -moz-transition: $expression;
+    -o-transition: $expression;
+    transition: $expression;
 }
 
+%backface-visibility {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
 }
 
+%border-box {
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+// some generic classes
+.clearfix {
+    *zoom: 1;
+
+    &:after {
+        clear: both;
+    }
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+}
+
+// The meat and potatoes
+.rrssb-buttons {
+    @extend %border-box;
+    font-family: $rrssb-main-font;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+        @extend %border-box;
+        float: left;
+        height: 100%;
+        line-height: 13px;
+        list-style: none;
+        margin: 0;
+        padding: 0 2.5px;
+
+        // This generates individual button classes for each item in social list on line 39.
+        @each $s-name in $social-list {
+
+            &.#{nth($s-name, 1)} {
+                a {
+                    background-color: nth($s-name, 2);
+
+                    &:hover {
+                        background-color: darken(nth($s-name, 2), 10%);
+                    }
+                }
+            }
+
+        } // end @each directive
+
+        a {
+            @extend %border-box;
+            background-color: #ccc;
+            border-radius: $rrssb-border-radius;
+            display: block;
+            font-size: 11px;
+            font-weight: bold;
+            height: 100%;
+            padding: 11px 7px 12px 27px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            @include transition(background-color 0.2s ease-in-out);
+
+            .rrssb-icon {
+                display: block;
+                height: 100%;
+                left: 10px;
+                padding-top: 9px;
+                position: absolute;
+                top: 0;
+                width: 10%;
+
+                svg {
+                    height: 17px;
+                    width: 17px;
+
+                    path, polygon {
+                        fill: $rrssb-txt;
+                    }
+                }
+            }
+
+            .rrssb-text {
+                color: $rrssb-txt;
+            }
+
+            &:active {
+                box-shadow:inset 1px 3px 15px 0 rgba(022,0,0,.25);
+            }
+        }
+
+        &.small {
+            a {
+                padding: 0;
+
+                .rrssb-icon {
+                    height: 100%;
+                    left: auto;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    position: relative;
+                    top: auto;
+                    width: 100%;
+                }
+                .rrssb-text {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+
+    &.large-format {
+        height: auto;
+
+        li {
+            height: auto;
+
+            a {
+                border-radius: 0.2em;
+                font-size: 15px; // fallback
+                font-size: 1vw;  // scales font with browser
+                line-height: 1vw;
+                padding: 7% 0% 7% 12%;
+                @extend %backface-visibility;
+
+                .rrssb-icon {
+                    left: 7%;
+                    padding-top: 0;
+                    width: 12%;
+
+                    svg {
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top:0;
+                    }
+                }
+
+                .rrssb-text {
+                    font-size: 15px;
+                    font-size: 1vw;
+                    @extend %backface-visibility;
+                }
+
+                &:hover {
+                    font-size: 15px;
+                    font-size: 1vw;
+                    padding: 7% 0% 7% 12%;
+                    border-radius: 0.2em;
+                }
+            }
+        }
+    }
+
+    &.small-format {
+        padding-top: 5px;
+
+        li {
+            height: 80%;
+            padding: 0 1.5px;
+
+            a {
+                .rrssb-icon {
+                    height: 100%;
+                    padding-top: 0;
+
+                    svg {
+                        height: 48%;
+                        position: relative;
+                        top: 6px;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    &.tiny-format {
+        height: 22px;
+        position: relative;
+
+        li {
+            padding-right: 7px;
+
+            a {
+                background-color: transparent;
+                padding: 0;
+
+                .rrssb-icon {
+                    svg {
+                        height: 70%;
+                        width: 100%;
+                    }
+                }
+
+                &:hover, &:active {
+                    background-color: transparent;
+                }
+            }
+
+            // This generates individual button classes for each item in social list on line 39.
+            @each $s-name in $social-list {
+
+                &.#{nth($s-name, 1)} {
+                    a {
+                        .rrssb-icon {
+                            svg {
+                                path, polygon {
+                                    fill: nth($s-name, 2);
+                                }
+                            }
+
+                            &:hover {
+                                .rrssb-icon {
+                                    svg {
+                                        path, polygon {
+                                            fill: darken(nth($s-name, 2), 20%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }  // end @each directive
+        }
+    }
+}
+
+// Sign up Form:
 .mc-loading button {
-	background: #2c3e50 url("../img/loading.gif") center center no-repeat;
-	text-indent: -9999px;
+    background: #2c3e50 url("../img/loading.gif") center center no-repeat;
+    text-indent: -9999px;
 }
 .mc-response {
-	margin: 25px 0;
-	-webkit-animation: fadeIn .6s ease both;
-	animation: fadeIn .6s ease both;
+    margin: 25px 0;
+    -webkit-animation: fadeIn .6s ease both;
+    animation: fadeIn .6s ease both;
 }
 
 .mc-success {
-	color: $blau;
+    color: $blau;
 }
 
 .mc-error form {
-	color: white;
-	-webkit-animation: formError .4s ease both;
-	animation: formError .4s ease both;
+    color: white;
+    -webkit-animation: formError .4s ease both;
+    animation: formError .4s ease both;
+}
+
+// social sidebar
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+   font-family: "entypo", sans-serif;
+}
+a {
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.container {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}
+#sticky-social {
+   left: 0;
+   position: fixed;
+   top: 150px;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+#sticky-social a:hover span {
+   left: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover,
+#sticky-social a[class*="gplus"] span { background: #dd4b39; }
+
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span { background: #007bb6; }
+
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span { background: #517fa4; }
+
+#sticky-social a[class*="stumbleupon"],
+#sticky-social a[class*="stumbleupon"]:hover,
+#sticky-social a[class*="stumbleupon"] span { background: #eb4924; }
+
+#sticky-social a[class*="pinterest"],
+#sticky-social a[class*="pinterest"]:hover,
+#sticky-social a[class*="pinterest"] span { background: #cc2127; }
+
+#sticky-social a[class*="flickr"],
+#sticky-social a[class*="flickr"]:hover,
+#sticky-social a[class*="flickr"] span { background: #ff0084; }
+
+#sticky-social a[class*="tumblr"],
+#sticky-social a[class*="tumblr"]:hover,
+#sticky-social a[class*="tumblr"] span { background: #32506d; }
+// Slider appearance
+/* Slider */
+.galerie {
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+@function slick-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($slick-font-path + $url);
+    }
+}
+
+/* Slider */
+
+.slick-list {
+    .slick-loading & {
+        background: #fff slick-image-url("../img/ajax-loader.gif") center center no-repeat;
+    }
+}
+
+/* Icons */
+@if $slick-font-family == "slick" {
+    @font-face {
+        font-family: "slick";
+        src: slick-font-url("slick.eot");
+        src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: 5px;
+    line-height: 1px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    margin-top: -25px;
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover, &:focus {
+        outline: none;
+        background: transparent;
+        color: transparent;
+        &:before {
+            opacity: $slick-opacity-on-hover;
+        }
+    }
+    &.slick-disabled:before {
+        opacity: $slick-opacity-not-active;
+    }
+}
+
+
+.slick-prev:before, .slick-next:before {
+    font-family: $slick-font-family;
+    font-size: 45px;
+    line-height: 1;
+    color: $slick-arrow-color;
+    opacity: $slick-opacity-default;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+    left: -25px;
+    [dir="rtl"] & {
+        left: auto;
+        right: -25px;
+    }
+    &:before {
+        content: $slick-prev-character;
+        [dir="rtl"] & {
+            content: $slick-next-character;
+        }
+    }
+}
+
+.slick-next {
+    right: -25px;
+    [dir="rtl"] & {
+        left: -25px;
+        right: auto;
+    }
+    &:before {
+        content: $slick-next-character;
+        [dir="rtl"] & {
+            content: $slick-prev-character;
+        }
+    }
+}
+
+/* Dots */
+
+.slick-slider {
+    margin-bottom: 10px;
+}
+
+.slick-dots {
+    position: relative;
+    bottom: -6px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    li {
+        position: relative;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin: 0px 5px;
+        padding: 5px;
+        cursor: pointer;
+        button {
+            border: 0;
+            background: transparent;
+            display: block;
+            height: 0px;
+            width: 0px;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+            &:hover, &:focus {
+                outline: none;
+                &:before {
+                    opacity: $slick-opacity-on-hover;
+                }
+            }
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: $slick-dot-character;
+                width: 40px;
+                height: 40px;
+                font-family: $slick-font-family;
+                font-size: $slick-dot-size;
+                line-height: 20px;
+                text-align: center;
+                color: $slick-dot-color;
+                opacity: $slick-opacity-not-active;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+        &.slick-active button:before {
+            color: $slick-dot-color-active;
+            opacity: $slick-opacity-default;
+        }
+    }
+}
+
+.preview {
+    border: 1px dotted $nikagrau;
+    width: 60%;
+    padding: 1.5rem;
+    }
+
+//The accordion is closed
+.accordion-icon:before {
+    padding-left: 1rem;
+    content: "\f067";
+}
+//The accordion is open
+.active .accordion-icon:before {
+    content: "\f068";
+ }
+
+// Media Queries
+
+@media #{$medium-up} {
+	#stoerer {
+    	margin-top: -45%;
+    	margin-left: 75%;
+    	height: 8rem;
+    	width: auto;
+}
+    .slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: 250px;
+    line-height: 1px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    margin-top: -25px;
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover, &:focus {
+        outline: none;
+        background: transparent;
+        color: transparent;
+        &:before {
+            opacity: $slick-opacity-on-hover;
+        }
+    }
+    &.slick-disabled:before {
+        opacity: $slick-opacity-not-active;
+    }
+}
+
+    .entry {
+        border-right: 1px solid $nikagrau;
+        height: 20rem;
+}
+
+    .nav-wrapper {
+        min-width: 100%;
+        background: rgba(255,255,255,0.85);
+        position: absolute;
+}
+    .impressum  {
+        padding-top: 10rem;
+        h2 {
+        font-size: 1.5rem;
+        text-align: left;
+        }
+        h1 {
+            margin-bottom: 2rem;
+        }
+    }
+    .slick-prev {
+    left: -150px;
+    [dir="rtl"] & {
+        left: auto;
+        right: -25px;
+    }
+    &:before {
+        content: $slick-prev-character;
+        [dir="rtl"] & {
+            content: $slick-next-character;
+        }
+    }
+};
+
+
+
+.slick-next {
+    right: -150px;
+    [dir="rtl"] & {
+        left: -25px;
+        right: auto;
+    }
+    &:before {
+        content: $slick-next-character;
+        [dir="rtl"] & {
+            content: $slick-prev-character;
+        }
+    }
+}
+}
+
+@media #{$large-up} {
+    #stoerer {
+        margin-top: -50%;
+        margin-left: 79%;
+        height: 9rem;
+        width: auto;
+    }
+}
+
+@media #{$xlarge-up} {
+	#stoerer {
+    	margin-top: -65%;
+    	margin-left: 90%;
+    	height: 10rem;
+    	width: auto;
+    }
 }

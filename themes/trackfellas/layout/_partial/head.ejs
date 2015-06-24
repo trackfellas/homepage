@@ -7,14 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="bitly-verification" content="33323f8295d0"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content="@trackfellas"/>
-        <meta property="og:title" content="Trackfellas"/>
-        <meta property="og:site_name" content="Trackfellas"/>
-        <meta property="og:url" content="http://trackfellas.com"/>
-        <meta property="og:description" content="Trackfellas unites the knowledge of travelers in a community. Discover, plan, book, document, rate, share!"/>
-        <meta property="og:image" content="http://trackfellas.com/img/preview_ogtwitter.jpg"/>
-
+        <%- open_graph({
+        twitter_site: '@' + theme.twitter,
+        }) %>
         <link rel="apple-touch-icon" sizes="57x57" href="<%- url_for('apple-touch-icon-57x57.png') %>">
         <link rel="apple-touch-icon" sizes="114x114" href="<%- url_for('apple-touch-icon-114x114.png') %>">
         <link rel="apple-touch-icon" sizes="72x72" href="<%- url_for('apple-touch-icon-72x72.png') %>">
