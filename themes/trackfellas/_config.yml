@@ -14,9 +14,9 @@ fancybox: false
 # Sidebar
 
 # Miscellaneous
-google_analytics: false
+google_analytics: true
 favicon: /favicon.png
 twitter: trackfellas
-google_plus:
+google_plus: https://plus.google.com/+Trackfellas
 fb_admins:
-fb_app_id:
+fb_app_id: 1579754445592640
