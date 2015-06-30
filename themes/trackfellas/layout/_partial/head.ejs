@@ -1,14 +1,19 @@
   <head>
         <meta charset="utf-8">
-        <%
-        var title = page.title;
-        %>
-        <title><% if (title){ %><%= title %> | <% } %> <%= config.title %></title>
+                <%
+        var title = page.title %>
+        <title>
+        <% if (title){ %><%= title %> | <% } %> <%= config.title %></title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="bitly-verification" content="33323f8295d0"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
         <%- open_graph({
-        twitter_site: '@' + theme.twitter,
+            image: page.cover,
+            twitter_id: theme.twitter,
+            google_plus: theme.google_plus,
+            fb_admins: theme.fb_admins,
+            fb_app_id: theme.fb_app_id
         }) %>
         <link rel="apple-touch-icon" sizes="57x57" href="<%- url_for('apple-touch-icon-57x57.png') %>">
         <link rel="apple-touch-icon" sizes="114x114" href="<%- url_for('apple-touch-icon-114x114.png') %>">

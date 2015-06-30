@@ -75,15 +75,15 @@ $include-html-global-classes: $include-html-classes;
 
 @font-face {
     font-family: ExoMedium;
-    src: url(/fonts/exo-medium.woff);
+    src: url('../fonts/exo-medium.woff');
 }
 @font-face {
     font-family: RobotoRegular;
-    src: url(/fonts/roboto-regular.woff);
+    src: url('../fonts/roboto-regular.woff');
 }
 @font-face {
     font-family: RobotoLight;
-    src: url(/fonts/roboto-light.woff);
+    src: url('../fonts/roboto-light.woff');
 }
 // b. Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -97,9 +97,9 @@ $row-width: rem-calc(1200);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-$font-family-menu: 'ExoMedium';
-$font-family-head: 'ExoMedium';
-$font-family-para: 'RobotoLight';
+$font-family-menu: 'ExoMedium', Exo, Helvetica, Roboto, Arial;
+$font-family-head: 'ExoMedium', Exo, Helvetica, Roboto, Arial;
+$font-family-para: 'RobotoLight', Roboto, Arial;
 // We use these to define default font stacks
 $font-family-sans-serif: $font-family-para;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;

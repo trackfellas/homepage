@@ -15,7 +15,7 @@ fancybox: false
 
 # Miscellaneous
 google_analytics: true
-favicon: /favicon.png
+favicon: /favicon.ico
 twitter: trackfellas
 google_plus: https://plus.google.com/+Trackfellas
 fb_admins:
