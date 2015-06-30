@@ -1,11 +1,11 @@
 # Header
 menu:
-  Home: /
-  About: /index.html#about
+  About: /#about
+  Routes: /routes.html
   Team: /#team
-  Blog: http://blog.trackfellas.com
+  Blog: //blog.trackfellas.com
   Sign up: /#signup
-  Get in touch: /#contacts
+  Get in touch: /#contact
 rss: /atom.xml
 
 # Content
@@ -14,7 +14,7 @@ fancybox: false
 # Sidebar
 
 # Miscellaneous
-google_analytics: true
+google_analytics: false
 favicon: /favicon.png
 twitter: trackfellas
 google_plus:
