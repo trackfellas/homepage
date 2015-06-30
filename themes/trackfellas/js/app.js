@@ -62,5 +62,5 @@ if ($(".galerie").length > 0) {
 
 $(document).foundation();
 if ($("#about").length > 0) {
-    smoothScroll.init();
+    $("a").smoothScroll();
    };

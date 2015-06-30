@@ -22,9 +22,9 @@ gulp.task('scripts', function() {
       './themes/trackfellas/bower_components/jquery/dist/jquery.js',
       './themes/trackfellas/bower_components/foundation/js/foundation.js',
       './themes/trackfellas/bower_components/slick.js/slick/slick.js',
-      './themes/trackfellas/js/jquery.formchimp-min.js',
+      './themes/trackfellas/bower_components/formchimp/jquery.formchimp.js',
       './themes/trackfellas/bower_components/featherlight/src/featherlight.js',
-      './themes/trackfellas/js/smooth-scroll.min.js',
+      './themes/trackfellas/bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js',
       './themes/trackfellas/js/app.js'])
     .pipe(concat('script.js'))
     .pipe(uglify())
