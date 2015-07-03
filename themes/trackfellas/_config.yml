@@ -3,7 +3,7 @@ menu:
   About: /#about
   Routes: /routes.html
   Team: /#team
-  Blog: //blog.trackfellas.com
+  Blog: /#blog
   Sign up: /#signup
   Get in touch: /#contact
 rss: /atom.xml

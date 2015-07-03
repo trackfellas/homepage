@@ -85,6 +85,10 @@ $include-html-global-classes: $include-html-classes;
     font-family: RobotoLight;
     src: url('../fonts/roboto-light.woff');
 }
+@font-face {
+    font-family: fontawesome;
+    src: url('../fonts/fontawesome-webfont.woff');
+}
 // b. Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -100,6 +104,7 @@ $row-width: rem-calc(1200);
 $font-family-menu: 'ExoMedium', Exo, Helvetica, Roboto, Arial;
 $font-family-head: 'ExoMedium', Exo, Helvetica, Roboto, Arial;
 $font-family-para: 'RobotoLight', Roboto, Arial;
+$font-awesome: 'fontawesome';
 // We use these to define default font stacks
 $font-family-sans-serif: $font-family-para;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -149,13 +154,13 @@ $alert-color: $rot;
 $slick-font-path: "../fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
-$slick-arrow-color: black !default;
-$slick-dot-color: black !default;
+$slick-arrow-color: $nikagrau !default;
+$slick-dot-color: $nikagrau !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "←" !default;
-$slick-next-character: "→" !default;
+$slick-prev-character: "<" !default;
+$slick-next-character: ">" !default;
 $slick-dot-character: "•" !default;
-$slick-dot-size: 10px !default;
+$slick-dot-size: 30px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
@@ -1458,7 +1463,7 @@ $topbar-link-bg-hover: $white;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 $topbar-link-font-family: $font-family-head;
 $topbar-link-text-transform: underline;
-$topbar-link-padding: ($topbar-height / 5);
+$topbar-link-padding: ($topbar-height / 7);
 // $topbar-back-link-size: $h5-font-size;
 // $topbar-link-dropdown-padding: 20px;
 

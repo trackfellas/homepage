@@ -1,12 +1,14 @@
 <footer>
-        <ul class="small-block-grid-2 medium-block-grid-4 text-center">
+<div class="footer text-center">
+        <ul>
+
             <% for (var i in theme.menu){ %>
-          <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+          <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li><span class="divider"></span>
         <% } %>
-                <li><a href="<%- url_for('privacy.html') %>">Privacy</a></li>
-                <li><a href="<%- url_for('impressum.html') %>">Impressum</a></li>
+                <li><a href="<%- url_for('privacy.html') %>">Privacy</a></li><span class="divider"></span>
+                <li><a href="<%- url_for('impressum.html') %>">Impressum</a></li><span class="divider"></span><li>Copyright Trackfellas 2015</li>
+
+
         </ul>
-        <p class="text-center">
-            <small>Copyright Trackfellas 2015</small>
-        </p>
+</div>
     </footer>
