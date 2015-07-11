@@ -68,7 +68,7 @@ html {
 	max-width: 1920px;
 }
 iframe {
-    height: 23rem;
+    height: 29rem;
     width: 100%;
 }
     .divider {
@@ -200,6 +200,17 @@ strong {
 }
 
 // other special pages:
+.accordion-overview {
+    @extend .accordion-navigation
+}
+.accordion .accordion-overview>a
+{
+    background: $braun;
+    color: #fff;
+    display: block;
+    padding: 1rem;
+}
+
 
 .impressum  {
     padding-top: 0rem;
@@ -540,12 +551,6 @@ $social-list: (
 
 // social sidebar
 
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-
-/* entypo */
-[class*="entypo-"]:before {
-   font-family: "entypo", sans-serif;
-}
 a {
    text-decoration: none;
 }
@@ -568,15 +573,15 @@ ul {
    background: #333;
    color: #fff;
    display: block;
-   height: 35px;
+   height: 50px;
    font: 16px "Open Sans", sans-serif;
-   line-height: 35px;
+   line-height: 50px;
    position: relative;
    text-align: center;
-   width: 35px;
+   width: 50px;
 }
 #sticky-social a span {
-   line-height: 35px;
+   line-height: 50px;
    left: -120px;
    position: absolute;
    text-align:center;

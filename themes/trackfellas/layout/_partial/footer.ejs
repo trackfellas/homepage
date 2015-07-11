@@ -3,10 +3,10 @@
         <ul>
 
             <% for (var i in theme.menu){ %>
-          <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li><span class="divider"></span>
+          <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a><span class="divider"></span></li>
         <% } %>
-                <li><a href="<%- url_for('privacy.html') %>">Privacy</a></li><span class="divider"></span>
-                <li><a href="<%- url_for('impressum.html') %>">Impressum</a></li><span class="divider"></span><li>Copyright Trackfellas 2015</li>
+                <li><a href="<%- url_for('privacy.html') %>">Privacy</a><span class="divider"></span></li>
+                <li><a href="<%- url_for('impressum.html') %>">Impressum</a><span class="divider"></span></li><li>Copyright Trackfellas 2015</li>
 
 
         </ul>
