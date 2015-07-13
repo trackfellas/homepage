@@ -1,29 +1,29 @@
   <head>
         <meta charset="utf-8">
-        <%
-        var title = page.title;
-        %>
-        <title><% if (title){ %><%= title %> | <% } %> <%= config.title %></title>
+                <%
+        var title = page.title %>
+        <title>
+        <% if (title){ %><%= title %> | <% } %> <%= config.title %></title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="bitly-verification" content="33323f8295d0"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content="@trackfellas"/>
-        <meta property="og:title" content="Trackfellas"/>
-        <meta property="og:site_name" content="Trackfellas"/>
-        <meta property="og:url" content="http://trackfellas.com"/>
-        <meta property="og:description" content="Trackfellas unites the knowledge of travelers in a community. Discover, plan, book, document, rate, share!"/>
-        <meta property="og:image" content="http://trackfellas.com/img/preview_ogtwitter.jpg"/>
 
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <%- open_graph({
+            image: page.cover,
+            twitter_id: theme.twitter,
+            google_plus: theme.google_plus,
+            fb_admins: theme.fb_admins,
+            fb_app_id: theme.fb_app_id
+        }) %>
+        <link rel="apple-touch-icon" sizes="57x57" href="<%- url_for('apple-touch-icon-57x57.png') %>">
+        <link rel="apple-touch-icon" sizes="114x114" href="<%- url_for('apple-touch-icon-114x114.png') %>">
+        <link rel="apple-touch-icon" sizes="72x72" href="<%- url_for('apple-touch-icon-72x72.png') %>">
+        <link rel="apple-touch-icon" sizes="144x144" href="<%- url_for('apple-touch-icon-144x144.png') %>">
+        <link rel="apple-touch-icon" sizes="60x60" href="<%- url_for('apple-touch-icon-60x60.png') %>">
+        <link rel="apple-touch-icon" sizes="120x120" href="<%- url_for('apple-touch-icon-120x120.png') %>">
+        <link rel="apple-touch-icon" sizes="76x76" href="<%- url_for('apple-touch-icon-76x76.png') %>">
+        <link rel="apple-touch-icon" sizes="152x152" href="<%- url_for('apple-touch-icon-152x152.png') %>">
+        <link rel="icon" type="image/png" href="<%- url_for('favicon-32x32.png') %>" sizes="32x32">
         <% if (theme.rss){ %>
         <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
         <% } %>

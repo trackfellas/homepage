@@ -3,18 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Trackfellas | A community for travel routes
+title: Trackfellas | Find travel routes
 subtitle: your community for travel routes
-description: Trackfellas is a revolutionary platform to discover, plan, book, document, rate and share travel routes.
+description: Trackfellas is your community and marketplace to discover, plan, book, document, rate and share travel routes.
 author: trackfellas team
 email: info@trackfellas.com
-language: EN
+language: en
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://trackfellas.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :category/:title/
 
 # Directory
 source_dir: source
@@ -28,14 +29,14 @@ external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-relative_link: false
+relative_link: true
 highlight:
   enable: true
   line_number: true
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: route
 category_map:
 tag_map:
 
@@ -69,7 +70,7 @@ per_page: 0
 pagination_dir: page
 
 # Disqus
-disqus_shortname:
+disqus_shortname: trackfellas
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
@@ -77,11 +78,6 @@ disqus_shortname:
 theme: trackfellas
 exclude_generator:
 
-# Deployment
-## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type: github
-  repo:
 # Sitemap
 sitemap:
   path: sitemap.xml
