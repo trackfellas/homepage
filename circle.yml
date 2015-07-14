@@ -3,12 +3,16 @@ dependencies:
     - npm install hexo-cli mocha bower gulp -g
     - npm install
     - bower install
-    - gulp
   cache_directories:
     - node_modules
     - themes/trackfellas/bower_components
-
 test:
   override:
     - mocha
     - hexo generate
+deployment:
+  master:
+    branch: master
+    owner: trackfellas
+    commands:
+      - hexo deploy
