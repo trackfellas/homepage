@@ -12,6 +12,11 @@ rss: /atom.xml
 fancybox: false
 
 # Sidebar
+node_sass:
+  file: themes/trackfellas/source/css/app.scss
+  outputStyle: compressed
+  precision: 5
+  sourceComments: false
 
 # Miscellaneous
 google_analytics: true
