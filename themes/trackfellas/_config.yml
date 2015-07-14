@@ -11,7 +11,7 @@ rss: /atom.xml
 # Content
 fancybox: false
 
-# Sidebar
+# Sass
 node_sass:
   file: themes/trackfellas/source/css/app.scss
   outputStyle: compressed

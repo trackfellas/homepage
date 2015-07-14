@@ -32,5 +32,7 @@ shell.cat([
       'themes/trackfellas/bower_components/featherlight/src/featherlight.js',
       'themes/trackfellas/bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js',
       'themes/trackfellas/js/app.js'
-]).to('themes/trackfellas/js/script.js');
+]).to('themes/trackfellas/source/js/script.js');
+var UglifyJS = require('uglify-js');
+var result = UglifyJS.minify('themes/trackfellas/source/js/script.js');
 
