@@ -9,7 +9,7 @@ dependencies:
 test:
   override:
     - mocha
-    - hexo generate
+    - hexo generate --debug
 deployment:
   master:
     branch: master
