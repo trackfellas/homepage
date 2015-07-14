@@ -1,6 +1,6 @@
 dependencies:
   pre:
-    - npm install hexo-cli mocha bower gulp -g
+    - npm install hexo-cli mocha bower -g
     - npm install
     - bower install
   cache_directories:
