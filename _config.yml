@@ -83,6 +83,7 @@ exclude_generator:
 sitemap:
   path: sitemap.xml
 
+
 # Deployment:
 deploy:
   type: git
