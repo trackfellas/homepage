@@ -12,7 +12,7 @@ test:
     - hexo generate --debug
 deployment:
   develop:
-    branch: master
+    branch: develop
     owner: trackfellas
     commands:
       - hexo deploy
