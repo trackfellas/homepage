@@ -15,5 +15,7 @@ deployment:
     branch: develop
     owner: trackfellas
     commands:
+      - git config user.email "bot@trackfellas.com"
+      - git config user.name "Trackfellas Bot"
       - sed -i.bak 's|git@github.com:trackfellas/homepage.git|'"$GITHUB_DEPLOY_URL"'|g' _config.yml
       - hexo deploy
