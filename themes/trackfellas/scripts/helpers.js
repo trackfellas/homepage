@@ -5,7 +5,7 @@ var rUrl = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:ww
 // Syntax:
 //   {% feather /path/to/image [/path/to/thumbnail] [title] %}
 
-hexo.extend.tag.register('feather', function (args) {
+hexo.extend.tag.register("feather", function (args) {
     var original = args.shift(),
         thumbnail = '';
 
@@ -24,7 +24,7 @@ hexo.extend.tag.register('feather', function (args) {
 /* JS */
 var shell = require('shelljs');
 
-var scripts = [
+shell.cat([
     'themes/trackfellas/bower_components/jquery/dist/jquery.js',
     'themes/trackfellas/bower_components/foundation/js/foundation.js',
     'themes/trackfellas/bower_components/slick.js/slick/slick.js',
@@ -32,10 +32,4 @@ var scripts = [
     'themes/trackfellas/bower_components/featherlight/src/featherlight.js',
     'themes/trackfellas/bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js',
     'themes/trackfellas/js/app.js'
-];
-
-shell.cat(scripts).to('themes/trackfellas/source/js/script.js');
-
-var UglifyJS = require('uglify-js');
-
-UglifyJS.minify('themes/trackfellas/source/js/script.js');
+]).to('themes/trackfellas/source/js/script.js');
