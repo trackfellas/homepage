@@ -87,4 +87,4 @@ sitemap:
 deploy:
   type: git
   repo: git@github.com:trackfellas/homepage.git
-  branch: gh-pages
+  branch: gh-pages2
