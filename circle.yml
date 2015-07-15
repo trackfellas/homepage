@@ -11,7 +11,7 @@ test:
     - mocha
     - hexo generate --debug
 deployment:
-  master:
+  develop:
     branch: master
     owner: trackfellas
     commands:
