@@ -11,8 +11,8 @@ test:
     - mocha
     - hexo generate --debug
 deployment:
-  develop:
-    branch: develop
+  master:
+    branch: master
     owner: trackfellas
     commands:
       - git config --global user.email "bot@trackfellas.com"
