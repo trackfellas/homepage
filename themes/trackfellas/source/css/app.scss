@@ -1,0 +1,46 @@
+@import "settings";
+
+// @import "foundation";
+// Or selectively include components
+@import
+"themes/trackfellas/bower_components/foundation/scss/foundation/components/accordion",
+//  "themes/trackfellas/bower_components/foundation/scss/foundation/components/alert-boxes",
+"themes/trackfellas/bower_components/foundation/scss/foundation/components/block-grid",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/breadcrumbs",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/button-groups",
+"themes/trackfellas/bower_components/foundation/scss/foundation/components/buttons",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/clearing",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/dropdown",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/dropdown-buttons",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/flex-video",
+"themes/trackfellas/bower_components/foundation/scss/foundation/components/forms",
+"themes/trackfellas/bower_components/foundation/scss/foundation/components/grid",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/inline-lists",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/joyride",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/keystrokes",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/labels",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/magellan",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/orbit",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/pagination",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/panels",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/pricing-tables",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/progress-bars",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/reveal",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/side-nav",
+"themes/trackfellas/bower_components/foundation/scss/foundation/components/split-buttons",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/sub-nav",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/switch",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/tables",
+//  "themes/trackfellas/bower_components/foundation/scss/foundation/components/tabs",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/thumbs",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/tooltips",
+"themes/trackfellas/bower_components/foundation/scss/foundation/components/top-bar",
+"themes/trackfellas/bower_components/foundation/scss/foundation/components/type";
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/offcanvas",
+// "themes/trackfellas/bower_components/foundation/scss/foundation/components/visibility";
+
+@import "themes/trackfellas/bower_components/fontawesome/scss/font-awesome.scss";
+
+@import "trackfellas";
+
+@import "../bower_components/featherlight/src/featherlight.css";

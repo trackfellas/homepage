@@ -75,9 +75,16 @@ disqus_shortname: trackfellas
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
+
 theme: trackfellas
 exclude_generator:
 
 # Sitemap
 sitemap:
   path: sitemap.xml
+
+# Deployment:
+deploy:
+  type: git
+  repo: git@github.com:trackfellas/homepage.git
+  branch: gh-pages2
