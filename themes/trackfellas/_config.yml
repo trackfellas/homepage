@@ -17,7 +17,11 @@ node_sass:
   outputStyle: compressed
   precision: 5
   sourceComments: false
-
+# Uglify
+uglify:
+  mangle: true
+  output:
+  compress:
 # Miscellaneous
 google_analytics: true
 favicon: /favicon.ico
