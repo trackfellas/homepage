@@ -15,5 +15,5 @@ deployment:
     branch: develop
     owner: trackfellas
     commands:
-      - sed -i.bak 's/git@github.com:trackfellas\/homepage.git/'"$GITHUB_DEPLOY_URL"'/g' _config.yml
+      - sed -i.bak 's/git@github.com:trackfellas\/homepage\.git/'"$GITHUB_DEPLOY_URL"'/g' _config.yml
       - hexo deploy
