@@ -1,131 +1,111 @@
-<%- partial( '_partial/social') %>
-    <%- image_tag( 'img/havanna.jpg', {alt: 'Old Car in Havanna', class: 'hero'}) %>
-        <div class="row">
-            <div class="normal-content">
-                <h1>Cuba Southeast Tour</h1>
-                <p class="text-center">
-                    <%- link_to( '//trackfellas.com', 'Trackfellas') %>
-                        presents you the best travel routes worldwide. Our next trip brings us to the fast changing socialistic island Cuba! We will guide you on your way from old colonial Havana from City to City towards the southeast to the epicenter of the revolution in Santiago de Cuba.</p>
-            </div>
+{{ partial( '_partial/social') }}{# Partial for social sharing Link #}
+  {{ image_tag( 'img/havanna.jpg', {alt: 'Old Car in Havanna', class: 'hero'}) }}
             <section>
-                <div class="small-content text-center">
-                    <h2>Traveler: Nika</h2>
-                    <%- image_tag( 'img/nika.jpg', {alt: 'Old Car in Havanna', class: 'routepic'}) %>
-                        <p class="text-center">(25-35)from Hamburg, Germany
-                            <br><strong>Skills:</strong> Globetrotter<br>
-                            <strong>Submitted Routes:</strong> 1
+            <div class="normal-content-route">{# This section displays title and description of the post, taken from the Markdown file #}
+                <h1>{{ page.title }}</h1>
+                <p class="text-center">
+                    {{ link_to( '//trackfellas.com', 'Trackfellas') }}
+                        presents you the best travel routes worldwide.{{ page.description }}</p>
+            </div>
+            </section>
+            <section>
+                <div class="small-content-route text-center">
+                    <h2>Traveler</h2>
+                    {{ image_tag( site.data.cuba.Traveler.picture, {alt: site.data.cuba.Traveler.name, class: 'routepic'}) }}
+            <p class="text-center">
+            <strong>Name: </strong>{{ site.data.cuba.Traveler.name }}<br>
+            <strong>Age: </strong>{{ site.data.cuba.Traveler.age }}<br>
+            <strong>Location: </strong>{{ site.data.cuba.Traveler.location }}<br>
+            <strong>Skills: </strong>{{ site.data.cuba.Traveler.skills }}<br>
+            <strong>Submitted Routes: </strong>{{ site.data.cuba.Traveler.noRoutes }}<br>
                             </p>
-                            <h4><a href="mailto:nika@trackfellas.com">Contact me!</a></h4>
+                            <h4><a href="mailto:{{ site.data.cuba.Traveler.noRoutes }}">Contact me!</a></h4>
 
                 </div>
             </section>
             <section>
-                <div class="big-content">
+                <div class="big-content-route">
                     <h2>Travel Route</h2>
-                    <iframe src="https://www.google.com/maps/d/embed?mid=zrYZfx3FSo48.kgVtIu-lk2YI"></iframe>
+                    <iframe src="{{ site.data.cuba.Map.mapLink }}"></iframe>
                 </div>
             </section>
             <section>
-                <div class="normal-content text-center">
+                <div class="normal-content-route text-center">
                     <h2>Key Facts</h2>
-                    <p><strong>Type:</strong> Individual Trip
-                        <br>
-                        <strong>Date:</strong> 03.04.2015 - 21.04.2015
-                        <br>
-                        <strong>Duration:</strong> 18 days
-                        <br>
-                        <strong>Weather:</strong> 20 - 30°C, dry and sunny weather
-                        <br>
-                        <strong>Activities:</strong> Nightlife, Eating, Relaxing, Sightseeing, Culture
-                        <br>
-                        <strong>Terrain:</strong> Island, Beach, Nature, Mountains, Urban
-                        <br>
-                        <strong>Safety:</strong> Cuba is a quite safe country for travelers, however keep an eye on our belongings
-                        <br>
-                        <strong>Number of travelers:</strong> 2 (Friends)
-                        <br>
-                        <strong>Required travel skills:</strong> Easy
-                        <br>
-                        <strong>Trip possible for:</strong> family; single woman; older traveler
-                        <br>
-                        <strong>Total cost on-site:</strong> 750 € (Traveling with another person helps to save money as you can share transportation and accomodation)
-                        <br>
-                        <strong>Accommodation category:</strong> Middle-class (AC, TV, private bath)
-                        <br>
-                        <strong>Total distance:</strong> 2000 km
-                        <br>
-                        <strong>Main transportation:</strong> Taxi (1300 km), bus (700 km)</p>
+                    <p><strong>Type: </strong> {{ site.data.cuba.KeyFacts.type }}<br>
+                        <strong>Date: </strong>{{ site.data.cuba.KeyFacts.date }}<br>
+                        <strong>Duration: </strong>{{ site.data.cuba.KeyFacts.duration }}<br>
+                        <strong>Weather: </strong>{{ site.data.cuba.KeyFacts.weather }}<br>
+                        <strong>Activities: </strong>{{ site.data.cuba.KeyFacts.activities }}<br>
+                        <strong>Terrain: </strong>{{ site.data.cuba.KeyFacts.terrain }}<br>
+                        <strong>Safety: </strong>{{ site.data.cuba.KeyFacts.safety }}<br>
+                        <strong>Number of Travelers: </strong>{{ site.data.cuba.KeyFacts.noTravelers }}<br>
+                        <strong>Required travel skills: </strong>{{ site.data.cuba.KeyFacts.skills }}<br>
+                        <strong>Trip possible for: </strong>{{ site.data.cuba.KeyFacts.travelType }}<br>
+                        <strong>Total cost on-site: </strong>{{ site.data.cuba.KeyFacts.cost }}<br>
+                        <strong>Accommodation category: </strong>{{ site.data.cuba.KeyFacts.categoryAccomodation }}<br>
+                        <strong>Total distance: </strong>{{ site.data.cuba.KeyFacts.distance }}<br>
+                        <strong>Main transportation: </strong>{{ site.data.cuba.KeyFacts.transportation }}</p>
                 </div>
             </section>
             <section>
-                <div class="normal-content">
+                <div class="normal-content-route">
                     <h2>Galerie</h2>
                     <div class="galerie">
                         <div>
-                            <a href="<%- url_for('img/cuba/1_havana.jpg') %>" data-featherlight="image">
-                                <%- image_tag( 'img/cuba/thumbnails/1_havana.jpg', {alt: 'Havana Cuba'}) %>
+                            <a href="{{ url_for('img/cuba/1_havana.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/1_havana.jpg', {alt: 'Havana Cuba'}) }}
                             </a>
                         </div>
                         <div>
-                            <a href="<%- url_for('img/cuba/2_cienfuegos.jpg') %>" data-featherlight="image">
-                                <%- image_tag( 'img/cuba/thumbnails/2_cienfuegos.jpg', {alt: 'Cienfuegos Cuba'}) %>
+                            <a href="{{ url_for('img/cuba/2_cienfuegos.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/2_cienfuegos.jpg', {alt: 'Cienfuegos Cuba'}) }}
                             </a>
                         </div>
                         <div>
-                            <a href="<%- url_for('img/cuba/3_viaje.jpg') %>" data-featherlight="image">
-                                <%- image_tag( 'img/cuba/thumbnails/3_viaje.jpg', {alt: 'Viaje'}) %>
+                            <a href="{{ url_for('img/cuba/3_viaje.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/3_viaje.jpg', {alt: 'Viaje'}) }}
                             </a>
                         </div>
                         <div>
-                            <a href="<%- url_for('img/cuba/4_camaguey.jpg') %>" data-featherlight="image">
-                                <%- image_tag( 'img/cuba/thumbnails/4_camaguey.jpg', {alt: 'Camaguey Cuba'}) %>
+                            <a href="{{ url_for('img/cuba/4_camaguey.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/4_camaguey.jpg', {alt: 'Camaguey Cuba'}) }}
                             </a>
                         </div>
                         <div>
-                            <a href="<%- url_for('img/cuba/5_bayamo.jpg') %>" data-featherlight="image">
-                                <%- image_tag( 'img/cuba/thumbnails/5_bayamo.jpg', {alt: 'Bayamo'}) %>
+                            <a href="{{ url_for('img/cuba/5_bayamo.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/5_bayamo.jpg', {alt: 'Bayamo'}) }}
                             </a>
                         </div>
                         <div>
-                            <a href="<%- url_for('img/cuba/6_santiago.jpg') %>" data-featherlight="image">
-                                <%- image_tag( 'img/cuba/thumbnails/6_santiago.jpg', {alt: 'Santiago de Cuba'}) %>
+                            <a href="{{ url_for('img/cuba/6_santiago.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/6_santiago.jpg', {alt: 'Santiago de Cuba'}) }}
                             </a>
                         </div>
                         <div>
-                            <a href="<%- url_for('img/cuba/7_santa_maria.jpg') %>" data-featherlight="image">
-                                <%- image_tag( 'img/cuba/thumbnails/7_santa_maria.jpg', {alt: 'Santa Maria Cuba'}) %>
+                            <a href="{{ url_for('img/cuba/7_santa_maria.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/7_santa_maria.jpg', {alt: 'Santa Maria Cuba'}) }}
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="big-content">
+                <div class="big-content-route">
                     <h2>Trip Details</h2>
                     <ul class="accordion" data-accordion>
                         <li class="accordion-overview">
                             <a href="#panel1b"><h3>Destination Overview<span class="fa accordion-icon right"></span></h3></a>
                             <div id="panel1b" class="content active">
-                                <p><strong>Country:</strong> Cuba
-                                    <br>
-                                    <strong>Location:</strong> Caribbean
-                                    <br>
-                                    <strong>Languages:</strong> Spanish
-                                    <br>
-                                    <strong>Climate:</strong> Steady temperatures all year round with day temperatures from 26°C in winter up to humid 32°C in summer. Hurricanes can hit Cuba from June until November, most often in September.
-                                    <br>
-                                    <strong>Seasons:</strong> Cuba can be visited all year. Best season is from November until May with lots of sun and temperatures around 25°C during the day and 20°C at night.
-                                    <br>
-                                    <strong>Travel period:</strong> June - October is off season and December - May is the main season, however Cuba is not overcrowded. This might change with the improvement of relations between the USA and Cuba, which could lead to a greater number of tourists from the US. Currently direct tourist travel from the USA to Cuba is not possible.
-                                    <br>
-                                    <strong>Visa:</strong> A visa/tourist card for EU travelers is valid for 30 days and can be renewed for another 30 days. You can get it at the Cuban embassy or most airlines or travel agents also sell it to you before departure. Price is 25 CUC. EU citizens also need a passport, that is valid for at least 6 more months. For US tourists visiting Cuba is still forbidden by US law.
-                                    <br>
-                                    <strong>Currency conversion:</strong> 1 CUC = 0,95 € (April 2015)
-                                    <br> The convertible peso (CUC) is the currency for tourists in Cuba and is equivalent to the US Dollar.
-                                    <strong>Accomodation:</strong> Every house with a blue anchor in front can be rented by tourists. Houses with a red anchor are just for locals. Prices for accomodation can normally be negotiated in Casas Particulares.
-                                    <br><strong>Health Care:</strong> No special vaccination necessary, apart from tetanus and diphtheria. No malaria, but dengue fever occurs. Medical care is quite good. Nevertheless there is a general lack of medication in pharmacies, so better bring your own first-aid kit.
-                                    <br>
-                                    <strong>Travel Warning:</strong> No travel warnings. Cuban citizens need a permission to make private business. Accommodation in private households without official permission might lead to problems with the police for the host and the guest, so better check the documents in advance.</p>
+                                <p><strong>Country: </strong>{{ site.data.cuba.Details.destinationOverview.country }}<br>
+                                    <strong>Location: </strong>{{ site.data.cuba.Details.destinationOverview.location }}<br>
+                                    <strong>Languages: </strong>{{ site.data.cuba.Details.destinationOverview.languages }}<br>
+                                    <strong>Climate: </strong>{{ site.data.cuba.Details.destinationOverview.climate }}<br>
+                                    <strong>Seasons: </strong>{{ site.data.cuba.Details.destinationOverview.seasons }}<br>
+                                    <strong>Travel period: </strong>{{ site.data.cuba.Details.destinationOverview.travelPeriod }}<br>
+                                    <strong>Visa: </strong>{{ site.data.cuba.Details.destinationOverview.visa }}<br>
+                                    <strong>Currency conversion: </strong>{{ site.data.cuba.Details.destinationOverview.conversionCurrency }}<strong>Accomodation: </strong>{{ site.data.cuba.Details.destinationOverview.accomodation }}<br><strong>Health Care: </strong>{{ site.data.cuba.Details.destinationOverview.healthcare }}<br>
+                                    <strong>Travel Warning: </strong>{{ site.data.cuba.Details.destinationOverview.travelWarning }}</p>
                             </div>
                         </li>
                         <li class="accordion-navigation">
@@ -257,7 +237,8 @@
                                     <br>
                                     <strong>Transportation:</strong> Bus
                                     <br>
-                                    <strong>Company:</strong> <a href="http://www.viazul.com">Viazul</a>
+                                    <strong>Company:</strong>
+                                    {{ link_to( '//www.viazul.com', 'Viazul') }}
                                     <br>
                                     <strong>Date:</strong> 07.04.15
                                     <br>
@@ -298,7 +279,7 @@
                                     <br>
                                     <strong>Comment:</strong> We didn&#39;t book a hostel. We met Anita while she was looking for new people at the bus station. The house was 10 min. walking distance from the city center. The apartment was very beautiful with a separate entry, terrace, roof top, 2 rooms and space for 3 people.
                                     <strong>Tip:</strong> The normal price is 25 CUC.</p>
-                                <p><strong>Food:</strong> <em><a href="http://labotija.trinidadhostales.com">La Botija</a></em>
+                                <p><strong>Food:</strong> <em>{{ link_to( 'labotija.trinidadhostales.com', 'La Botija') }}</em>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -351,7 +332,7 @@
                                     <br>
                                     <strong>Transportation:</strong> Bus
                                     <br>
-                                    <strong>Company:</strong> <a href="http://www.viazul.com">Viazul</a>
+                                    <strong>Company:</strong> {{ link_to( '//www.viazul.com', 'Viazul') }}
                                     <br>
                                     <strong>Date:</strong> 10.04.15
                                     <br>
@@ -424,7 +405,7 @@
                                         <br>
                                         <strong>Transportation:</strong> Bus
                                         <br>
-                                        <strong>Company:</strong> <a href="http://www.viazul.com">Viazul</a>
+                                        <strong>Company:</strong> {{ link_to( '//www.viazul.com', 'Viazul') }}
                                         <br>
                                         <strong>Date:</strong> 11.04.15
                                         <br>
@@ -466,7 +447,7 @@
                                     <strong>Costs:</strong> 18 CUC // 18 €
                                     <br>
                                     <strong>Comment:</strong> That time they were building new apartments. You&#39;ll find a freezer, tv, nice bathroom and you have your own entrance + there is a roof terrace.</p>
-                                <p><strong>Sightseeing:</strong> <em><a href="http://www.ecured.cu/index.php/Museo_de_Cera_en_Bayamo">Museo de Cera</a></em>
+                                <p><strong>Sightseeing:</strong> <em>{{ link_to( 'www.ecured.cu/index.php/', 'Museo de Cera') }}</em>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -497,7 +478,7 @@
                                     <br>
                                     <strong>Transportation:</strong> Bus
                                     <br>
-                                    <strong>Company:</strong> <a href="http://www.viazul.com">Viazul</a>
+                                    <strong>Company:</strong> {{ link_to( '//www.viazul.com', 'Viazul') }}
                                     <br>
                                     <strong>Date:</strong> 12.04.15
                                     <br>
@@ -521,7 +502,7 @@
                             <i class="fa fa-star-o"></i>
                             <span class="fa accordion-icon right"></span></h3></a>
                             <div id="panel11a" class="content">
-                                <p><strong>Type:</strong> Town
+                                <p><strong>Type:</strong> City
                                     <br>
                                     <strong>Date:</strong> 12.04. - 14.04.15
                                     <br>
@@ -541,7 +522,7 @@
                                     <strong>Costs:</strong> 20 CUC // 18 €
                                     <br>
                                     <strong>Comment:</strong> Margarita is a very nice person, the apartment is situated in an old colonial house, the room is beautiful but without a window.</p>
-                                <p><strong>Sightseeing:</strong> <em><a href="http://www.ecured.cu/index.php/Cuartel_Moncada">Cuartel Moncada</a></em>
+                                <p><strong>Sightseeing:</strong> <em>{{ link_to( '//www.ecured.cu/index.php/Cuartel_Moncada', 'Cuartel Moncada') }}</em>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -638,7 +619,7 @@
                                     <br>
                                     <strong>Costs:</strong> 70 CUC // 65 € for 2 persons
                                     <br>
-                                    <strong>Comment:</strong> With the <a href="http://www.viazul.com">Viazul</a> Bus 12 hours and 110 CUC for 2 persons
+                                    <strong>Comment:</strong> With the {{ link_to( '//www.viazul.com', 'Viazul') }} Bus 12 hours and 110 CUC for 2 persons
                                     <br>
                                     <strong>Tip:</strong> You always can ask for a taxi (so did we) at the bus terminals. Sometimes it is cheaper than the bus. We stopped for lunch at Camagüey and changed cars.</p>
                             </div>
@@ -709,7 +690,7 @@
                 </div>
             </section>
             <section>
-                <div class="normal-content text-center">
+                <div class="normal-content-route text-center">
                     <h2>Feedback</h2>
                     <p>We hope we gave you some inspiration and tips for travelling on your own in Cuba. Please leave <a href="//docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/viewform">your feedback here!</a></p>
                     <p>Keep in touch for more travel stories and routes worldwide and sign up for our <a href="http://trackfellas.com/#signup">Beta program</a> to experience the ultimate way of traveling as a Trackfella.</p>
@@ -717,4 +698,9 @@
                     <p><strong>Nika from Trackfellas</strong> </p>
                 </div>
             </section>
-        </div>
+<div id="feedback" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Feedback</h2>
+  <p class="lead">Thanks for checking out our route.</p>
+  <p>We are really happy that you check out our page and would like to get your opinion. So please check out our feedback form and answer a few questions. It'll only take a minute. You also find the feedback form at the bottom of the page.</p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>

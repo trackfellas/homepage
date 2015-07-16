@@ -20,8 +20,6 @@
     "hexo-renderer-sass": "^0.1.2",
     "hexo-server": "^0.1.2",
     "hexo-uglify": "0.0.3",
-    "node-sass": "~3.2.0",
-    "shelljs": "^0.5.1",
-    "uglify-js": "^2.4.23"
+    "shelljs": "^0.5.1"
   }
 }
