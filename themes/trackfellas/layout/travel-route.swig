@@ -19,7 +19,7 @@
             <strong>Skills: </strong>{{ site.data.cuba.Traveler.skills }}<br>
             <strong>Submitted Routes: </strong>{{ site.data.cuba.Traveler.noRoutes }}<br>
                             </p>
-                            <h4><a href="mailto:{{ site.data.cuba.Traveler.noRoutes }}">Contact me!</a></h4>
+                            <h4><a href="mailto:{{ site.data.cuba.Traveler.contactEmail }}">Contact me!</a></h4>
 
                 </div>
             </section>
@@ -104,7 +104,9 @@
                                     <strong>Seasons: </strong>{{ site.data.cuba.Details.destinationOverview.seasons }}<br>
                                     <strong>Travel period: </strong>{{ site.data.cuba.Details.destinationOverview.travelPeriod }}<br>
                                     <strong>Visa: </strong>{{ site.data.cuba.Details.destinationOverview.visa }}<br>
-                                    <strong>Currency conversion: </strong>{{ site.data.cuba.Details.destinationOverview.conversionCurrency }}<strong>Accomodation: </strong>{{ site.data.cuba.Details.destinationOverview.accomodation }}<br><strong>Health Care: </strong>{{ site.data.cuba.Details.destinationOverview.healthcare }}<br>
+                                    <strong>Currency conversion: </strong>{{ site.data.cuba.Details.destinationOverview.conversionCurrency }}<br>
+                                    <strong>Accomodation: </strong>{{ site.data.cuba.Details.destinationOverview.accomodation }}
+                                    <br><strong>Health Care: </strong>{{ site.data.cuba.Details.destinationOverview.healthcare }}<br>
                                     <strong>Travel Warning: </strong>{{ site.data.cuba.Details.destinationOverview.travelWarning }}</p>
                             </div>
                         </li>
