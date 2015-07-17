@@ -102,20 +102,20 @@
                 <a href="#panel1b"><h3>Destination Overview<span class="fa accordion-icon right"></span></h3></a>
 
                 <div id="panel1b" class="content active">
-                    <p><strong>Country: </strong>{{ site.data.cuba.details.destinationOverview.country }}<br>
-                        <strong>Location: </strong>{{ site.data.cuba.details.destinationOverview.location }}<br>
-                        <strong>Languages: </strong>{{ site.data.cuba.details.destinationOverview.languages }}<br>
-                        <strong>Climate: </strong>{{ site.data.cuba.details.destinationOverview.climate }}<br>
-                        <strong>Seasons: </strong>{{ site.data.cuba.details.destinationOverview.seasons }}<br>
-                        <strong>Travel period: </strong>{{ site.data.cuba.details.destinationOverview.travelPeriod }}
+                    <p><strong>Country: </strong>{{ page.routedata.details.destinationOverview.country }}<br>
+                        <strong>Location: </strong>{{ page.routedata.details.destinationOverview.location }}<br>
+                        <strong>Languages: </strong>{{ page.routedata.details.destinationOverview.languages }}<br>
+                        <strong>Climate: </strong>{{ page.routedata.details.destinationOverview.climate }}<br>
+                        <strong>Seasons: </strong>{{ page.routedata.details.destinationOverview.seasons }}<br>
+                        <strong>Travel period: </strong>{{ page.routedata.details.destinationOverview.travelPeriod }}
                         <br>
-                        <strong>Visa: </strong>{{ site.data.cuba.details.destinationOverview.visa }}<br>
+                        <strong>Visa: </strong>{{ page.routedata.details.destinationOverview.visa }}<br>
                         <strong>Currency
-                            conversion: </strong>{{ site.data.cuba.details.destinationOverview.conversionCurrency }}<br>
-                        <strong>Accomodation: </strong>{{ site.data.cuba.details.destinationOverview.accomodation }}
-                        <br><strong>Health Care: </strong>{{ site.data.cuba.details.destinationOverview.healthcare }}
+                            conversion: </strong>{{ page.routedata.details.destinationOverview.conversionCurrency }}<br>
+                        <strong>Accomodation: </strong>{{ page.routedata.details.destinationOverview.accomodation }}
+                        <br><strong>Health Care: </strong>{{ page.routedata.details.destinationOverview.healthcare }}
                         <br>
-                        <strong>Travel Warning: </strong>{{ site.data.cuba.details.destinationOverview.travelWarning }}
+                        <strong>Travel Warning: </strong>{{ page.routedata.details.destinationOverview.travelWarning }}
                     </p>
                 </div>
             </li>
@@ -264,7 +264,7 @@
                         <strong>Transportation:</strong> Bus
                         <br>
                         <strong>Company:</strong>
-                        {{ link_to( '//www.viazul.com', 'Viazul') }}
+                        {{ link_to( '//www.viazul.com', 'Viazul', {external: true}) }}
                         <br>
                         <strong>Date:</strong> 07.04.15
                         <br>
@@ -314,7 +314,7 @@
                         people.
                         <strong>Tip:</strong> The normal price is 25 CUC.</p>
 
-                    <p><strong>Food:</strong> <em>{{ link_to( 'labotija.trinidadhostales.com', 'La Botija') }}</em>
+                    <p><strong>Food:</strong> <em>{{ link_to( 'labotija.trinidadhostales.com', 'La Botija',  {external: true}) }}</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -371,7 +371,7 @@
                         <br>
                         <strong>Transportation:</strong> Bus
                         <br>
-                        <strong>Company:</strong> {{ link_to( '//www.viazul.com', 'Viazul') }}
+                        <strong>Company:</strong> {{ link_to( '//www.viazul.com', 'Viazul',  {external: true}) }}
                         <br>
                         <strong>Date:</strong> 10.04.15
                         <br>
@@ -452,7 +452,7 @@
                         <br>
                         <strong>Transportation:</strong> Bus
                         <br>
-                        <strong>Company:</strong> {{ link_to( '//www.viazul.com', 'Viazul') }}
+                        <strong>Company:</strong> {{ link_to( '//www.viazul.com', 'Viazul', {external: true}) }}
                         <br>
                         <strong>Date:</strong> 11.04.15
                         <br>
@@ -500,7 +500,7 @@
                         freezer, tv, nice bathroom and you have your own entrance + there is a roof terrace.</p>
 
                     <p><strong>Sightseeing:</strong>
-                        <em>{{ link_to( 'www.ecured.cu/index.php/', 'Museo de Cera') }}</em>
+                        <em>{{ link_to( '//www.ecured.cu/index.php/Museo_de_Cera_en_Bayamo', 'Museo de Cera', {external: true}) }}</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -533,7 +533,7 @@
                         <br>
                         <strong>Transportation:</strong> Bus
                         <br>
-                        <strong>Company:</strong> {{ link_to( '//www.viazul.com', 'Viazul') }}
+                        <strong>Company:</strong> {{ link_to( '//www.viazul.com', 'Viazul', {external: true}) }}
                         <br>
                         <strong>Date:</strong> 12.04.15
                         <br>
@@ -585,7 +585,7 @@
                         colonial house, the room is beautiful but without a window.</p>
 
                     <p><strong>Sightseeing:</strong>
-                        <em>{{ link_to( '//www.ecured.cu/index.php/Cuartel_Moncada', 'Cuartel Moncada') }}</em>
+                        <em>{{ link_to( '//www.ecured.cu/index.php/Cuartel_Moncada', 'Cuartel Moncada', {external: true}) }}</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -690,7 +690,7 @@
                         <br>
                         <strong>Costs:</strong> 70 CUC // 65 € for 2 persons
                         <br>
-                        <strong>Comment:</strong> With the {{ link_to( '//www.viazul.com', 'Viazul') }} Bus 12 hours and
+                        <strong>Comment:</strong> With the {{ link_to( '//www.viazul.com', 'Viazul', {external: true}) }} Bus 12 hours and
                         110 CUC for 2 persons
                         <br>
                         <strong>Tip:</strong> You always can ask for a taxi (so did we) at the bus terminals. Sometimes
