@@ -17,7 +17,7 @@ Traveler:
     country: Germany
   skills: Globetrotter
   noRoutes: 1
-  contactEmail: nika@trackfellas.com
+  contactEmail: 'nika@trackfellas.com'
 
 # Map
 Map:
