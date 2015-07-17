@@ -12,8 +12,14 @@ npm install
 ```sh
 bower install
 ```
-```
+
 ```sh
+# Serve the project
+hexo serve
+```
+
+```sh
+# Generate the project
 hexo generate
 ```
 
