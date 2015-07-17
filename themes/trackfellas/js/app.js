@@ -1,20 +1,4 @@
-window.fbAsyncInit = function() {
-    FB.init({
-        appId      : '741343615976832',
-        xfbml      : true,
-        version    : 'v2.4'
-    });
-};
-
-(function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-$(document).ready(function() {
+$(document).ready(function () {
     if ($(".galerie").length > 0) {
         $(".galerie").slick({
             dots: true,
@@ -43,7 +27,8 @@ $(document).ready(function() {
                 }
             },]
         });
-    };
+    }
+    ;
 
     if ($("#newsletter-form").length > 0) {
         $("#newsletter-form").formchimp({
@@ -52,33 +37,35 @@ $(document).ready(function() {
             responseClass: "mc-response text-center",
             successMessage: "Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you."
         });
-    };
+    }
+    ;
 
     if ($("#blog").length > 0) {
-        $.get("atom.xml", function(data) {
+        $.get("atom.xml", function (data) {
             var $data = $(data);
-            $(data).find('entry').each(function() {
+            $(data).find('entry').each(function () {
                 var id = $(this).find('id').text();
                 var title = $(this).find('title').text();
                 var featured = $(this).find('featured').text();
                 $(".content-div").append("<div class='medium-4 columns text-center entry'><article>" + "<img class='blogpic' src='" + featured + "'><br>" + "<a href='" + id + "'>" + title);
             });
         });
-    };
-/*    if ($("#feedback-form").length > 0) {
-        $("#ss-form").multipage();
+    }
+    ;
+    /*    if ($("#feedback-form").length > 0) {
+     $("#ss-form").multipage();
 
-    };
-    setTimeout(function() {
-        $("#feedback").foundation('reveal', 'open');
-    }, 1000);
-*/
+     };
+     setTimeout(function() {
+     $("#feedback").foundation('reveal', 'open');
+     }, 1000);
+     */
 });
 
 $(document).foundation({
     abide: {
         validators: {
-            checkbox_limit: function(el, required, parent) {
+            checkbox_limit: function (el, required, parent) {
                 var group = parent.closest('.checkbox-group');
                 var limit = group.attr('data-abide-validator-limit').split(',');
                 var countC = group.find(':checked').length;
