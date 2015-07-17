@@ -1,4 +1,7 @@
 // general content elements:
+body {
+    background: white;
+}
 @mixin content-sec {
     margin: 0 auto;
     padding: 3.75rem 0rem 3.75rem 0rem;
@@ -596,16 +599,58 @@ $social-list: (
 }
 
 // social bar
+.social-bar {
+    ul {
+        margin: 0;
+        display: inline;
+    }
+    display: inline;
+    z-index: 5;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 75%;
+    left: 50%;
+    margin: 0 0 0 -37.5%;
 
-.social {
+}
+
+.social-bar li {
+    display: inline;
+    width: 45px;
+    height: 45px;
+
+}
+
+    .social-bar li a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background: #222;
+      font: normal normal normal
+      1.3rem/1.7rem
+      'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      padding: 5px;
+      text-decoration: none;
+      text-align: center;
+      transition: background .4s ease .300ms
+    }
+
+@media #{$medium-up} {
+.social-bar {
+    ul {
+        margin-left: 0;
+        display: block;
+    }
     margin: 0;
     left: 0;
     position: fixed;
     top: 150px;
 }
 
-
-    .social li a {
+    .social-bar li a {
       display: block;
       height: 60px;
       width: 60px;
@@ -620,24 +665,23 @@ $social-list: (
       text-align: center;
       transition: background .4s ease .300ms
     }
-.social li:first-child a { background: #3b5998 }
-.social li:first-child a:hover { background: scale-color(#3b5998, $lightness: -11%)}
-.social li:nth-child(2) a { background: #00acee }
-.social li:nth-child(2) a:hover {background: scale-color(#00acee, $lightness: -11%)}
-.social li:nth-child(3) a { background: #cc3732 }
-.social li:nth-child(3) a:hover {background: scale-color(#cc3732, $lightness: -11%)}
+}
+.social-bar li:first-child a { background: #3b5998 }
+.social-bar li:first-child a:hover { background: scale-color(#3b5998, $lightness: -11%)}
+.social-bar li:nth-child(2) a { background: #00acee }
+.social-bar li:nth-child(2) a:hover {background: scale-color(#00acee, $lightness: -11%)}
+.social-bar li:nth-child(3) a { background: #cc3732 }
+.social-bar li:nth-child(3) a:hover {background: scale-color(#cc3732, $lightness: -11%)}
 
-.social li:first-child a { border-radius: 0 5px 0 0 }
-.social li:last-child a { border-radius: 0 0 5px 0 }
 
-.social li a span {
+.social-bar li a span {
   width: 100px;
   float: left;
   text-align: center;
   background: #222;
   color: #fff;
   margin: -25px 74px;
-  padding: 8px;
+  padding: 0px;
   transform-origin: 0;
   visibility: hidden;
   opacity: 0;
@@ -665,6 +709,7 @@ $social-list: (
   opacity: 1;
   transform: rotateY(0)
 } */
+
 // Slider appearance
 /* Slider */
 .galerie {

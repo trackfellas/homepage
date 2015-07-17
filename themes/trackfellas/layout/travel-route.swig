@@ -15,7 +15,7 @@
             <p class="text-center">
             <strong>Name: </strong>{{ site.data.cuba.Traveler.name }}<br>
             <strong>Age: </strong>{{ site.data.cuba.Traveler.age }}<br>
-            <strong>Location: </strong>{{ site.data.cuba.Traveler.location }}<br>
+            <strong>Location: </strong>{{ site.data.cuba.Traveler.location.city }}, {{ site.data.cuba.Traveler.location.country }}<br>
             <strong>Skills: </strong>{{ site.data.cuba.Traveler.skills }}<br>
             <strong>Submitted Routes: </strong>{{ site.data.cuba.Traveler.noRoutes }}<br>
                             </p>
@@ -45,7 +45,7 @@
                         <strong>Total cost on-site: </strong>{{ site.data.cuba.KeyFacts.cost }}<br>
                         <strong>Accommodation category: </strong>{{ site.data.cuba.KeyFacts.categoryAccomodation }}<br>
                         <strong>Total distance: </strong>{{ site.data.cuba.KeyFacts.distance }}<br>
-                        <strong>Main transportation: </strong>{{ site.data.cuba.KeyFacts.transportation }}</p>
+                        <strong>Main transportation: </strong>{{ site.data.cuba.KeyFacts.transportationMain }}</p>
                 </div>
             </section>
             <section>
