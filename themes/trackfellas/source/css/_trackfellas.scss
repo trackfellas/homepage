@@ -274,6 +274,7 @@ strong {
 .entry {
     padding-bottom: 1rem;
 }
+
 .blogpic {
     max-width: 8rem;
     height: 8rem;
@@ -1003,11 +1004,10 @@ $social-list: (
 
 .preview {
     border: 1px dotted $nikagrau;
-    width: 60%;
     padding: 1.5rem;
 }
 
-//The accordion is closed
+    //The accordion is closed
 .accordion-icon:before {
     padding-left: 1rem;
     content: "\f067";
