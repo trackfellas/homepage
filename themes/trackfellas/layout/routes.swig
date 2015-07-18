@@ -9,11 +9,7 @@
             {% for post in site.posts %}
                 <li>
                     <div class="preview text-center">
-<<<<<<< HEAD
                         <a href="{{ url_for(post.permalink) }}">
-=======
-                        <a href="{{ url_for(post.path) }}">
->>>>>>> fixed route page, added some fields to cuba route
                             <h2>{{ post.title }}</h2>
                             {{ image_tag( post.routepic, {alt: post.routepicalt, class: 'hero'}) }}
                             <p>{{ post.description }}</p>

@@ -827,7 +827,7 @@ $social-list: (
     height: 130px;
     display: inline;
     min-height: 1px;
-    [dir"rtl"] & {
+    [dir="rtl"] & {
         float: right;
     }
     img {
