@@ -2,37 +2,22 @@
 
 This is the readme file for the current homepage. It contains all necessary information to install and serve the current trackfellas.com page.
 
-
-### Installation
-
+### Installation and code refresh
 
 ```sh
+# Get latest dependencies
 npm install
-```
-```sh
 bower install
+
+# Serve the project
+hexo serve
 ```
+
+### Generate the project
+
 ```sh
-gulp
-```
-```sh
+# Generate the project
 hexo generate
 ```
-### Deployment
-
-```sh
-hexo deploy
-```
 
 
-### Other
-
-```sh
-gulp develop
-```
-watches for changing in the scss files.
-
-For production just run:
-```sh
-gulp
-```
