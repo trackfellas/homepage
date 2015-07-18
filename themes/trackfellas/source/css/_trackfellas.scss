@@ -2,22 +2,23 @@
 body {
     background: white;
 }
+
 @mixin content-sec {
     margin: 0 auto;
     padding: 3.75rem 0rem 3.75rem 0rem;
-h1 {
-    margin-bottom: 1.875rem;
-    text-align: center;
-    text-transform: uppercase;
+    h1 {
+        margin-bottom: 1.875rem;
+        text-align: center;
+        text-transform: uppercase;
     }
-h2 {
-    margin-bottom: 1.875rem;
-    text-align: center;
-    text-transform: uppercase;
+    h2 {
+        margin-bottom: 1.875rem;
+        text-align: center;
+        text-transform: uppercase;
     }
-p {
-    padding-bottom: 2.5rem;
-}
+    p {
+        padding-bottom: 2.5rem;
+    }
 ;
 }
 
@@ -25,88 +26,96 @@ p {
     @include content-sec;
     padding: 3.75rem 0rem 0rem 0rem;
     p {
-    padding-bottom: 0rem;
+        padding-bottom: 0rem;
+    }
 }
-}
+
 ul.accordion {
     margin-right: 0.625rem;
     margin-left: 0.625rem;
 }
+
 .accordion-navigation {
     padding-bottom: .1875rem;
 }
+
 .big-content {
-  @include grid-column(
-    $columns:10,
-    $last-column:true,
-    $center:true,
-    $offset:1,
-    $collapse:false,
-    $float:right
-  );
-  @include content-sec;
+    @include grid-column(
+    $columns: 10,
+    $last-column: true,
+    $center: true,
+    $offset: 1,
+    $collapse: false,
+    $float: right
+    );
+    @include content-sec;
 }
 
 .big-content-route {
-  @include grid-column(
-    $columns:10,
-    $last-column:true,
-    $center:true,
-    $offset:1,
-    $collapse:false,
-    $float:right
-  );
-  @include content-sec-route;
+    @include grid-column(
+    $columns: 10,
+    $last-column: true,
+    $center: true,
+    $offset: 1,
+    $collapse: false,
+    $float: right
+    );
+    @include content-sec-route;
 }
+
 .normal-content {
-  @include grid-column(
-    $columns:8,
-    $last-column:true,
-    $center:true,
-    $offset:2,
-    $collapse:false,
-    $float:right
-  );
-  @include content-sec;
+    @include grid-column(
+    $columns: 8,
+    $last-column: true,
+    $center: true,
+    $offset: 2,
+    $collapse: false,
+    $float: right
+    );
+    @include content-sec;
 }
+
 .normal-content-first {
-  @extend .normal-content;
-  padding: 3.75rem 0 0 0;
+    @extend .normal-content;
+    padding: 3.75rem 0 0 0;
 }
+
 .normal-content-route {
-      @include grid-column(
-        $columns:8,
-        $last-column:true,
-        $center:true,
-        $offset:2,
-        $collapse:false,
-        $float:right
-      );
-  @include content-sec-route;
+    @include grid-column(
+    $columns: 8,
+    $last-column: true,
+    $center: true,
+    $offset: 2,
+    $collapse: false,
+    $float: right
+    );
+    @include content-sec-route;
 }
 
 .small-content {
-  @include grid-column(
-    $columns:6,
-    $last-column:true,
-    $center:true,
-    $offset:3,
-    $collapse:false,
-    $float:right
-  );
-  @include content-sec;
+    @include grid-column(
+    $columns: 6,
+    $last-column: true,
+    $center: true,
+    $offset: 3,
+    $collapse: false,
+    $float: right
+    );
+    @include content-sec;
 }
+
 .small-content-route {
-  @include grid-column(
-    $columns:6,
-    $last-column:true,
-    $center:true,
-    $offset:3,
-    $collapse:false,
-    $float:right
-  );
-  @include content-sec-route;
+    @include grid-column(
+    $columns: 6,
+    $last-column: true,
+    $center: true,
+    $offset: 3,
+    $collapse: false,
+    $float: right
+    );
+    @include content-sec-route;
 }
+
 .small-content-contact {
     @extend .small-content;
     padding: 0;
@@ -114,35 +123,45 @@ ul.accordion {
 
 // Basic stuff
 html {
-	max-width: 1920px;
+    max-width: 1920px;
 }
+
 iframe {
     height: 29rem;
     width: 100%;
 }
-    .divider {
-        height: .1rem;
-        border-right: 1px solid white;
-        padding: 0rem 0rem 0rem 0rem;
-    }
+
+.divider {
+    height: 1px;
+    border-right: 1px solid white;
+    padding: 0 0 0 0;
+    margin: 0 .5rem;
+    font-size: .55rem;
+}
+
 .footer {
-    margin: .5rem;
+    margin: .8rem;
     padding: 0;
     li {
         display: inline;
-        padding: .5rem;
-        font-size: .75rem;
+        padding: 0 0 0 0;
+        font-size: .85rem;
     }
 
     @extend .normal-content
 }
+
 footer {
     background: $nikabraun;
     color: white;
-    padding: .5rem;
+    padding: 2rem 0 2rem 0;
     a {
-    color: white;
-    font-size: .75rem;
+        color: white;
+    }
+    a:hover {
+        color: white;
+        padding-bottom: .3rem;
+        border-bottom: 1px solid white;
     }
 }
 
@@ -150,18 +169,21 @@ strong {
     font-family: RobotoRegular;
     font-size: 1.25;
 }
+
 #logo {
     margin: 0 0 0 0;
-    height:5rem;
+    height: 5rem;
 }
+
 .nav-wrapper {
     min-width: 100%;
-    background: rgba(255,255,255,0.85);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .top-bar-section {
     margin: 0 0 0 0;
 }
+
 .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #555555;
     background: transparent;
@@ -171,65 +193,71 @@ strong {
 
 // Index page
 .line-dark {
-	text-transform: uppercase;
-	padding-bottom: 0.625rem;
-	border-bottom: 1px solid $nikagrau;
-	margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0.625rem;
+    border-bottom: 1px solid $nikagrau;
+    margin-bottom: 2.5rem;
 }
 
 .line-light {
-	text-transform: uppercase;
-	padding-bottom: 0.625rem;
-	border-bottom: 1px solid $white;
-	margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0.625rem;
+    border-bottom: 1px solid $white;
+    margin-bottom: 2.5rem;
 }
 
 #about h3 {
-	color: $nikagrau;
+    color: $nikagrau;
 }
 
-#team h2,h3,h4 {
-	color: $white;
+#team h2, h3, h4 {
+    color: $white;
 }
 
 #signup {
-	background: $rot;
+    background: $rot;
 }
 
-.white  {
-	color: $white;
+.white {
+    color: $white;
 }
-#signup h2,h3 {
-	color: $white;
+
+#signup h2, h3 {
+    color: $white;
 }
+
 #team {
     background: $blau;
 }
+
 .teampic {
-	height: 12rem;
-	width: 12rem;
-	margin-bottom: 1.25rem;
-	border-radius:80%;
+    height: 12rem;
+    width: 12rem;
+    margin-bottom: 1.25rem;
+    border-radius: 80%;
 }
+
 .routepic {
     margin: 1rem auto;
     width: 11rem;
     border-radius: 80%;
     border: 3px solid white;
 }
+
 .social-team {
-	height:1.5rem;
-	width:auto;
+    height: 1.5rem;
+    width: auto;
 }
+
 .social {
-	margin-bottom:-16px;
-	height:1.8rem;
-	width:auto;
+    margin-bottom: -16px;
+    height: 1.8rem;
+    width: auto;
 }
 
 .sma {
-	height: 6rem;
-	width: 6rem;
+    height: 6rem;
+    width: 6rem;
 }
 
 #stoerer {
@@ -237,40 +265,43 @@ strong {
     margin-left: 70%;
     height: 5.5rem;
     width: auto;
-    }
+}
+
+.content-div {
+    padding-bottom: 3.75rem;
+}
 
 .entry {
-    height: 20rem;
-    }
+    padding-bottom: 1rem;
+}
 .blogpic {
-    height: 15rem;
-    max-width: 17rem;
-    padding: 2rem;
+    max-width: 8rem;
+    height: 8rem;
 }
 
 // other special pages:
 .accordion-overview {
     @extend .accordion-navigation
 }
-.accordion .accordion-overview>a
-{
+
+.accordion .accordion-overview > a {
     background: $braun;
     color: #fff;
     display: block;
     padding: 1rem;
 }
 
-
-.impressum  {
+.impressum {
     padding-top: 0rem;
     h2 {
-    font-size: 1.5rem;
-    text-align: left;
+        font-size: 1.5rem;
+        text-align: left;
     }
     h1 {
         margin-bottom: 2rem;
     }
 }
+
 // Ridiculously Responsive Social Sharing Buttons
 // Team: @dbox, @joshuatuscan
 // Site: http://www.kurtnoble.com/labs/rrssb
@@ -287,7 +318,6 @@ strong {
 //     \  \:\        \  \:\          /__/:/
 //      \  \:\        \  \:\         \__\/
 //       \__\/         \__\/
-
 
 // How to use: Add/remove buttons from config settings and $social-list.
 
@@ -313,18 +343,18 @@ $rrssb-main-font: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // Variable list for all social button colors to be iterated over.
 $social-list: (
-    rrssb-email             $rrssb-email,
-    rrssb-facebook          $rrssb-facebook,
-    rrssb-tumblr            $rrssb-tumblr,
-    rrssb-linkedin          $rrssb-linkedin,
-    rrssb-twitter           $rrssb-twitter,
-    rrssb-googleplus        $rrssb-googleplus,
-    rrssb-youtube           $rrssb-youtube,
-    rrssb-reddit            $rrssb-reddit,
-    rrssb-pinterest         $rrssb-pinterest,
-    rrssb-pocket            $rrssb-pocket,
-    rrssb-github            $rrssb-github,
-    rrssb-instagram         $rrssb-instagram
+    rrssb-email $rrssb-email,
+    rrssb-facebook $rrssb-facebook,
+    rrssb-tumblr $rrssb-tumblr,
+    rrssb-linkedin $rrssb-linkedin,
+    rrssb-twitter $rrssb-twitter,
+    rrssb-googleplus $rrssb-googleplus,
+    rrssb-youtube $rrssb-youtube,
+    rrssb-reddit $rrssb-reddit,
+    rrssb-pinterest $rrssb-pinterest,
+    rrssb-pocket $rrssb-pocket,
+    rrssb-github $rrssb-github,
+    rrssb-instagram $rrssb-instagram
 );
 
 @mixin transition($expression) {
@@ -341,7 +371,7 @@ $social-list: (
 }
 
 %border-box {
-    -moz-box-sizing:border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -391,7 +421,8 @@ $social-list: (
                 }
             }
 
-        } // end @each directive
+        }
+        // end @each directive
 
         a {
             @extend %border-box;
@@ -435,7 +466,7 @@ $social-list: (
             }
 
             &:active {
-                box-shadow:inset 1px 3px 15px 0 rgba(022,0,0,.25);
+                box-shadow: inset 1px 3px 15px 0 rgba(022, 0, 0, .25);
             }
         }
 
@@ -468,7 +499,7 @@ $social-list: (
             a {
                 border-radius: 0.2em;
                 font-size: 15px; // fallback
-                font-size: 1vw;  // scales font with browser
+                font-size: 1vw; // scales font with browser
                 line-height: 1vw;
                 padding: 7% 0% 7% 12%;
                 @extend %backface-visibility;
@@ -482,7 +513,7 @@ $social-list: (
                         height: 100%;
                         width: 100%;
                         position: absolute;
-                        top:0;
+                        top: 0;
                     }
                 }
 
@@ -572,7 +603,8 @@ $social-list: (
                         }
                     }
                 }
-            }  // end @each directive
+            }
+            // end @each directive
         }
     }
 }
@@ -582,6 +614,7 @@ $social-list: (
     background: #2c3e50 url("../img/loading.gif") center center no-repeat;
     text-indent: -9999px;
 }
+
 .mc-response {
     margin: 25px 0;
     -webkit-animation: fadeIn .6s ease both;
@@ -622,73 +655,86 @@ $social-list: (
 
 }
 
-    .social-bar li a {
-      display: inline-block;
-      height: 40px;
-      width: 40px;
-      background: #222;
-      font: normal normal normal
-      1.3rem/1.7rem
-      'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
-      color: #fff;
-      -webkit-font-smoothing: antialiased;
-      padding: 5px;
-      text-decoration: none;
-      text-align: center;
-      transition: background .4s ease .300ms
-    }
+.social-bar li a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #222;
+    font: normal normal normal 1.3rem/1.7rem 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background .4s ease .300ms
+}
 
 @media #{$medium-up} {
-.social-bar {
-    ul {
-        margin-left: 0;
-        display: block;
+    .social-bar {
+        ul {
+            margin-left: 0;
+            display: block;
+        }
+        margin: 0;
+        left: 0;
+        width: 60px;
+        position: fixed;
+        top: 150px;
     }
-    margin: 0;
-    left: 0;
-    width:60px;
-    position: fixed;
-    top: 150px;
-}
 
     .social-bar li a {
-      display: block;
-      height: 60px;
-      width: 60px;
-      background: #222;
-      font: normal normal normal
-      1.3rem/1.7rem
-      'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
-      color: #fff;
-      -webkit-font-smoothing: antialiased;
-      padding: 15px;
-      text-decoration: none;
-      text-align: center;
-      transition: background .4s ease .300ms
+        display: block;
+        height: 60px;
+        width: 60px;
+        background: #222;
+        font: normal normal normal 1.3rem/1.7rem 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        padding: 15px;
+        text-decoration: none;
+        text-align: center;
+        transition: background .4s ease .300ms
     }
 }
-.social-bar li:first-child a { background: #3b5998 }
-.social-bar li:first-child a:hover { background: scale-color(#3b5998, $lightness: -11%)}
-.social-bar li:nth-child(2) a { background: #00acee }
-.social-bar li:nth-child(2) a:hover {background: scale-color(#00acee, $lightness: -11%)}
-.social-bar li:nth-child(3) a { background: #cc3732 }
-.social-bar li:nth-child(3) a:hover {background: scale-color(#cc3732, $lightness: -11%)}
 
+.social-bar li:first-child a {
+    background: #3b5998
+}
+
+.social-bar li:first-child a:hover {
+    background: scale-color(#3b5998, $lightness: -11%)
+}
+
+.social-bar li:nth-child(2) a {
+    background: #00acee
+}
+
+.social-bar li:nth-child(2) a:hover {
+    background: scale-color(#00acee, $lightness: -11%)
+}
+
+.social-bar li:nth-child(3) a {
+    background: #cc3732
+}
+
+.social-bar li:nth-child(3) a:hover {
+    background: scale-color(#cc3732, $lightness: -11%)
+}
 
 .social-bar li a span {
-  width: 100px;
-  float: left;
-  text-align: center;
-  background: #222;
-  color: #fff;
-  margin: -25px 74px;
-  padding: 0px;
-  transform-origin: 0;
-  visibility: hidden;
-  opacity: 0;
-  transform: rotateY(45deg);
-  border-radius: 5px;
-  transition: all .5s ease .300ms
+    width: 100px;
+    float: left;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    margin: -25px 74px;
+    padding: 0px;
+    transform-origin: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: rotateY(45deg);
+    border-radius: 5px;
+    transition: all .5s ease .300ms
 }
 
 /* .social li span:after {
@@ -715,6 +761,7 @@ $social-list: (
 /* Slider */
 .galerie {
 }
+
 .slick-slider {
     position: relative;
     display: block;
@@ -730,6 +777,7 @@ $social-list: (
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+
 .slick-list {
     position: relative;
     overflow: hidden;
@@ -746,6 +794,7 @@ $social-list: (
         cursor: hand;
     }
 }
+
 .slick-slider .slick-track,
 .slick-slider .slick-list {
     transform: translate3d(0, 0, 0);
@@ -771,6 +820,7 @@ $social-list: (
         visibility: hidden;
     }
 }
+
 .slick-slide {
     float: left;
     height: 130px;
@@ -810,8 +860,7 @@ $social-list: (
 @function slick-image-url($url) {
     @if function-exists(image-url) {
         @return image-url($url);
-    }
-    @else {
+    } @else {
         @return url($slick-loader-path + $url);
     }
 }
@@ -823,7 +872,6 @@ $social-list: (
         background: #fff slick-image-url("../img/ajax-loader.gif") center center no-repeat;
     }
 }
-
 
 /* Arrows */
 
@@ -952,53 +1000,57 @@ $social-list: (
         }
     }
 }
+
 .preview {
     border: 1px dotted $nikagrau;
     width: 60%;
     padding: 1.5rem;
-    }
+}
 
 //The accordion is closed
 .accordion-icon:before {
     padding-left: 1rem;
     content: "\f067";
 }
+
 //The accordion is open
 .active .accordion-icon:before {
     content: "\f068";
- }
+}
 
 // Media Queries
 
 @media #{$medium-up} {
-	#stoerer {
-    	margin-top: -45%;
-    	margin-left: 75%;
-    	height: 8rem;
-    	width: auto;
-}
+    #stoerer {
+        margin-top: -45%;
+        margin-left: 75%;
+        height: 8rem;
+        width: auto;
+    }
     .entry {
         border-right: 1px solid $nikagrau;
-        height: 20rem;
-}
+        height: 10rem;
+        padding-bottom: 0;
+    }
 
     .nav-wrapper {
         min-width: 100%;
-        background: rgba(255,255,255,0.85);
+        background: rgba(255, 255, 255, 0.85);
         position: absolute;
-}
-    .impressum  {
+    }
+    .impressum {
         padding-top: 10rem;
         h2 {
-        font-size: 1.5rem;
-        text-align: left;
+            font-size: 1.5rem;
+            text-align: left;
         }
         h1 {
             margin-bottom: 2rem;
         }
     }
-};
+}
 
+;
 
 @media #{$large-up} {
     #stoerer {
@@ -1010,13 +1062,14 @@ $social-list: (
 }
 
 @media #{$xlarge-up} {
-	#stoerer {
-    	margin-top: -65%;
-    	margin-left: 90%;
-    	height: 10rem;
-    	width: auto;
+    #stoerer {
+        margin-top: -65%;
+        margin-left: 90%;
+        height: 10rem;
+        width: auto;
     }
 }
+
 /**
  * Featherlight – ultra slim jQuery lightbox
  * Version 1.3.2 - http://noelboss.github.io/featherlight/
@@ -1029,8 +1082,11 @@ $social-list: (
         display: none;
 
         /* dimensions: spanning the background from edge to edge */
-        position:fixed;
-        top: 0; right: 0; bottom: 0; left: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         z-index: 2147483647; /* z-index needs to be >= elements on the site. */
 
         /* position: centering content */
@@ -1075,7 +1131,7 @@ $social-list: (
         border-bottom: 25px solid transparent;
 
         /* dimensions: handling small or empty content */
-        min-width:  30%;
+        min-width: 30%;
 
         /* dimensions: handling large content */
         margin-left: 5%;
@@ -1116,12 +1172,10 @@ $social-list: (
         color: #000;
     }
 
-
     .featherlight .featherlight-image {
         /* styling */
         width: 100%;
     }
-
 
     .featherlight-iframe .featherlight-content {
         /* removed the border for image croping since iframe is edge to edge */
@@ -1149,32 +1203,77 @@ $social-list: (
 }
 
 // Multipage css
-.multipage_nav { border-top:1px solid #CCC; padding-top:10px;}
-.multipage_nav a { font-weight: bold; display:block; padding: 10px 20px; color: #FFF; text-shadow: #333 1px 1px 5px; text-decoration:none; -moz-box-shadow: 0px 0px 5px #333; -webkit-box-shadow: 0px 0px 5px #333; }
-.multipage_nav .multipage_next { @extend .button;}
+.multipage_nav {
+    border-top: 1px solid #CCC;
+    padding-top: 10px;
+}
+
+.multipage_nav a {
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+    color: #FFF;
+    text-shadow: #333 1px 1px 5px;
+    text-decoration: none;
+    -moz-box-shadow: 0px 0px 5px #333;
+    -webkit-box-shadow: 0px 0px 5px #333;
+}
+
+.multipage_nav .multipage_next {
+    @extend .button;
+}
 
 .multipage_nav .multipage_back {
-@extend .button;}
+    @extend .button;
+}
 
 .multipage_nav .submit {
 
-@extend .button
+    @extend .button
 }
 
-.multipage_nav .multipage_state { display: block; text-align:center; width:100px; margin-left:auto;margin-right:auto; font-size:18px;}
-.multipage fieldset { @extend .panel }
+.multipage_nav .multipage_state {
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
 
-div.clearer{
+.multipage fieldset {
+    @extend .panel
+}
+
+div.clearer {
     display: block;
     visibility: hidden;
     clear: both;
-    height:0;
-    border-width:0;
-    margin:0;
-    padding:0;
+    height: 0;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
 }
 
-ul.multipage_tabs { list-style-type: none; margin:0px; padding:0px; border-bottom:1px solid #CCC; margin-bottom:20px;}
-ul.multipage_tabs li { display:block; float: left; margin-right:20px;}
-ul.multipage_tabs li a { display:block; padding:10px; }
-ul.multipage_tabs li.active { background: #CCC; }
+ul.multipage_tabs {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+
+ul.multipage_tabs li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+ul.multipage_tabs li a {
+    display: block;
+    padding: 10px;
+}
+
+ul.multipage_tabs li.active {
+    background: #CCC;
+}
