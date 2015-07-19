@@ -1,5 +1,4 @@
 @import "settings";
-
 // @import "foundation";
 // Or selectively include components
 @import
@@ -38,7 +37,6 @@
 "themes/trackfellas/bower_components/foundation/scss/foundation/components/type";
 // "themes/trackfellas/bower_components/foundation/scss/foundation/components/offcanvas",
 // "themes/trackfellas/bower_components/foundation/scss/foundation/components/visibility";
-
 @import "themes/trackfellas/bower_components/fontawesome/scss/font-awesome.scss";
-
+@import "googleform";
 @import "trackfellas";
