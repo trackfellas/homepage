@@ -644,6 +644,7 @@ $social-list: (
     position: fixed;
     text-align: center;
     width: 75%;
+    height: auto;
     left: 50%;
     margin: 0 0 0 -37.5%;
 
@@ -661,7 +662,7 @@ $social-list: (
     height: 40px;
     width: 40px;
     background: #222;
-    font: normal normal normal 1.3rem/1.7rem 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font: normal normal normal 1.3rem/1.7rem $font-awesome, $font-family-para, Helvetica, Arial, sans-serif;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     padding: 5px;
@@ -679,6 +680,7 @@ $social-list: (
         margin: 0;
         left: 0;
         width: 60px;
+        max-height: 200px;
         position: fixed;
         top: 150px;
     }
@@ -1206,4 +1208,19 @@ $social-list: (
     height: 0;
     padding: 0;
     margin: 0;
+}
+.label-form-headline {
+    @extend h3;
+    color: $nikagrau;
+    font-size: 1.2rem;
+    padding-bottom: 1.5rem;
+ }
+
+.feedback_last-list {
+    column-count:2;
+    margin: .5em 0 0 0;
+    padding: 0;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }

@@ -59,18 +59,6 @@ $confirmationBannerBackground: #ffff87;
 $errorBoxBadBorderColor: #ffe6cc;
 
 $listChoiceItem: block;
-
-* html .goog-inline-block, *:first-child+html .goog-inline-block {
-  display: inline
-}
-body {
-  color: $baseColor;
-  font: $bodyFontStyle $bodyFontVariant $bodyFontWeight $bodyFontSize $bodyFontFamily;
-  margin: 0;
-  line-height: $bodyLineHeight;
-  padding: 0 1em;
-  background-color: white;
-}
 input, textarea {
   outline: none;
 }
@@ -411,7 +399,7 @@ td.ss-rightlabel {
 }
 .ss-q-long {
   resize: vertical;
-  width: 70%;
+    padding: 1rem;
 }
 .ss-choices {
   list-style: none;
