@@ -46,7 +46,7 @@
             <strong>Required travel skills: </strong>{{ page.routedata.keyFacts.skills }}<br>
             <strong>Trip possible for: </strong>{{ page.routedata.keyFacts.travelType }}<br>
             <strong>Total cost on-site: </strong>{{ page.routedata.keyFacts.cost }}<br>
-            <strong>Accommodation category: </strong>{{ page.routedata.keyFacts.categoryAccomodation }}<br>
+            <strong>Accommodation category: </strong>{{ page.routedata.keyFacts.categoryAccommodation }}<br>
             <strong>Total distance: </strong>{{ page.routedata.keyFacts.distance }}<br>
             <strong>Main transportation: </strong>{{ page.routedata.keyFacts.transportationMain }}</p>
     </div>
@@ -57,39 +57,76 @@
 
         <div class="galerie">
             <div>
-                <a href="{{ url_for('img/cuba/1_havana.jpg') }}" data-featherlight="image">
-                    {{ image_tag( 'img/cuba/thumbnails/1_havana.jpg', {alt: 'Havana Cuba'}) }}
+                <a href="{{ url_for('img/cuba/havana_vieja_capitol.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_capitol.jpg', {alt: 'Capitol Havana'}) }}
                 </a>
+                <caption>El Capitolio in Havana</caption>
             </div>
             <div>
-                <a href="{{ url_for('img/cuba/2_cienfuegos.jpg') }}" data-featherlight="image">
-                    {{ image_tag( 'img/cuba/thumbnails/2_cienfuegos.jpg', {alt: 'Cienfuegos Cuba'}) }}
+                <a href="{{ url_for('img/cuba/havana_vieja_cars.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_cars.jpg', {alt: 'Old Cars Havana'}) }}
                 </a>
+                <caption>One of the attractions in Cuba are the old american cars from the 50s & 60s</caption>
             </div>
             <div>
-                <a href="{{ url_for('img/cuba/3_viaje.jpg') }}" data-featherlight="image">
-                    {{ image_tag( 'img/cuba/thumbnails/3_viaje.jpg', {alt: 'Viaje'}) }}
+                <a href="{{ url_for('img/cuba/havana_viaja.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_viaja.jpg', {alt: 'Carriage in Havana'}) }}
                 </a>
+                <caption>Horse carriage are also still part of the Cubas cityscape</caption>
             </div>
             <div>
-                <a href="{{ url_for('img/cuba/4_camaguey.jpg') }}" data-featherlight="image">
-                    {{ image_tag( 'img/cuba/thumbnails/4_camaguey.jpg', {alt: 'Camaguey Cuba'}) }}
+                <a href="{{ url_for('img/cuba/havana_vieja_streets.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_streets.jpg', {alt: 'Old Car in front of house facade'}) }}
                 </a>
+                <caption>The old colonial house facade have a special charm too</caption>
             </div>
             <div>
-                <a href="{{ url_for('img/cuba/5_bayamo.jpg') }}" data-featherlight="image">
-                    {{ image_tag( 'img/cuba/thumbnails/5_bayamo.jpg', {alt: 'Bayamo'}) }}
+                <a href="{{ url_for('img/cuba/havana_touristic_street.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_touristic_street.jpg', {alt: 'Touristic street'}) }}
                 </a>
+                <caption>Renovated houses in the touristic city center</caption>
             </div>
             <div>
-                <a href="{{ url_for('img/cuba/6_santiago.jpg') }}" data-featherlight="image">
-                    {{ image_tag( 'img/cuba/thumbnails/6_santiago.jpg', {alt: 'Santiago de Cuba'}) }}
+                <a href="{{ url_for('img/cuba/havana_vieja_plaza.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_plaza.jpg', {alt: 'havana vieja plaza'}) }}
                 </a>
+                <caption>Plaza in havana vieja center</caption>
             </div>
             <div>
-                <a href="{{ url_for('img/cuba/7_santa_maria.jpg') }}" data-featherlight="image">
-                    {{ image_tag( 'img/cuba/thumbnails/7_santa_maria.jpg', {alt: 'Santa Maria Cuba'}) }}
+                <a href="{{ url_for('img/cuba/havana_che.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_che.jpg', {alt: 'havana plaza che'}) }}
                 </a>
+                <caption>Che Guevara can't be missed in Cuba</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/havana_vieja_hostal.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_hostal.jpg', {alt: 'Hostel sea view'}) }}
+                </a>
+                <caption>Sea view from the Hostal</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/havana_morro_castle.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_morro_castle.jpg', {alt: 'Morro Castle'}) }}
+                </a>
+                <caption>Cannons pointing from the Morro castle to Havana vieja</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/santa_maria.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_santa_maria.jpg', {alt: 'Beach santa Maria'}) }}
+                </a>
+                <caption>Chilled Beach east of Havana</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/havana_transport.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_transport.jpg', {alt: 'Transportation Cuba'}) }}
+                </a>
+                <caption>Choose your favorite transportation vehicle: bicycle ricksha, Taxi or Tuk Tuk</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cubabayamo_casa_de_la_nacionalidad_de_cuba.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_bayamo_casa_de_la_nacionalidad_de_cuba.jpg', {alt: 'Viaje'}) }}
+                </a>
+                <caption> Casa de la Nacionalidad in Bayamo</caption>
             </div>
         </div>
     </div>
@@ -112,7 +149,7 @@
                         <strong>Visa: </strong>{{ page.routedata.details.destinationOverview.visa }}<br>
                         <strong>Currency
                             conversion: </strong>{{ page.routedata.details.destinationOverview.conversionCurrency }}<br>
-                        <strong>Accomodation: </strong>{{ page.routedata.details.destinationOverview.accomodation }}
+                        <strong>Accommodation: </strong>{{ page.routedata.details.destinationOverview.accommodation }}
                         <br><strong>Health Care: </strong>{{ page.routedata.details.destinationOverview.healthcare }}
                         <br>
                         <strong>Travel Warning: </strong>{{ page.routedata.details.destinationOverview.travelWarning }}
@@ -136,6 +173,48 @@
                         <strong>Comment:</strong> Is a MUST see. It&#39;s beautiful and I would say the most important
                         city BUT it is the dirtiest city I have seen in Cuba and also the smelliest. </p>
                     <br>
+                    <ul class="small-block-grid-2 medium-block-grid-4">
+                        <li><a href="{{ url_for('img/cuba/havana_vieja_capitol.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_capitol.jpg', {alt: 'Capitol Havana'}) }}
+                            </a></li>
+                        <li><a href="{{ url_for('img/cuba/havana_vieja_cars.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_cars.jpg', {alt: 'Old Cars Havana'}) }}
+                            </a></li>
+                        <li><a href="{{ url_for('img/cuba/havana_viaja.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/thumb_havana_viaja.jpg', {alt: 'Carriage in Havana'}) }}
+                            </a></li>
+                        <li><a href="{{ url_for('img/cuba/havana_vieja_streets.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_streets.jpg', {alt: 'Old Car in front of house facade'}) }}
+                            </a></li>
+                        <li><a href="{{ url_for('img/cuba/havana_touristic_street.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/thumb_havana_touristic_street.jpg', {alt: 'Touristic street'}) }}
+                            </a></li>
+                        <li><a href="{{ url_for('img/cuba/havana_vieja_plaza.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_plaza.jpg', {alt: 'havana vieja plaza'}) }}
+                            </a></li>
+                        <li><a href="{{ url_for('img/cuba/havana_che.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/thumb_havana_che.jpg', {alt: 'havana plaza che'}) }}
+                            </a></li>
+                    </ul>
+                    <br>
+
+                    <p><strong>Accommodation:</strong> <em>Walkiria's House</em>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <strong>Type:</strong> Holiday Apartment
+                        <br>
+                        <strong>Room:</strong> Middle-class (BnB/AC/TV/Private Bath)
+                        <br>
+                        <strong>Cost:</strong> 25 CUC // 23 €
+                        <br>
+                        <strong>Comment:</strong> The apartment is nice for cuban standards. The house is very safe with
+                        a security guy at the basement day and night. You'll have a beautiful view from the sleeping
+                        room over old havana and the sea including the sunset. Lot's of things are in walking distance
+                        and you are just 3 minutes away from the Malecon.
+                    <br>
 
                     <p><strong><i class="fa fa-trophy"></i> Food:</strong> <em>La Torre</em>
                         <i class="fa fa-star"></i>
@@ -149,7 +228,10 @@
                         <strong>Comment:</strong> Nice 360° view over Havana; Good food and reasonable price for
                         tourists.</p>
                     <br>
-
+                    <a href="{{ url_for('img/cuba/havana_morro_castle.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_morro_castle.jpg', {alt: 'Morro Castle'}) }}
+                    </a>
+                    <br>
                     <p><strong>Entertainment:</strong> <em>Casa de la Musica</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -190,6 +272,10 @@
                         <strong>Transportation:</strong> Public Transportation
                         <br>
                         <strong>Comment:</strong> Nice beach 20 minutes away from the center of Havana</p>
+                    <br>
+                    <a href="{{ url_for('img/cuba/santa_maria.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santa_maria.jpg', {alt: 'Beach santa Maria'}) }}
+                    </a>
                 </div>
             </li>
             <li class="accordion-navigation">
@@ -218,6 +304,10 @@
                         <br>
                         <strong>Tip:</strong> Ask for a taxi ride at the bus station. It is cheaper than going by bus.
                     </p>
+                    <br>
+                    <a href="{{ url_for('img/cuba/havana_transport.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_transport.jpg', {alt: 'Transportation Cuba'}) }}
+                    </a>
                 </div>
             </li>
             <li class="accordion-navigation">
@@ -414,7 +504,8 @@
                         things to do, very good and super cheap restaurants </p>
                     <br>
 
-                    <p><strong>Accommodation:</strong> <i class="fa fa-star"></i>
+                    <p><strong>Accommodation:</strong> <em>Puchy Arrendador</em
+                            ><i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -495,7 +586,9 @@
                         <strong>Tip:</strong> You can find yoghurt and cheese here AND Bayamo is very close to a nice
                         beach. If you find time you could stay 1 night in Bayamo and 1 or 2 nights in Manzanillo.</p>
                     <br>
-
+                    <a href="{{ url_for('img/cuba/bayamo_casa_de_la_nacionalidad_de_cuba.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_bayamo_casa_de_la_nacionalidad_de_cuba.jpg', {alt: 'Viaje'}) }}
+                        <br>
                     <p><strong>Accommodation:</strong> <em>Arturo &amp; Esmeralda Hostal</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -585,7 +678,9 @@
                         every few days, which takes about 16 hours overnight and might be a nice alternative to travel
                         with locals. Prices between 63 CUC and 30 CUC are reasonable, but you will have to buy the
                         tickets up to 5 days in advance from the station your are leaving from. Bring your passport. For
-                        more infos check out: {{ link_to('http://www.seat61.com/Cuba.htm#How%20to%20book', 'Seat61: How to book', {external: true}) }}</p>
+                        more infos check
+                        out: {{ link_to('http://www.seat61.com/Cuba.htm#How%20to%20book', 'Seat61: How to book', {external: true}) }}
+                    </p>
                     <br>
 
                     <p><strong>Accommodation:</strong> <em>Casa Margarita</em>
@@ -604,7 +699,8 @@
                         colonial house, the room is beautiful but without a window.</p>
                     <br>
 
-                    <p><strong>Sightseeing:</strong> <em> {{ link_to('http://www.santiagodecubacity.org/en/architecture/santa-ifigenia-cemetary.html', 'Santa Ifigenia Cemetery') }}</em>
+                    <p><strong>Sightseeing:</strong>
+                        <em> {{ link_to('http://www.santiagodecubacity.org/en/architecture/santa-ifigenia-cemetary.html', 'Santa Ifigenia Cemetery') }}</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -617,9 +713,15 @@
                         <br>
                         <strong>Price:</strong> Free
                         <br>
-                        <strong>Comment:</strong> If you have time you should visit the cemetery. It's in the northwest of Santiago de Cuba. Take a nice walk down to the harbour and catch a bicycle-taxi. You will pass the train station and the old "Bacardi-factory". One of the most visited places in the churchyard is the big Mausoleum that keeps the ashes of one of the most important National Heros "José Martí".</p>
+                        <strong>Comment:</strong> If you have time you should visit the cemetery. It's in the northwest
+                        of Santiago de Cuba. Take a nice walk down to the harbour and catch a bicycle-taxi. You will
+                        pass the train station and the old "Bacardi-factory". One of the most visited places in the
+                        churchyard is the big Mausoleum that keeps the ashes of one of the most important National Heros
+                        "José Martí".</p>
                     <br>
-                    <p><strong>Sightseeing:</strong> <em> {{ link_to('http://www.santiagodecubacity.org/en/architecture/antonio-maceo-square.html', 'Antonio Maceo Revolution Square') }}</em>
+
+                    <p><strong>Sightseeing:</strong>
+                        <em> {{ link_to('http://www.santiagodecubacity.org/en/architecture/antonio-maceo-square.html', 'Antonio Maceo Revolution Square') }}</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -630,9 +732,12 @@
                         <br>
                         <strong>Transportation:</strong> By foot
                         <br>
-                        <strong>Comment:</strong> This square is very close to the Viazul bus station and here you can find the highest statue in the whole country in honor of the hero Antonio Maceo Grajale</p>
+                        <strong>Comment:</strong> This square is very close to the Viazul bus station and here you can
+                        find the highest statue in the whole country in honor of the hero Antonio Maceo Grajale</p>
                     <br>
-                    <p><strong>Sightseeing:</strong> <em> {{ link_to('http://www.santiagodecubacity.org/en/architecture/cathedral-asuncion.html', 'Cathedral Asunción') }}</em>
+
+                    <p><strong>Sightseeing:</strong>
+                        <em> {{ link_to('http://www.santiagodecubacity.org/en/architecture/cathedral-asuncion.html', 'Cathedral Asunción') }}</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -643,8 +748,10 @@
                         <br>
                         <strong>Transportation:</strong> By foot
                         <br>
-                        <strong>Comment:</strong> The Square around the cathedral is very famous and beautiful. Here you can find a little park, the town hall and the oldest house from Cuba (build in 1516).</p>
+                        <strong>Comment:</strong> The Square around the cathedral is very famous and beautiful. Here you
+                        can find a little park, the town hall and the oldest house from Cuba (build in 1516).</p>
                     <br>
+
                     <p><strong>Sightseeing:</strong>
                         <em>{{ link_to( '//www.ecured.cu/index.php/Cuartel_Moncada', 'Cuartel Moncada', {external: true}) }}</em>
                         <i class="fa fa-star"></i>
@@ -709,7 +816,8 @@
                         money). There is really not that much to do or see. I visited the family of my friend.
                         I stayed in a casa particulares for locals, but you will find nice Bed&Breakfast in the center.
                         <br>
-                        <strong>Tip:</strong> Better head east to isolated Baracoa with its rich nature, beaches and the National Park Alejandro de Humboldt.</p>
+                        <strong>Tip:</strong> Better head east to isolated Baracoa with its rich nature, beaches and the
+                        National Park Alejandro de Humboldt.</p>
                     <br>
                 </div>
             </li>
@@ -827,14 +935,18 @@
     </div>
 </section>
 <section>
-    <div class="normal-content-route text-center">
+    <div class="normal-content-route">
         <h2>Feedback</h2>
 
-        <p>We hope we gave you some inspiration and tips for travelling on your own in Cuba. Please leave <a
+        <p class="text-center">We hope we gave you some inspiration and tips for travelling on your own in Cuba. Please
+            leave <a
                 href="//docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/viewform">your feedback
                 here!</a></p>
+    </div>
+    <div class="normal-content-route">
         {{ partial( '_partial/feedback') }}
-
+    </div>
+    <div class="normal-content-route text-center">
         <p>Keep in touch for more travel stories and routes worldwide and sign up for our <a
                 href="http://trackfellas.com/#signup">Beta program</a> to experience the ultimate way of traveling
             as a Trackfella.</p>
@@ -844,13 +956,3 @@
         <p><strong>Nika from Trackfellas</strong></p>
     </div>
 </section>
-<div id="feedback" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-    <h2 id="modalTitle">Feedback</h2>
-
-    <p class="lead">Thanks for checking out our route.</p>
-
-    <p>We are really happy that you check out our page and would like to get your opinion. So please check out our
-        feedback form and answer a few questions. It'll only take a minute. You also find the feedback form at the
-        bottom of the page.</p>
-    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-</div>
