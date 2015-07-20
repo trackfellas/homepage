@@ -157,6 +157,15 @@
                 </div>
             </li>
             <li class="accordion-navigation">
+                <a href="#panel1c"><h3>Highlights and No-go's</h3></a>
+                <div id="panel1c" class="content">
+                   <ul class="small-block-grid-1 medium-block-grid-2">
+                       <li><h4>Highlights <i class="fa fa-trophy"></i></h4></li>
+                       <li><h4>Nogo's <i class="fa-exclamation-triangle"></i></h4></li>
+                   </ul>
+                </div>
+            </li>
+            <li class="accordion-navigation">
                 <a href="#panel1a"><h3>Havana
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
