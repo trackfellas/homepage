@@ -92,6 +92,18 @@ ul.accordion {
     @include content-sec-route;
 }
 
+.normal-content-route-last {
+    @include grid-column(
+    $columns: 8,
+    $last-column: true,
+    $center: true,
+    $offset: 2,
+    $collapse: false,
+    $float: right
+    );
+    margin-bottom: 1.5rem;
+    max-height: 5rem;
+}
 .small-content {
     @include grid-column(
     $columns: 6,
@@ -154,7 +166,7 @@ iframe {
 footer {
     background: $nikabraun;
     color: white;
-    padding: 2rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
     a {
         color: white;
     }
@@ -240,8 +252,8 @@ strong {
 .routepic {
     margin: 1rem auto;
     width: 11rem;
-    border-radius: 80%;
-    border: 3px solid white;
+    /*    border-radius: 80%;
+        border: 3px solid white;*/
 }
 
 .social-team {
@@ -291,7 +303,17 @@ strong {
     display: block;
     padding: 1rem;
 }
-
+.accordion .accordion-overview > a:hover {
+    background: scale-color($braun, $lightness: -5%);
+}
+.accordion .accordion-overview > a:after {
+    background: $braun;
+}
+.accordion-overview  {
+    @include accordion-navigation;
+    $accordion-navigation-hover-bg-color: scale-color($nikabraun, $lightness: -5%);
+    $accordion-navigation-active-bg-color: scale-color($braun, $lightness: -3%);
+}
 .impressum {
     padding-top: 0rem;
     h2 {
@@ -644,6 +666,7 @@ $social-list: (
     position: fixed;
     text-align: center;
     width: 75%;
+    height: auto;
     left: 50%;
     margin: 0 0 0 -37.5%;
 
@@ -661,7 +684,7 @@ $social-list: (
     height: 40px;
     width: 40px;
     background: #222;
-    font: normal normal normal 1.3rem/1.7rem 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font: normal normal normal 1.3rem/1.7rem $font-awesome, $font-family-para, Helvetica, Arial, sans-serif;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     padding: 5px;
@@ -679,6 +702,7 @@ $social-list: (
         margin: 0;
         left: 0;
         width: 60px;
+        max-height: 200px;
         position: fixed;
         top: 150px;
     }
@@ -1127,8 +1151,8 @@ $social-list: (
 
         /* dimensions: cut off images */
         overflow: auto;
-        padding: 25px 25px 0;
-        border-bottom: 25px solid transparent;
+        padding: 5px 5px 0;
+        border-bottom: 5px solid transparent;
 
         /* dimensions: handling small or empty content */
         min-width: 30%;
@@ -1202,78 +1226,157 @@ $social-list: (
     }
 }
 
-// Multipage css
-.multipage_nav {
-    border-top: 1px solid #CCC;
-    padding-top: 10px;
+/**
+ * Featherlight Gallery – an extension for the ultra slim jQuery lightbox
+ * Version 1.3.2 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2015, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+@media all {
+    .featherlight-next,
+    .featherlight-previous {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        bottom: 0;
+        left: 80%;
+        cursor: pointer;
+        /* preventing text selection */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        /* IE9 hack, otherwise navigation doesn't appear */
+        background: rgba(0,0,0,0);
+    }
+
+    .featherlight-previous {
+        left: 25px;
+        right: 80%;
+    }
+
+    .featherlight-next:hover,
+    .featherlight-previous:hover {
+        background: rgba(255,255,255,0.25);
+    }
+
+
+    .featherlight-next span,
+    .featherlight-previous span {
+        display: none;
+        position: absolute;
+
+        top: 50%;
+        left: 5%;
+        width: 82%;
+
+        /* center horizontally */
+        text-align: center;
+
+        font-size: 80px;
+        line-height: 80px;
+
+        /* center vertically */
+        margin-top: -40px;
+
+        text-shadow: 0px 0px 5px #fff;
+        color: #fff;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .featherlight-next span {
+        right: 5%;
+        left: auto;
+    }
+
+
+    .featherlight-next:hover span,
+    .featherlight-previous:hover span {
+        display: inline-block;
+    }
+
+    /* Hide navigation while loading */
+    .featherlight-loading .featherlight-previous, .featherlight-loading .featherlight-next {
+        display:none;
+    }
 }
 
-.multipage_nav a {
-    font-weight: bold;
-    display: block;
-    padding: 10px 20px;
-    color: #FFF;
-    text-shadow: #333 1px 1px 5px;
-    text-decoration: none;
-    -moz-box-shadow: 0px 0px 5px #333;
-    -webkit-box-shadow: 0px 0px 5px #333;
+/* Always display arrows on touch devices */
+@media only screen and (max-device-width: 1024px){
+    .featherlight-next:hover,
+    .featherlight-previous:hover {
+        background: none;
+    }
+    .featherlight-next span,
+    .featherlight-previous span {
+        display: block;
+    }
 }
 
-.multipage_nav .multipage_next {
-    @extend .button;
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+    .featherlight-next,
+    .featherlight-previous {
+        top: 10px;
+        right: 10px;
+        left: 85%;
+    }
+
+    .featherlight-previous {
+        left: 10px;
+        right: 85%;
+    }
+
+    .featherlight-next span,
+    .featherlight-previous span {
+        margin-top: -30px;
+        font-size: 40px;
+    }
 }
 
-.multipage_nav .multipage_back {
-    @extend .button;
-}
-
-.multipage_nav .submit {
-
-    @extend .button
-}
-
-.multipage_nav .multipage_state {
-    display: block;
-    text-align: center;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-}
-
-.multipage fieldset {
-    @extend .panel
-}
-
-div.clearer {
-    display: block;
+.hide-form {
     visibility: hidden;
-    clear: both;
     height: 0;
-    border-width: 0;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
+.label-form-headline {
+    @extend h3;
+    color: $nikagrau;
+    font-size: 1.2rem;
+    padding-bottom: 1.5rem;
+ }
 
-ul.multipage_tabs {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    border-bottom: 1px solid #CCC;
-    margin-bottom: 20px;
+.feedback_last-list {
+    column-count:2;
+    margin: .5em 0 0 0;
+    padding: 0;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
-
-ul.multipage_tabs li {
-    display: block;
-    float: left;
-    margin-right: 20px;
+.accordion-navigation .content h4 {
+    color: $nikagrau;
 }
-
-ul.multipage_tabs li a {
-    display: block;
-    padding: 10px;
+.fa-arrow-down {
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
-
-ul.multipage_tabs li.active {
-    background: #CCC;
+#disqus_thread {
+    @include grid-column(
+    $columns: 10,
+    $last-column: true,
+    $center: true,
+    $offset: 1,
+    $collapse: false,
+    $float: right
+    );
+    margin-bottom: 1.8rem;
+}
+.descriptionpic {
+    margin: 1.5rem .5rem;
 }

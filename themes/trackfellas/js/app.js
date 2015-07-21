@@ -52,14 +52,8 @@ $(document).ready(function () {
         });
     }
     ;
-    /*    if ($("#feedback-form").length > 0) {
-     $("#ss-form").multipage();
 
-     };
-     setTimeout(function() {
-     $("#feedback").foundation('reveal', 'open');
-     }, 1000);
-     */
+
 });
 
 $(document).foundation({
@@ -86,5 +80,28 @@ $(document).foundation({
 });
 if ($("#about").length > 0) {
     $("a").smoothScroll();
-
 }
+$('#page_two_btn').click(function() {
+    $('#page_one').addClass('hide-form');
+    $('#page_two').removeClass('hide-form');
+});
+$('#page_three_btn').click(function() {
+    $('#page_two').addClass('hide-form');
+    $('#page_three').removeClass('hide-form');
+});
+$('#page_four_btn').click(function() {
+    $('#page_three').addClass('hide-form');
+    $('#page_four').removeClass('hide-form');
+});
+$('#page_twoback_btn').click(function() {
+    $('#page_three').addClass('hide-form');
+    $('#page_two').removeClass('hide-form');
+});
+$('#page_oneback_btn').click(function() {
+    $('#page_two').addClass('hide-form');
+    $('#page_one').removeClass('hide-form');
+});
+$('#page_threeback_btn').click(function() {
+    $('#page_four').addClass('hide-form');
+    $('#page_three').removeClass('hide-form');
+});
