@@ -154,7 +154,7 @@ iframe {
 footer {
     background: $nikabraun;
     color: white;
-    padding: 2rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
     a {
         color: white;
     }
@@ -1223,4 +1223,11 @@ $social-list: (
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
+}
+.accordion-navigation .content h4 {
+    color: $nikagrau;
+}
+.fa-arrow-down {
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
