@@ -31,16 +31,16 @@ routedata:
   keyFacts:
     type: Individual Trip
     date: 03.04.2015 - 21.04.2015
-    duration: 18
+    duration: 18 days
     weather: '20 - 30°C, dry and sunny weather'
     activities: Nightlife, Eating, Relaxing, Sightseeing, Culture
     terrain: Island, Beach, Nature, Mountains, Urban
     safety: 'Cuba is quite a safe country for travelers, however keep an eye on our belongings'
-    noTravelers: 2 (Friends)
+    notravelers: 2 (Friends)
     skills: Easy
     travelType: family; single woman; older traveler
     cost: 750 € (Traveling with another person helps to save money as you can share transportation and accomodation)
-    categoryAccomodation: Middle-class (AC, TV, private bath)
+    categoryAccommodation: Middle-class (AC, TV, private bath)
     distance: 2000 km
     transportationMain: Taxi (1300 km), bus (700 km)
   # Trip details
