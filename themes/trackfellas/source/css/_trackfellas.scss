@@ -291,7 +291,17 @@ strong {
     display: block;
     padding: 1rem;
 }
-
+.accordion .accordion-overview > a:hover {
+    background: scale-color($braun, $lightness: -5%);
+}
+.accordion .accordion-overview > a:after {
+    background: $braun;
+}
+.accordion-overview  {
+    @include accordion-navigation;
+    $accordion-navigation-hover-bg-color: scale-color($nikabraun, $lightness: -5%);
+    $accordion-navigation-active-bg-color: scale-color($braun, $lightness: -3%);
+}
 .impressum {
     padding-top: 0rem;
     h2 {
