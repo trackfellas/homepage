@@ -8,6 +8,8 @@
                     <label for="entry_848149128">
                         <span class="label-form-headline">Question 1: How did you find us or this trip?</span>
                     </label>
+                    <small class="error">Please fill out this field.</small>
+
                     <input type="text" name="entry.848149128" value="" id="entry_848149128"
                            dir="auto" aria-label="How did you found us or this trip?" title="">
                 </div>
@@ -16,6 +18,7 @@
                         <span class="label-form-headline">Question 2: How helpful was the information about this travel route?</span>
                         Choose from 1 (not at all) - 5 (absolutely)
                     </label>
+                    <small class="error">Please check one box..</small>
                     <ul class="ss-choices"
                         aria-label="How helpful was the information about this travel route? Choose from 1 (not at all) - 5 (absolutely) ">
                         <li>
@@ -108,9 +111,10 @@
                 </div>
                 <div class="medium-6 columns">
                     <label for="entry_715740726">
-                        <span class="label-form-headline">Question 3:How much would you pay for this information?</span>
+                        <span
+                            class="label-form-headline">Question 4: How much would you pay for this information?</span>
                     </label>
-                    <ul class="ss-choices" role="radiogroup"
+                    <ul class="ss-choices"
                         aria-label="How much would you pay for this information Choose between 1 (nothing) - 5 (&gt;5€) ">
                         <li>
                             <label><input type="radio" name="entry.521179728" value="1 (nothing)"
@@ -159,7 +163,7 @@
             <div class="row">
                 <div class="medium-5 columns">
                     <label for="entry_1000860881">
-                            <span class="label-form-headline">Would you like to publish your own travel routes and sell this
+                            <span class="label-form-headline">Question 5: Would you like to publish your own travel routes and sell this
                                 information?</span>
                     </label>
                     <ul class="feedback_last-list"
@@ -204,10 +208,10 @@
                 </div>
                 <div class="medium-7 columns">
                     <label for="entry_1633164414">
-                            <span class="label-form-headline">What part is most valuable for you or would you like to have more
+                            <span class="label-form-headline">Question 6: What part is most valuable for you or would you like to have more
                                 detailed?</span>
                     </label>
-                    <ul class="feedback_last-list">
+                    <ul class="feedback_last-list"
                         aria-label="What part is most valuable for you or would you like to have more detailed? Multiple
                         answer possible ">
                         <li>

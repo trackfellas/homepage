@@ -120,13 +120,139 @@
                 <a href="{{ url_for('img/cuba/havana_transport.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_transport.jpg', {alt: 'Transportation Cuba'}) }}
                 </a>
-                <caption>Choose your favorite transportation vehicle: bicycle ricksha, Taxi or Tuk Tuk</caption>
+                <caption>Choose your favorite transportation vehicle: bicycle rickshaw, Taxi or Tuk Tuk</caption>
             </div>
             <div>
                 <a href="{{ url_for('img/cubabayamo_casa_de_la_nacionalidad_de_cuba.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_bayamo_casa_de_la_nacionalidad_de_cuba.jpg', {alt: 'Viaje'}) }}
                 </a>
                 <caption> Casa de la Nacionalidad in Bayamo</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/cienfuegos_car.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_car.jpg', {alt: 'Taxi cienfuegos'}) }}
+                </a>
+                <caption>Taxi in Unesco's World Heritage Cienfuegos</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/cienfuegos_malecon.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_malecon.jpg', {alt: 'House Malecon'}) }}
+                </a>
+                <caption>Nice architecture along the malecon in the bay of Jagua</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/cienfuegos_restaurant.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_restaurant.jpg', {alt: 'Restaurant Bahia'}) }}
+                </a>
+                <caption>Great restaurant and funny staff</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/trinidad_car.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_car.jpg', {alt: 'Blue car in Trinidad'}) }}
+                </a>
+                <caption>Classic cars...</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/trinidad_hombres.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_hombres.jpg', {alt: 'Hombres in Trinidad'}) }}
+                </a>
+                <caption>... and classic hombres in magnificent Trinidad</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/trinidad_hostal_view.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_hostal_view.jpg', {alt: 'View from rooftop terrace Anita y Pirolo'}) }}
+                </a>
+                <caption>... and stunning view over the surrounding landscape</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/trinidad_24h_restaurant.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_24h_restaurant.jpg', {alt: 'Taberna La Botija in Trinidad'}) }}
+                </a>
+                <caption>Taberna with great food, open 24 hours with happy hour between 4 pm and 6 pm</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/trinidad_house_arts.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_house_arts.jpg', {alt: 'Galeria de Arte Universal Benito Ortiz'}) }}
+                </a>
+                <caption>Inside the Art Gallery Benito Ortiz right at Plaza Mayor</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/trinidad_viazul.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_viazul.jpg', {alt: 'Bus connection between Trinidad and Santiago de Cuba'}) }}
+                </a>
+                <caption>Bus connection with Viazul from Trinidad to Santiago de Cuba</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/camaguey_architecture_center.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_camaguey_architecture_center.jpg', {alt: 'Camagüey historic city centre'}) }}
+                </a>
+                <caption>Another Unesco World Heritage City Center in Camagüey with nice architecture</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/camaguey_hostal.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_camaguey_hostal.jpg', {alt: 'Camagüey hostal'}) }}
+                </a>
+                <caption>Beautiful casa particulares including kitchen</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/camaguey_restaurant_la_isabella.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_camaguey_restaurant_la_isabella.jpg', {alt: 'Camagüey restaurant la isabella'}) }}
+                </a>
+                <caption>Best pizza in town :)</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/santiago_plaza_de_la_liberdad.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_plaza_de_la_liberdad.jpg', {alt: 'Propaganda Fidel'}) }}
+                </a>
+                <caption>Propaganda is a constant companion in Cuba</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/santiago_street.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_street.jpg', {alt: 'Street Santiago de Cuba'}) }}
+                </a>
+                <caption>View from the Casa Margerita on the streets of Santiago de Cuba. Note the blue (for tourists)
+                    and red anchor (for locals) of the Casa particulares
+                </caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/santiago_moncada.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_moncada.jpg', {alt: 'Cuartel Moncada'}) }}
+                </a>
+                <caption>Here started the revolution of Cuba. The bullet holes from the attacking guerillas are still
+                    visible
+                </caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/santiago_moncada.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_santa_ifigenia_mausoluem.jpg', {alt: 'Mausoleum of Jose Marti'}) }}
+                </a>
+                <caption>The opulent mausoleum of the national hero Jose Marti is one of more then 8000 graves on the
+                    Santa Ifigenia Cemetery
+                </caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/santiago_statue_antonio_maceo_grajale.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_statue_antonio_maceo_grajale.jpg', {alt: 'Statue Antonio Maceo Grajale'}) }}
+                </a>
+                <caption>The biggest statue in whole Cuba shows another national hero Antonio Maceo Grajale</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/santiago_cathedral.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_cathedral.jpg', {alt: 'Cathedral of Santiago de Cuba'}) }}
+                </a>
+                <caption>Majestic cathedral of Santiago de Cuba</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/guantanamo_architecture.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_guantanamo_architecture.jpg', {alt: 'City Centre Guantanamo'}) }}
+                </a>
+                <caption>Typical colonial architecture in Guantanamo's city center</caption>
+            </div>
+            <div>
+                <a href="{{ url_for('img/cuba/guantanamo_restaurant.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_guantanamo_restaurant.jpg', {alt: 'Restaurant Los Ensueños'}) }}
+                </a>
+                <caption>Best restaurant in town with mojitos for just 1 CUC</caption>
             </div>
         </div>
     </div>
@@ -136,9 +262,10 @@
         <h2>Trip Details</h2>
         <ul class="accordion" data-accordion>
             <li class="accordion-overview">
-                <a href="#panel1b"><h3>Destination Overview<span class="fa accordion-icon right"></span></h3></a>
+                <a href="#destination_overview"><h3>Destination Overview<span class="fa accordion-icon right"></span>
+                    </h3></a>
 
-                <div id="panel1b" class="content active">
+                <div id="destination_overview" class="content active">
                     <p><strong>Country: </strong>{{ page.routedata.details.destinationOverview.country }}<br>
                         <strong>Location: </strong>{{ page.routedata.details.destinationOverview.location }}<br>
                         <strong>Languages: </strong>{{ page.routedata.details.destinationOverview.languages }}<br>
@@ -157,21 +284,23 @@
                 </div>
             </li>
             <li class="accordion-overview">
-                <a href="#panel1c"><h3>Highlights and Low points
+                <a href="#highlights_andlowpoints"><h3>Highlights and low points
                         <span class="fa accordion-icon right"></span></h3></a>
-                <div id="panel1c" class="content">
-                   <ul class="small-block-grid-1 medium-block-grid-2">
-                       <li><h4>Highlights <i class="fa fa-trophy"></i></h4>
-                       <ul>
-                           <li>La Torre, Restaurant, Havana</li>
-                           <li>Trinidad, Town</li>
-                       </ul></li>
-                       <li><h4>Low points <i class="fa fa-exclamation-triangle"></i></h4></li>
-                   </ul>
+
+                <div id="highlights_andlowpoints" class="content">
+                    <ul class="small-block-grid-1 medium-block-grid-2">
+                        <li><h4>Highlights <i class="fa fa-trophy"></i></h4>
+                            <ul>
+                                <li>La Torre, Restaurant, Havana</li>
+                                <li>Trinidad, Town</li>
+                            </ul>
+                        </li>
+                        <li><h4>Low points <i class="fa fa-exclamation-triangle"></i></h4></li>
+                    </ul>
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel1a"><h3>Havana
+                <a href="#havana1"><h3>Havana
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -179,18 +308,18 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel1a" class="content">
+                <div id="havana1" class="content">
+
                     <p><strong>Type:</strong> Big city, capital
                         <br>
                         <strong>Date:</strong> 03.04. - 07.04.15
                         <br>
-                        <strong>Comment:</strong> Is a MUST see. It&#39;s beautiful and I would say the most important
-                        city BUT it is the dirtiest city I have seen in Cuba and also the smelliest. </p>
+                        <strong>Comment:</strong> Is a MUST see. It&#39;s beautiful and I would say the most
+                        important
+                        city BUT it is the dirtiest city I have seen in Cuba and also the smelliest.
+                    </p>
                     <br>
                     <ul class="small-block-grid-2 medium-block-grid-4">
-                        <li><a href="{{ url_for('img/cuba/havana_vieja_capitol.jpg') }}" data-featherlight="image">
-                                {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_capitol.jpg', {alt: 'Capitol Havana'}) }}
-                            </a></li>
                         <li><a href="{{ url_for('img/cuba/havana_vieja_cars.jpg') }}" data-featherlight="image">
                                 {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_cars.jpg', {alt: 'Old Cars Havana'}) }}
                             </a></li>
@@ -209,8 +338,13 @@
                         <li><a href="{{ url_for('img/cuba/havana_che.jpg') }}" data-featherlight="image">
                                 {{ image_tag( 'img/cuba/thumbnails/thumb_havana_che.jpg', {alt: 'havana plaza che'}) }}
                             </a></li>
+                        <li>
+                            <a href="{{ url_for('img/cuba/havana_vieja_capitol.jpg') }}" data-featherlight="image">
+                                {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_capitol.jpg', {alt: 'Capitol Havana'}) }}
+                            </a>
+                        </li>
                     </ul>
-                    <br>
+
 
                     <p><strong>Accommodation:</strong> <em>Walkiria's House</em>
                         <i class="fa fa-star"></i>
@@ -225,10 +359,13 @@
                         <strong>Cost:</strong> 25 CUC // 23 €
                         <br>
                         <strong>Comment:</strong> The apartment is nice for cuban standards. The house is very safe with
-                        a security guy at the basement day and night. You'll have a beautiful view from the sleeping
-                        room over old havana and the sea including the sunset. Lot's of things are in walking distance
+                        a security guy st the front door. There is a bieatiful view from the bed
+                        room over old Havana and the sea including the sunset. Lots of things are in walking distance
                         and you are just 3 minutes away from the Malecon.
-                    <br>
+                    </p>
+                    <a href="{{ url_for('img/cuba/havana_vieja_hostal.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_hostal.jpg', {alt: 'Hostel sea view', class: 'descriptionpic'}) }}
+                    </a>
 
                     <p><strong><i class="fa fa-trophy"></i> Food:</strong> <em>La Torre</em>
                         <i class="fa fa-star"></i>
@@ -241,11 +378,12 @@
                         <br>
                         <strong>Comment:</strong> Nice 360° view over Havana; Good food and reasonable price for
                         tourists.</p>
-                    <br>
+
                     <a href="{{ url_for('img/cuba/havana_morro_castle.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_morro_castle.jpg', {alt: 'Morro Castle'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_morro_castle.jpg', {alt: 'Morro Castle', class: 'descriptionpic'}) }}
                     </a>
-                    <br>
+
+
                     <p><strong>Entertainment:</strong> <em>Casa de la Musica</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -256,8 +394,7 @@
                         <br>
                         <strong>Cost:</strong> 10 CUC-40 CUC // 9€-37€
                         <br>
-                        <strong>Comment:</strong> Live music &amp; concerts, often latin american dances</p>
-                    <br>
+                        <strong>Comment:</strong> Live music &amp; concerts, often latin american dances<br></p>
 
                     <p><strong>Sightseeing:</strong> <em>Morro Castle</em>
                         <i class="fa fa-star"></i>
@@ -286,14 +423,13 @@
                         <strong>Transportation:</strong> Public Transportation
                         <br>
                         <strong>Comment:</strong> Nice beach 20 minutes away from the center of Havana</p>
-                    <br>
                     <a href="{{ url_for('img/cuba/santa_maria.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_santa_maria.jpg', {alt: 'Beach santa Maria'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santa_maria.jpg', {alt: 'Beach santa Maria', class: 'descriptionpic'}) }}
                     </a>
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel2a"><h3>
+                <a href="#havanatocienfuegos"><h3>
                         <i class="fa fa-taxi"></i>
                         <i class="fa fa-arrow-down"></i>
                         <i class="fa fa-star"></i>
@@ -303,7 +439,7 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa onestar"></span><span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel2a" class="content">
+                <div id="havanatocienfuegos" class="content">
                     <p><strong>Type:</strong> Transportation
                         <br>
                         <strong>Transportation:</strong> Private taxi
@@ -318,14 +454,13 @@
                         <br>
                         <strong>Tip:</strong> Ask for a taxi ride at the bus station. It is cheaper than going by bus.
                     </p>
-                    <br>
                     <a href="{{ url_for('img/cuba/havana_transport.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_transport.jpg', {alt: 'Transportation Cuba'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_transport.jpg', {alt: 'Transportation Cuba', class: 'descriptionpic'}) }}
                     </a>
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel3a"><h3>Cienfuegos
+                <a href="#cienfuegos"><h3>Cienfuegos
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -333,13 +468,19 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel3a" class="content">
+                <div id="cienfuegos" class="content">
                     <p><strong>Type:</strong> Stopover
                         <br>
                         <strong>Date:</strong> 07.04.15
                         <br>
                         <strong>Comment:</strong> Great for a stopover for a few hours. Beautiful city.</p>
-                    <br>
+
+                    <a href="{{ url_for('img/cuba/cienfuegos_car.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_car.jpg', {alt: 'Taxi cienfuegos', class:'descriptionpic'}) }}
+                    </a>
+                    <a href="{{ url_for('img/cuba/cienfuegos_malecon.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_malecon.jpg', {alt: 'House Malecon', class:'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Food:</strong> <em>Restaurante Bahia</em>
                         <i class="fa fa-star"></i>
@@ -354,10 +495,13 @@
                         <br>
                         <strong>Comment:</strong>Very good quality (not very easy to find in Cuba), super tasty,
                         affordable food</p>
+                    <a href="{{ url_for('img/cuba/cienfuegos_restaurant.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_restaurant.jpg', {alt: 'Restaurant Bahia', class:'descriptionpic'}) }}
+                    </a>
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel4a"><h3>
+                <a href="#cienfuegostotrinidad"><h3>
                         <i class="fa fa-bus"></i>
                         <i class="fa fa-arrow-down"></i>
                         <i class="fa fa-star"></i>
@@ -367,7 +511,7 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel4a" class="content">
+                <div id="cienfuegostotrinidad" class="content">
                     <p><strong>Type:</strong> Transportation
                         <br>
                         <strong>Transportation:</strong> Bus
@@ -387,14 +531,14 @@
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel5a"><h3><i class="fa fa-trophy"></i> Trinidad
+                <a href="#trinidad"><h3><i class="fa fa-trophy"></i> Trinidad
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i><span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel5a" class="content">
+                <div id="trinidad" class="content">
                     <p><strong>Type:</strong> Town
                         <br>
                         <strong>Date:</strong> 07.04. - 10.4.15
@@ -406,6 +550,12 @@
                         <strong>Tip:</strong> You don&#39;t need to book in advance a Casa Particular, there are many
                         people waiting for you at the bus station!</p>
                     <br>
+                    <a href="{{ url_for('img/cuba/trinidad_car.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_car.jpg', {alt: 'Blue car in Trinidad', class: 'descriptionpic'}) }}
+                    </a>
+                    <a href="{{ url_for('img/cuba/trinidad_hombres.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_hombres.jpg', {alt: 'Hombres in Trinidad', class: 'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Accommodation:</strong> <em>Hostal Anita y Pirolo</em>
                         <i class="fa fa-star"></i>
@@ -427,7 +577,7 @@
                     <br>
 
                     <p><strong>Food:</strong>
-                        <em>{{ link_to( 'labotija.trinidadhostales.com', 'La Botija',  {external: true}) }}</em>
+                        <em>{{ link_to( '//labotija.trinidadhostales.com', 'La Botija',  {external: true}) }}</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -441,6 +591,9 @@
                         <strong>Comment:</strong> 24 hours open, international, good and cheap food. The waiters spoke
                         English. </p>
                     <br>
+                    <a href="{{ url_for('img/cuba/trinidad_24h_restaurant.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_24h_restaurant.jpg', {alt: 'Taberna La Botija in Trinidad', class:'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Entertainment:</strong> <em>Casa de la Musica</em>
                         <i class="fa fa-star"></i>
@@ -466,10 +619,13 @@
                         <strong>Type:</strong> Historical sight
                         <br>
                         <strong>Transportation:</strong> By foot </p>
+                    <a href="{{ url_for('img/cuba/trinidad_house_arts.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_house_arts.jpg', {alt: 'Galeria de Arte Universal Benito Ortiz', class:'descriptionpic'}) }}
+                    </a>
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel6a"><h3>
+                <a href="#trinidadtocamaguey"><h3>
                         <i class="fa fa-bus"></i>
                         <i class="fa fa-arrow-down"></i>
                         <i class="fa fa-star"></i>
@@ -481,7 +637,7 @@
                     </h3>
                 </a>
 
-                <div id="panel6a" class="content">
+                <div id="trinidadtocamaguey" class="content">
                     <p><strong>Type:</strong> Transportation
                         <br>
                         <strong>Transportation:</strong> Bus
@@ -497,10 +653,13 @@
                         <strong>Duration:</strong> 5:30 hours
                         <br>
                         <strong>Cost:</strong> 15 CUC // 14 €</p>
+                    <a href="{{ url_for('img/cuba/trinidad_viazul.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_viazul.jpg', {alt: 'Bus connection between Trinidad and Santiago de Cuba', class:'descriptionpic'}) }}
+                    </a>
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel7a">
+                <a href="#camaguey">
                     <h3>Camagüey
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -509,14 +668,16 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel7a" class="content">
+                <div id="camaguey" class="content">
                     <p><strong>Type:</strong> City
                         <br>
                         <strong>Date:</strong> 10.04. - 11.4.15
                         <br>
                         <strong>Comment:</strong> Not many tourists, it&#39;s nice to see, but there are not that many
                         things to do, very good and super cheap restaurants </p>
-                    <br>
+                    <a href="{{ url_for('img/cuba/camaguey_architecture_center.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_camaguey_architecture_center.jpg', {alt: 'Camagüey historic city centre', class:'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Accommodation:</strong> <em>Puchy Arrendador</em
                             ><i class="fa fa-star"></i>
@@ -533,7 +694,9 @@
                         <br>
                         <strong>Comment:</strong> Very beautiful room to stay. They also have another big room with full
                         kitchen. </p>
-                    <br>
+                    <a href="{{ url_for('img/cuba/camaguey_hostal.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_camaguey_hostal.jpg', {alt: 'Camagüey hostal', class:'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Food:</strong> <em>La Isabela</em>
                         <i class="fa fa-star"></i>
@@ -548,10 +711,13 @@
                         <br>
                         <strong>Comment:</strong> The restaurant has a nice design (decorated with movie theatre decor,
                         director style seats), they have a big menu, it&#39;s very tasty and they have REAL pizza.</p>
+                    <a href="{{ url_for('img/cuba/camaguey_restaurant_la_isabella.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_camaguey_restaurant_la_isabella.jpg', {alt: 'Camagüey restaurant la isabella', class:'descriptionpic'}) }}
+                    </a>
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel8a"><h3>
+                <a href="#camagueytobayamo"><h3>
                         <i class="fa fa-bus"></i>
                         <i class="fa fa-arrow-down"></i>
                         <i class="fa fa-star"></i>
@@ -563,7 +729,7 @@
 
                     </h3></a>
 
-                <div id="panel8a" class="content">
+                <div id="camagueytobayamo" class="content">
                     <p><strong>Type:</strong> Transportation
                         <br>
                         <strong>Transportation:</strong> Bus
@@ -582,7 +748,7 @@
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel9a"><h3>Bayamo
+                <a href="#bayamo"><h3>Bayamo
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -590,7 +756,7 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel9a" class="content">
+                <div id="bayamo" class="content">
                     <p><strong>Type:</strong> Town
                         <br>
                         <strong>Date:</strong> 11.04. - 12.4.15
@@ -599,11 +765,11 @@
                         <br>
                         <strong>Tip:</strong> You can find yoghurt and cheese here AND Bayamo is very close to a nice
                         beach. If you find time you could stay 1 night in Bayamo and 1 or 2 nights in Manzanillo.</p>
-                    <br>
-                    <a href="{{ url_for('img/cuba/bayamo_casa_de_la_nacionalidad_de_cuba.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_bayamo_casa_de_la_nacionalidad_de_cuba.jpg', {alt: 'Viaje'}) }}
-                        </a>
-                    <br>
+                    <a href="{{ url_for('img/cuba/bayamo_casa_de_la_nacionalidad_de_cuba.jpg') }}"
+                       data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_bayamo_casa_de_la_nacionalidad_de_cuba.jpg', {alt: 'Viaje', class: 'descriptionpic'}) }}
+                    </a>
+
                     <p><strong>Accommodation:</strong> <em>Arturo &amp; Esmeralda Hostal</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -639,7 +805,7 @@
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel10a"><h3>
+                <a href="#bayamotosantiagodecuba"><h3>
                         <i class="fa fa-bus"></i>
                         <i class="fa fa-arrow-down"></i>
                         <i class="fa fa-star"></i>
@@ -649,7 +815,7 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel10a" class="content">
+                <div id="bayamotosantiagodecuba" class="content">
                     <p><strong>Type:</strong> Transportation
                         <br>
                         <strong>Transportation:</strong> Bus
@@ -671,7 +837,7 @@
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel11a"><h3>Santiago de Cuba
+                <a href="#santiagodecuba"><h3>Santiago de Cuba
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -679,7 +845,7 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel11a" class="content">
+                <div id="santiagodecuba" class="content">
                     <p><strong>Type:</strong> City
                         <br>
                         <strong>Date:</strong> 12.04. - 14.04.15
@@ -696,7 +862,9 @@
                         more infos check
                         out: {{ link_to('http://www.seat61.com/Cuba.htm#How%20to%20book', 'Seat61: How to book', {external: true}) }}
                     </p>
-                    <br>
+                    <a href="{{ url_for('img/cuba/santiago_plaza_de_la_liberdad.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_plaza_de_la_liberdad.jpg', {alt: 'Propaganda Fidel', class: 'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Accommodation:</strong> <em>Casa Margarita</em>
                         <i class="fa fa-star"></i>
@@ -712,7 +880,9 @@
                         <br>
                         <strong>Comment:</strong> Margarita is a very nice person, the apartment is situated in an old
                         colonial house, the room is beautiful but without a window.</p>
-                    <br>
+                    <a href="{{ url_for('img/cuba/santiago_street.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_street.jpg', {alt: 'Street Santiago de Cuba', class: 'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Sightseeing:</strong>
                         <em> {{ link_to('http://www.santiagodecubacity.org/en/architecture/santa-ifigenia-cemetary.html', 'Santa Ifigenia Cemetery') }}</em>
@@ -733,7 +903,9 @@
                         pass the train station and the old "Bacardi-factory". One of the most visited places in the
                         churchyard is the big Mausoleum that keeps the ashes of one of the most important National Heros
                         "José Martí".</p>
-                    <br>
+                    <a href="{{ url_for('img/cuba/santiago_moncada.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails//thumb_santiago_santa_ifigenia_mausoluem.jpg', {alt: 'Mausoleum of Jose Marti', class: 'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Sightseeing:</strong>
                         <em> {{ link_to('http://www.santiagodecubacity.org/en/architecture/antonio-maceo-square.html', 'Antonio Maceo Revolution Square') }}</em>
@@ -749,7 +921,10 @@
                         <br>
                         <strong>Comment:</strong> This square is very close to the Viazul bus station and here you can
                         find the highest statue in the whole country in honor of the hero Antonio Maceo Grajale</p>
-                    <br>
+                    <a href="{{ url_for('img/cuba/santiago_statue_antonio_maceo_grajale.jpg') }}"
+                       data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_statue_antonio_maceo_grajale.jpg', {alt: 'Statue Antonio Maceo Grajale', class: 'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Sightseeing:</strong>
                         <em> {{ link_to('http://www.santiagodecubacity.org/en/architecture/cathedral-asuncion.html', 'Cathedral Asunción') }}</em>
@@ -765,7 +940,9 @@
                         <br>
                         <strong>Comment:</strong> The Square around the cathedral is very famous and beautiful. Here you
                         can find a little park, the town hall and the oldest house from Cuba (build in 1516).</p>
-                    <br>
+                    <a href="{{ url_for('img/cuba/santiago_cathedral.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_cathedral.jpg', {alt: 'Cathedral of Santiago de Cuba', class: 'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Sightseeing:</strong>
                         <em>{{ link_to( '//www.ecured.cu/index.php/Cuartel_Moncada', 'Cuartel Moncada', {external: true}) }}</em>
@@ -783,10 +960,13 @@
                         <br>
                         <strong>Comment:</strong> This is where the history of the Cuban revolution starts. A must see!
                     </p>
+                    <a href="{{ url_for('img/cuba/santiago_moncada.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/santiago_moncada.jpg', {alt: 'Cuartel Moncada', class: 'descriptionpic'}) }}
+                    </a>
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel12a"><h3>
+                <a href="#santiagodecubatoguantanamo"><h3>
                         <i class="fa fa-taxi"></i>
                         <i class="fa fa-arrow-down"></i>
                         <i class="fa fa-star"></i>
@@ -796,7 +976,7 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel12a" class="content">
+                <div id="santiagodecubatoguantanamo" class="content">
                     <p><strong>Type:</strong> Transportation
                         <br>
                         <strong>Transportation:</strong> Private taxi
@@ -813,7 +993,7 @@
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel13a"><h3>Guantanamo
+                <a href="#guantanamo"><h3>Guantanamo
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
@@ -821,7 +1001,7 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel13a" class="content">
+                <div id="guantanamo" class="content">
                     <p><strong>Type:</strong> Town
                         <br>
                         <strong>Date:</strong> 14.04. - 18.04.15
@@ -833,11 +1013,28 @@
                         <br>
                         <strong>Tip:</strong> Better head east to isolated Baracoa with its rich nature, beaches and the
                         National Park Alejandro de Humboldt.</p>
-                    <br>
+                    <a href="{{ url_for('img/cuba/guantanamo_architecture.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_guantanamo_architecture.jpg', {alt: 'City Centre Guantanamo', class: 'descriptionpic'}) }}
+                    </a>
+                    <a href="{{ url_for('img/cuba/guantanamo_haircutter.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_guantanamo_haircutter.jpg', {alt: 'Hairdesser in Guantanmo', class: 'descriptionpic'}) }}
+                    </a>
+
+                    <p><strong>Food:</strong> <em>Los Ensueños</em>
+                        <br>
+                        <strong>Type:</strong> Restaurant
+                        <br>
+                        <strong>Comment:</strong> The restaurant is directly in the small center. There’s no sign, just
+                        a nude statue denoting the entrance to Guantánamo’s allegedly best restaurant. Very beautiful
+                        interior, nice and well tasted food. If you are lucky you can even choose between chicken,
+                        lobster and fish in different sauces. And you find here one of the best mojitos in Cuba for just
+                        1CUC.
+                        <br>
+                        <strong>Tip:</strong> House special is the chicken 'Gordon Blue'</p>
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel14a"><h3>
+                <a href="#guantanamotohavana"><h3>
                         <i class="fa fa-taxi"></i>
                         <i class="fa fa-arrow-down"></i>
                         <i class="fa fa-star"></i>
@@ -847,7 +1044,7 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="panel14a" class="content">
+                <div id="guantanamotohavana" class="content">
                     <p><strong>Type:</strong> Transportation
                         <br>
                         <strong>Transportation:</strong> Private taxi
@@ -871,7 +1068,7 @@
                 </div>
             </li>
             <li class="accordion-navigation">
-                <a href="#panel15a"><h3>Havana
+                <a href="#havana2"><h3>Havana
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -879,7 +1076,7 @@
                         <i class="fa fa-star-o"></i>
                         <span class="fa accordion-icon right"></span><span class="divi"></span></h3></a>
 
-                <div id="panel15a" class="content">
+                <div id="havana2" class="content">
                     <p><strong>Type:</strong> Big city, capital
                         <br>
                         <strong>Date:</strong> 18.04. - 21.4.15
