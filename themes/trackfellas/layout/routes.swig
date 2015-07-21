@@ -7,7 +7,9 @@
             always contact the one who did the trip for more advice</p>
         <ul class="small-block-grid-1 medium-block-grid-1">
             {% for post in site.posts %}
+
                 <li>
+                    <section>
                     <div class="preview text-center">
                         <a href="{{ url_for(post.permalink) }}">
                             <h2>{{ post.title }}</h2>
@@ -15,9 +17,9 @@
                             <p>{{ post.description }}</p>
                         </a>
                     </div>
+                    </section>
                 </li>
             {% endfor %}
         </ul>
-
     </div>
 </section>
