@@ -961,7 +961,7 @@
                         <strong>Comment:</strong> This is where the history of the Cuban revolution starts. A must see!
                     </p>
                     <a href="{{ url_for('img/cuba/santiago_moncada.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/santiago_moncada.jpg', {alt: 'Cuartel Moncada', class: 'descriptionpic'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_moncada.jpg', {alt: 'Cuartel Moncada', class: 'descriptionpic'}) }}
                     </a>
                 </div>
             </li>
