@@ -15,7 +15,7 @@ routedata:
     socialCover: '/img/cuba/cuba_fb.jpg'
   # Specify Traveler
   traveler:
-    picture: '/img/nika.jpg'
+    picture: '/img/cuba/traveler_nika.png'
     name: 'Nika'
     age: 25-35
     location:

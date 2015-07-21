@@ -114,144 +114,14 @@ input, textarea {
 .form-error-arg {
   font-weight: bold
 }
-h1 {
-  font-size: 1.8em;
-  padding: 0;
-}
-hr {
-  border: 0;
-  height: 1px;
-  background-color: $hrBackground;
-}
-table {
-  border-collapse: collapse
-}
-textarea {
-  font: normal 1rem $font-family-para,sans-serif
-}
-br {
-  display: block!important
-}
+
 .aria-only-help {
   font-size: 0;
   left: -9999px;
   position: absolute;
 }
-.ss-printable-hint {
-  display: none
-}
-.goog-date-picker, .goog-date-picker th, .goog-date-picker td {
-  font: 13px Arial,sans-serif
-}
 
-.goog-date-picker {
-  -moz-user-focus: normal;
-  -moz-user-select: none;
-  position: relative;
-  border: 1px solid $datePickerBorder;
-  float: left;
-  padding: 2px;
-  color: $datePickerColor;
-  background: $datePickerBackground;
-  cursor: default;
-}
-.goog-date-picker th {
-  text-align: center
-}
-.goog-date-picker td {
-  text-align: center;
-  vertical-align: middle;
-  padding: 1px 3px;
-}
-.goog-date-picker-menu {
-  position: absolute;
-  background: $datePickerMenuBackground;
-  border: 1px solid gray;
-  -moz-user-focus: normal;
-  z-index: 1;
-  outline: none;
-}
-.goog-date-picker-menu ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-.goog-date-picker-menu ul li {
-  cursor: default
-}
 
-.goog-date-picker-menu-selected {
-  background: $datePickerMenuSelected
-}
-.goog-date-picker th {
-  font-size: .9em
-}
-.goog-date-picker td div {
-  float: left
-}
-
-.goog-date-picker button {
-  padding: 0px;
-  margin: 1px 0;
-  border: 0;
-  color: $datePickerButtonColor;
-  font-weight: bold;
-  background: transparent;
-}
-
-.goog-date-picker-date {
-  background: $datePickerDatebackground
-}
-
-.goog-date-picker-week, .goog-date-picker-wday {
-  padding: 1px 3px;
-  border: 0;
-  border-color: $datePickerWeekBorderColor;
-  border-style: solid;
-}
-.goog-date-picker-week {
-  border-right-width: 1px
-}
-.goog-date-picker-wday {
-  border-bottom-width: 1px
-}
-.goog-date-picker-head td {
-  text-align: center
-}
-td.goog-date-picker-today-cont {
-  text-align: center
-}
-td.goog-date-picker-none-cont {
-  text-align: center
-}
-.goog-date-picker-month {
-  width: 11ex
-}
-.goog-date-picker-year {
-  width: 6ex
-}
-.goog-date-picker table {
-  border-collapse: collapse
-}
-
-.goog-date-picker-other-month {
-  color: $datePickerOtherMonth;
-}
-
-.goog-date-picker-wkend-start, .goog-date-picker-wkend-end {
-  background: $datePickerWkendStartBackground
-}
-
-td.goog-date-picker-selected {
-  background: $datePickerSelectedBackground
-}
-
-.goog-date-picker-today {
-  background: $datePickerTodayBackground;
-  font-weight: bold!important;
-  border-color: $datePickerTodayBorderColor;
-  color: $datePickerTodayColor;
-}
 .ss-date input, .ss-datetime input, .ss-time input {
   font: inherit
 }
@@ -406,12 +276,7 @@ td.ss-rightlabel {
   margin: .5em 0 0 0;
   padding: 0;
 }
-.ss-choice-item {
-  margin: 0;
-  line-height: 1.3em;
-  padding-bottom: .5em;
-  display: $listChoiceItem;
-}
+
 .ss-required-asterisk {
   color: $error
 }

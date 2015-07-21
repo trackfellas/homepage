@@ -92,6 +92,10 @@ ul.accordion {
     @include content-sec-route;
 }
 
+.normal-content-route-last {
+    @extend .normal-content-route;
+    padding-bottom: 1.5rem;
+}
 .small-content {
     @include grid-column(
     $columns: 6,
@@ -240,8 +244,8 @@ strong {
 .routepic {
     margin: 1rem auto;
     width: 11rem;
-    border-radius: 80%;
-    border: 3px solid white;
+    /*    border-radius: 80%;
+        border: 3px solid white;*/
 }
 
 .social-team {
@@ -1240,4 +1244,15 @@ $social-list: (
 .fa-arrow-down {
     padding-left: .5rem;
     padding-right: .5rem;
+}
+#disqus_thread {
+    @include grid-column(
+    $columns: 10,
+    $last-column: true,
+    $center: true,
+    $offset: 1,
+    $collapse: false,
+    $float: right
+    );
+    margin-bottom: 1.8rem;
 }

@@ -602,7 +602,8 @@
                     <br>
                     <a href="{{ url_for('img/cuba/bayamo_casa_de_la_nacionalidad_de_cuba.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_bayamo_casa_de_la_nacionalidad_de_cuba.jpg', {alt: 'Viaje'}) }}
-                        <br>
+                        </a>
+                    <br>
                     <p><strong>Accommodation:</strong> <em>Arturo &amp; Esmeralda Hostal</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -960,7 +961,7 @@
     <div class="normal-content-route">
         {{ partial( '_partial/feedback') }}
     </div>
-    <div class="normal-content-route text-center">
+    <div class="normal-content-route-last text-center">
         <p>Keep in touch for more travel stories and routes worldwide and sign up for our <a
                 href="http://trackfellas.com/#signup">Beta program</a> to experience the ultimate way of traveling
             as a Trackfella.</p>
@@ -970,3 +971,4 @@
         <p><strong>Nika from Trackfellas</strong></p>
     </div>
 </section>
+{{ partial( '_partial/disqus') }}
