@@ -1380,3 +1380,9 @@ $social-list: (
 .descriptionpic {
     margin: 1.5rem .5rem;
 }
+
+@media #{$medium-up} {
+    .feedback-form {
+        height: 450px;
+    }
+}

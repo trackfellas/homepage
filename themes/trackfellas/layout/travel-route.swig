@@ -283,22 +283,7 @@
                     </p>
                 </div>
             </li>
-            <li class="accordion-overview">
-                <a href="#highlights_andlowpoints"><h3>Highlights and low points
-                        <span class="fa accordion-icon right"></span></h3></a>
 
-                <div id="highlights_andlowpoints" class="content">
-                    <ul class="small-block-grid-1 medium-block-grid-2">
-                        <li><h4>Highlights <i class="fa fa-trophy"></i></h4>
-                            <ul>
-                                <li>La Torre, Restaurant, Havana</li>
-                                <li>Trinidad, Town</li>
-                            </ul>
-                        </li>
-                        <li><h4>Low points <i class="fa fa-exclamation-triangle"></i></h4></li>
-                    </ul>
-                </div>
-            </li>
             <li class="accordion-navigation">
                 <a href="#havana1"><h3>Havana
                         <i class="fa fa-star"></i>
@@ -352,6 +337,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
+                        <br>
                         <strong>Type:</strong> Holiday Apartment
                         <br>
                         <strong>Room:</strong> Middle-class (BnB/AC/TV/Private Bath)
@@ -394,8 +380,8 @@
                         <br>
                         <strong>Cost:</strong> 10 CUC-40 CUC // 9€-37€
                         <br>
-                        <strong>Comment:</strong> Live music &amp; concerts, often latin american dances<br></p>
-
+                        <strong>Comment:</strong> Live music &amp; concerts, often latin american dances</p>
+                    <br>
                     <p><strong>Sightseeing:</strong> <em>Morro Castle</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -563,6 +549,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
+                        <br>
                         <strong>Type:</strong> Holiday Apartment
                         <br>
                         <strong>Room:</strong> Middle-class (BnB/AC/TV/Private Bath)
@@ -1077,70 +1064,23 @@
                         <span class="fa accordion-icon right"></span><span class="divi"></span></h3></a>
 
                 <div id="havana2" class="content">
-                    <p><strong>Type:</strong> Big city, capital
-                        <br>
-                        <strong>Date:</strong> 18.04. - 21.4.15
-                        <br>
-                        <strong>Comment:</strong> Is a MUST see. It&#39;s beautiful and I would say the most important
-                        city BUT it is the dirtiest city I have seen in Cuba and the smelliest. There are many old,
-                        destroyed houses</p>
-                    <br>
+                  <p> Information and recommendations see above.</p>
+                </div>
+            </li>
+            <li class="accordion-overview">
+                <a href="#highlights_andlowpoints"><h3>Highlights and low points
+                        <span class="fa accordion-icon right"></span></h3></a>
 
-                    <p><strong>Food:</strong> <em>La Torre</em>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <br>
-                        <strong>Type:</strong> Restaurant &amp; bar
-                        <br>
-                        <strong>Comment:</strong> Nice 360° view over Havana; Good food and reasonable price for
-                        tourists.</p>
-                    <br>
-
-                    <p><strong>Entertainment:</strong> <em>Casa de la Musica</em>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <br>
-                        <strong>Type:</strong> Club
-                        <br>
-                        <strong>Cost:</strong> 10 CUC-40 CUC // 9 €-37 €
-                        <br>
-                        <strong>Comment:</strong> Live music &amp; concerts, often latin american dances</p>
-                    <br>
-
-                    <p><strong>Sightseeing:</strong> <em>Morro Castle</em>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <br>
-                        <strong>Type:</strong> Historical sight
-                        <br>
-                        <strong>Transportation:</strong> Private taxi
-                        <br>
-                        <strong>Comment:</strong> Morro castle was built during the late 16th century. Especially its
-                        lighthouse is a symbol of Havana. If you come after 4 pm it&#39;s $8 CUC entry fee but which
-                        entitles you to stay and watch the canons being fired off before the dark.</p>
-                    <br>
-
-                    <p><strong>Sightseeing:</strong> <em>Santa Maria</em>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <br>
-                        <strong>Type:</strong> Beach
-                        <br>
-                        <strong>Transportation:</strong> Public Transportation
-                        <br>
-                        <strong>Comment:</strong> Nice beach 20 minutes away from the center of Havana</p>
+                <div id="highlights_andlowpoints" class="content">
+                    <ul class="small-block-grid-1 medium-block-grid-2">
+                        <li><h4>Highlights <i class="fa fa-trophy"></i></h4>
+                            <ul>
+                                <li>La Torre, Restaurant, Havana</li>
+                                <li>Trinidad, Town</li>
+                            </ul>
+                        </li>
+                        <li><h4>Low points <i class="fa fa-exclamation-triangle"></i></h4></li>
+                    </ul>
                 </div>
             </li>
         </ul>
@@ -1155,9 +1095,7 @@
                 href="//docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/viewform">your feedback
                 here!</a></p>
     </div>
-    <div class="normal-content-route">
-        {{ partial( '_partial/feedback') }}
-    </div>
+
     <div class="normal-content-route-last text-center">
         <p>Keep in touch for more travel stories and routes worldwide and sign up for our <a
                 href="http://trackfellas.com/#signup">Beta program</a> to experience the ultimate way of traveling
