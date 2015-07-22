@@ -1,11 +1,12 @@
 $(document).ready(function () {
     if ($(".galerie").length > 0) {
         $(".galerie").slick({
-            dots: true,
+            dots: false,
             infinite: true,
-            slidesToShow: 1,
+            slidesToShow: 3,
             centerMode: true,
-            accessibility: true,
+            centerPadding: '10px',
+            accessibility: false,
             speed: 300,
             arrows: false,
             mobileFirst: true,
