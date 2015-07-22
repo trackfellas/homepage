@@ -378,7 +378,7 @@ $list-side-margin: .625rem;
 
 // $include-html-accordion-classes: $include-html-classes;
 
-$accordion-navigation-padding: rem-calc(16);
+$accordion-navigation-padding: rem-calc(7);
 $accordion-navigation-bg-color: $rot    ;
 $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -25%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
@@ -386,7 +386,7 @@ $accordion-navigation-font-color: $white    ;
 // $accordion-navigation-font-size: rem-calc(16);
 // $accordion-navigation-font-family: $body-font-family;
 
-$accordion-content-padding: 1.85rem;
+$accordion-content-padding: 1.75rem;
 // $accordion-content-active-bg-color: $white;
 
 // 02. Alert Boxes
