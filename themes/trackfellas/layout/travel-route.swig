@@ -1,8 +1,14 @@
+<aside>
+       <div class="feedback-side">
+        <a href="#"data-reveal-id="feedbackModal">Feedback</a>
+           </div>
+</aside>
 {{ partial( '_partial/social') }}{# Partial for social sharing Link #}
+
   {{ image_tag( page.routepic, {alt: page.routepicalt, class: 'hero'}) }}
 <section>
     <div
-        class="normal-content-route">{# This section displays title and description of the post, taken from the Markdown file #}
+        class="route-title-section">{# This section displays title and description of the post, taken from the Markdown file #}
         <h1>{{ page.title }}</h1>
 
         <p class="text-center">
@@ -11,7 +17,7 @@
     </div>
 </section>
 <section>
-    <div class="small-content-route text-center">
+    <div class="route-traveler-section">
         <h2>Traveler</h2>
         {{ image_tag( page.routedata.traveler.picture, {alt: page.routedata.traveler.name, class: 'routepic'}) }}
         <p class="text-center">
@@ -22,7 +28,7 @@
             <strong>Skills: </strong>{{ page.routedata.traveler.skills }}<br>
             <strong>Submitted Routes: </strong>{{ page.routedata.traveler.noRoutes }}<br>
         </p>
-        <h4><a href="mailto:{{ page.routedata.traveler.contactEmail }}">Contact me!</a></h4>
+        <h4><a href="mailto:{{ page.routedata.traveler.contactEmail }}" class="button primary">Contact me!</a></h4>
     </div>
 </section>
 <section>
@@ -258,7 +264,7 @@
     </div>
 </section>
 <section>
-    <div class="big-content-route">
+    <div class="route-details-section">
         <h2>Trip Details</h2>
         <ul class="accordion" data-accordion>
             <li class="accordion-overview">
@@ -1087,12 +1093,11 @@
     </div>
 </section>
 <section>
-    <div class="normal-content-route">
+    <div class="route-feedback-section">
         <h2>Feedback</h2>
 
         <p class="text-center">We hope we gave you some inspiration and tips for travelling on your own in Cuba. Please
-            leave <a
-                href="//docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/viewform">your feedback
+            leave <a href="#"data-reveal-id="feedbackModal">your feedback
                 here!</a></p>
     </div>
 
@@ -1107,3 +1112,4 @@
     </div>
 </section>
 {{ partial( '_partial/disqus') }}
+{{ partial( '_partial/feedback') }}
