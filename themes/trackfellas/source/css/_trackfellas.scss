@@ -5,7 +5,7 @@ body {
 
 @mixin content-sec {
     margin: 0 auto;
-    padding: 3.75rem 0rem 3.75rem 0rem;
+    padding: 3.75rem 0 3.75rem 0;
     h1 {
         margin-bottom: 1.875rem;
         text-align: center;
@@ -24,9 +24,9 @@ body {
 
 @mixin content-sec-route {
     @include content-sec;
-    padding: 3.75rem 0rem 0rem 0rem;
+    padding: 5.625rem 0 0 0;
     p {
-        padding-bottom: 0rem;
+        padding-bottom: 0;
     }
 }
 
@@ -37,6 +37,9 @@ ul.accordion {
 
 .accordion-navigation {
     padding-bottom: .1875rem;
+    h3 {
+        font-size: 1.2rem;
+    }
 }
 
 .big-content {
@@ -63,6 +66,15 @@ ul.accordion {
     @include content-sec-route;
 }
 
+.route-details-section {
+    @extend .big-content-route;
+    padding-top: 4.375rem;
+    h2 {
+        padding-bottom: 4.375rem;
+        margin-bottom: 0;
+    }
+}
+
 .normal-content {
     @include grid-column(
     $columns: 8,
@@ -78,6 +90,19 @@ ul.accordion {
 .normal-content-first {
     @extend .normal-content;
     padding: 3.75rem 0 0 0;
+}
+
+.route-title-section, .route-feedback-section {
+    @include grid-column(
+    $columns: 8,
+    $last-column: true,
+    $center: true,
+    $offset: 2,
+    $collapse: false,
+    $float: right
+    );
+    @include content-sec-route;
+    padding: 4.375rem 0 0 0;
 }
 
 .normal-content-route {
@@ -102,8 +127,8 @@ ul.accordion {
     $float: right
     );
     margin-bottom: 1.5rem;
-    max-height: 5rem;
 }
+
 .small-content {
     @include grid-column(
     $columns: 6,
@@ -126,6 +151,20 @@ ul.accordion {
     $float: right
     );
     @include content-sec-route;
+    p {
+        padding-top: 1.875rem;
+    }
+}
+
+.route-traveler-section {
+    @extend .small-content-route;
+    text-align: center;
+    p {
+        padding-bottom: 1.875rem;
+    }
+    a.button.primary {
+        margin: 0;
+    }
 }
 
 .small-content-contact {
@@ -152,7 +191,7 @@ iframe {
 }
 
 .footer {
-    margin: .8rem;
+    margin: 0;
     padding: 0;
     li {
         display: inline;
@@ -166,7 +205,7 @@ iframe {
 footer {
     background: $nikabraun;
     color: white;
-    padding: 1rem 0 1rem 0;
+    padding: .5rem 0 .5rem 0;
     a {
         color: white;
     }
@@ -178,7 +217,7 @@ footer {
 }
 
 strong {
-    font-family: RobotoRegular;
+    font-family: $font-family-bold;
     font-size: 1.25;
 }
 
@@ -197,9 +236,8 @@ strong {
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: #555555;
     background: transparent;
-    padding-bottom: -10px;
+    margin-bottom: -1px;
     border-bottom: 1px solid $rot;
 }
 
@@ -250,7 +288,7 @@ strong {
 }
 
 .routepic {
-    margin: 1rem auto;
+    margin: 0 auto 0 auto;
     width: 11rem;
     /*    border-radius: 80%;
         border: 3px solid white;*/
@@ -293,6 +331,7 @@ strong {
 }
 
 // other special pages:
+
 .accordion-overview {
     @extend .accordion-navigation
 }
@@ -301,334 +340,31 @@ strong {
     background: $braun;
     color: #fff;
     display: block;
-    padding: 1rem;
+    padding: 7px;
 }
+
 .accordion .accordion-overview > a:hover {
     background: scale-color($braun, $lightness: -5%);
 }
+
 .accordion .accordion-overview > a:after {
     background: $braun;
 }
-.accordion-overview  {
+
+.accordion-overview {
     @include accordion-navigation;
     $accordion-navigation-hover-bg-color: scale-color($nikabraun, $lightness: -5%);
     $accordion-navigation-active-bg-color: scale-color($braun, $lightness: -3%);
 }
+
 .impressum {
-    padding-top: 0rem;
+    padding-top: 0;
     h2 {
         font-size: 1.5rem;
         text-align: left;
     }
     h1 {
         margin-bottom: 2rem;
-    }
-}
-
-// Ridiculously Responsive Social Sharing Buttons
-// Team: @dbox, @joshuatuscan
-// Site: http://www.kurtnoble.com/labs/rrssb
-// Twitter: @therealkni
-
-//        ___           ___
-//       /__/|         /__/\        ___
-//      |  |:|         \  \:\      /  /\
-//      |  |:|          \  \:\    /  /:/
-//    __|  |:|      _____\__\:\  /__/::\
-//   /__/\_|:|____ /__/::::::::\ \__\/\:\__
-//   \  \:\/:::::/ \  \:\~~\~~\/    \  \:\/\
-//    \  \::/~~~~   \  \:\  ~~~      \__\::/
-//     \  \:\        \  \:\          /__/:/
-//      \  \:\        \  \:\         \__\/
-//       \__\/         \__\/
-
-// How to use: Add/remove buttons from config settings and $social-list.
-
-// Config settings
-$rrssb-txt: #fff !default;
-$rrssb-email: #0a88ff !default;
-$rrssb-facebook: #306199 !default;
-$rrssb-tumblr: #32506d !default;
-$rrssb-linkedin: #007bb6 !default;
-$rrssb-twitter: #26c4f1 !default;
-$rrssb-googleplus: #e93f2e !default;
-$rrssb-reddit: #8bbbe3 !default;
-$rrssb-youtube: #df1c31 !default;
-$rrssb-pinterest: #b81621 !default;
-$rrssb-pocket: #ED4054 !default;
-$rrssb-github: #444 !default;
-$rrssb-instagram: #517fa4 !default;
-
-// Set the border radius for the buttons
-$rrssb-border-radius: 2px !default;
-
-$rrssb-main-font: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-
-// Variable list for all social button colors to be iterated over.
-$social-list: (
-    rrssb-email $rrssb-email,
-    rrssb-facebook $rrssb-facebook,
-    rrssb-tumblr $rrssb-tumblr,
-    rrssb-linkedin $rrssb-linkedin,
-    rrssb-twitter $rrssb-twitter,
-    rrssb-googleplus $rrssb-googleplus,
-    rrssb-youtube $rrssb-youtube,
-    rrssb-reddit $rrssb-reddit,
-    rrssb-pinterest $rrssb-pinterest,
-    rrssb-pocket $rrssb-pocket,
-    rrssb-github $rrssb-github,
-    rrssb-instagram $rrssb-instagram
-);
-
-@mixin transition($expression) {
-    -webkit-transition: $expression;
-    -moz-transition: $expression;
-    -o-transition: $expression;
-    transition: $expression;
-}
-
-%backface-visibility {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-}
-
-%border-box {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-// some generic classes
-.clearfix {
-    *zoom: 1;
-
-    &:after {
-        clear: both;
-    }
-
-    &:before,
-    &:after {
-        content: " ";
-        display: table;
-    }
-}
-
-// The meat and potatoes
-.rrssb-buttons {
-    @extend %border-box;
-    font-family: $rrssb-main-font;
-    height: 36px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-
-    li {
-        @extend %border-box;
-        float: left;
-        height: 100%;
-        line-height: 13px;
-        list-style: none;
-        margin: 0;
-        padding: 0 2.5px;
-
-        // This generates individual button classes for each item in social list on line 39.
-        @each $s-name in $social-list {
-
-            &.#{nth($s-name, 1)} {
-                a {
-                    background-color: nth($s-name, 2);
-
-                    &:hover {
-                        background-color: darken(nth($s-name, 2), 10%);
-                    }
-                }
-            }
-
-        }
-        // end @each directive
-
-        a {
-            @extend %border-box;
-            background-color: #ccc;
-            border-radius: $rrssb-border-radius;
-            display: block;
-            font-size: 11px;
-            font-weight: bold;
-            height: 100%;
-            padding: 11px 7px 12px 27px;
-            position: relative;
-            text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-            width: 100%;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            @include transition(background-color 0.2s ease-in-out);
-
-            .rrssb-icon {
-                display: block;
-                height: 100%;
-                left: 10px;
-                padding-top: 9px;
-                position: absolute;
-                top: 0;
-                width: 10%;
-
-                svg {
-                    height: 17px;
-                    width: 17px;
-
-                    path, polygon {
-                        fill: $rrssb-txt;
-                    }
-                }
-            }
-
-            .rrssb-text {
-                color: $rrssb-txt;
-            }
-
-            &:active {
-                box-shadow: inset 1px 3px 15px 0 rgba(022, 0, 0, .25);
-            }
-        }
-
-        &.small {
-            a {
-                padding: 0;
-
-                .rrssb-icon {
-                    height: 100%;
-                    left: auto;
-                    margin: 0 auto;
-                    overflow: hidden;
-                    position: relative;
-                    top: auto;
-                    width: 100%;
-                }
-                .rrssb-text {
-                    visibility: hidden;
-                }
-            }
-        }
-    }
-
-    &.large-format {
-        height: auto;
-
-        li {
-            height: auto;
-
-            a {
-                border-radius: 0.2em;
-                font-size: 15px; // fallback
-                font-size: 1vw; // scales font with browser
-                line-height: 1vw;
-                padding: 7% 0% 7% 12%;
-                @extend %backface-visibility;
-
-                .rrssb-icon {
-                    left: 7%;
-                    padding-top: 0;
-                    width: 12%;
-
-                    svg {
-                        height: 100%;
-                        width: 100%;
-                        position: absolute;
-                        top: 0;
-                    }
-                }
-
-                .rrssb-text {
-                    font-size: 15px;
-                    font-size: 1vw;
-                    @extend %backface-visibility;
-                }
-
-                &:hover {
-                    font-size: 15px;
-                    font-size: 1vw;
-                    padding: 7% 0% 7% 12%;
-                    border-radius: 0.2em;
-                }
-            }
-        }
-    }
-
-    &.small-format {
-        padding-top: 5px;
-
-        li {
-            height: 80%;
-            padding: 0 1.5px;
-
-            a {
-                .rrssb-icon {
-                    height: 100%;
-                    padding-top: 0;
-
-                    svg {
-                        height: 48%;
-                        position: relative;
-                        top: 6px;
-                        width: 80%;
-                    }
-                }
-            }
-        }
-    }
-
-    &.tiny-format {
-        height: 22px;
-        position: relative;
-
-        li {
-            padding-right: 7px;
-
-            a {
-                background-color: transparent;
-                padding: 0;
-
-                .rrssb-icon {
-                    svg {
-                        height: 70%;
-                        width: 100%;
-                    }
-                }
-
-                &:hover, &:active {
-                    background-color: transparent;
-                }
-            }
-
-            // This generates individual button classes for each item in social list on line 39.
-            @each $s-name in $social-list {
-
-                &.#{nth($s-name, 1)} {
-                    a {
-                        .rrssb-icon {
-                            svg {
-                                path, polygon {
-                                    fill: nth($s-name, 2);
-                                }
-                            }
-
-                            &:hover {
-                                .rrssb-icon {
-                                    svg {
-                                        path, polygon {
-                                            fill: darken(nth($s-name, 2), 20%);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            // end @each directive
-        }
     }
 }
 
@@ -753,7 +489,7 @@ $social-list: (
     background: #222;
     color: #fff;
     margin: -25px 74px;
-    padding: 0px;
+    padding: 0;
     transform-origin: 0;
     visibility: hidden;
     opacity: 0;
@@ -785,6 +521,8 @@ $social-list: (
 // Slider appearance
 /* Slider */
 .galerie {
+    margin-top: 1.25rem;
+    margin-bottom: 0;
 }
 
 .slick-slider {
@@ -906,13 +644,13 @@ $social-list: (
     display: block;
     height: 120px;
     width: 50px;
-    line-height: 0px;
+    line-height: 0;
     font-size: 45px;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 0%;
-    margin: auto 0px;
+    top: 0;
+    margin: auto 0;
     padding: 0;
     border: none;
     outline: none;
@@ -941,7 +679,7 @@ $social-list: (
     left: -60px;
     [dir="rtl"] & {
         left: auto;
-        right: 0px;
+        right: 0;
     }
     &:before {
         content: "\f104";
@@ -954,7 +692,7 @@ $social-list: (
 .slick-next {
     right: -50px;
     [dir="rtl"] & {
-        left: 0px;
+        left: 0;
         right: auto;
     }
     &:before {
@@ -994,8 +732,8 @@ $social-list: (
             height: 20px;
             width: 20px;
             outline: none;
-            line-height: 0px;
-            font-size: 0px;
+            line-height: 0;
+            font-size: 0;
             color: transparent;
             padding: 5px;
             cursor: pointer;
@@ -1031,7 +769,7 @@ $social-list: (
     padding: 1.5rem;
 }
 
-    //The accordion is closed
+//The accordion is closed
 .accordion-icon:before {
     padding-left: 1rem;
     content: "\f067";
@@ -1251,7 +989,7 @@ $social-list: (
         -ms-user-select: none;
         user-select: none;
         /* IE9 hack, otherwise navigation doesn't appear */
-        background: rgba(0,0,0,0);
+        background: rgba(0, 0, 0, 0);
     }
 
     .featherlight-previous {
@@ -1261,9 +999,8 @@ $social-list: (
 
     .featherlight-next:hover,
     .featherlight-previous:hover {
-        background: rgba(255,255,255,0.25);
+        background: rgba(255, 255, 255, 0.25);
     }
-
 
     .featherlight-next span,
     .featherlight-previous span {
@@ -1283,7 +1020,7 @@ $social-list: (
         /* center vertically */
         margin-top: -40px;
 
-        text-shadow: 0px 0px 5px #fff;
+        text-shadow: 0 0 5 #fff;
         color: #fff;
         font-style: normal;
         font-weight: normal;
@@ -1293,7 +1030,6 @@ $social-list: (
         left: auto;
     }
 
-
     .featherlight-next:hover span,
     .featherlight-previous:hover span {
         display: inline-block;
@@ -1301,12 +1037,12 @@ $social-list: (
 
     /* Hide navigation while loading */
     .featherlight-loading .featherlight-previous, .featherlight-loading .featherlight-next {
-        display:none;
+        display: none;
     }
 }
 
 /* Always display arrows on touch devices */
-@media only screen and (max-device-width: 1024px){
+@media only screen and (max-device-width: 1024px) {
     .featherlight-next:hover,
     .featherlight-previous:hover {
         background: none;
@@ -1338,34 +1074,15 @@ $social-list: (
     }
 }
 
-.hide-form {
-    visibility: hidden;
-    height: 0;
-    padding: 0;
-    margin: 0;
-}
-.label-form-headline {
-    @extend h3;
-    color: $nikagrau;
-    font-size: 1.2rem;
-    padding-bottom: 1.5rem;
- }
-
-.feedback_last-list {
-    column-count:2;
-    margin: .5em 0 0 0;
-    padding: 0;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-}
 .accordion-navigation .content h4 {
     color: $nikagrau;
 }
+
 .fa-arrow-down {
     padding-left: .5rem;
     padding-right: .5rem;
 }
+
 #disqus_thread {
     @include grid-column(
     $columns: 10,
@@ -1375,14 +1092,127 @@ $social-list: (
     $collapse: false,
     $float: right
     );
-    margin-bottom: 1.8rem;
+
+    margin-top: 3.125rem;
+    padding-top: 0;
 }
+
 .descriptionpic {
     margin: 1.5rem .5rem;
 }
 
+// Feedback Form
+
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.form-content {
+    position: relative;
+    height: 70%;
+}
+
+.form-nav {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.hidden {
+    display: none;
+}
+.errordiv {
+    height: 1rem;
+    margin-bottom: .4rem;
+    padding: .3rem;
+}
+
+.validation-error {
+    background: $rot;
+    color: white;
+    font-size: .6rem;
+}
+.label-form-headline {
+    @extend h3;
+    color: $nikagrau;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.feedback-list {
+    list-style: none;
+    column-count: 2;
+    margin: .5em 0 0 0;
+    padding: 0;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.forward-button {
+    @include button;
+    position: relative;
+    background: $rot;
+    float: right;
+
+}
+
+.back-button {
+    @include button;
+    position: relative;
+    background: $rot;
+    float: left;
+
+}
+
+.feedback-side {
+    visibility: hidden;
+
+}
+
 @media #{$medium-up} {
-    .feedback-form {
-        height: 450px;
+    .feedback-side {
+        position: fixed;
+        visibility: visible;
+        top: 350px;
+        left: 0;
+        padding: 5px;
+        background: $blau;
+        font-size: 1.5rem;
+        font-family: $font-family-menu;
+        height: 130px;
+        width: 60px;
+        a {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            color: white;
+            display: inline-block;
+            margin-top: 2.75rem;
+            margin-left: -1.8rem;
+
+        }
+
+    }
+    .form-container {
+        position: relative;
+        width: 100%;
+        max-height: 27rem;
+    }
+    .form-content {
+        position: relative;
+        height: 20rem;
+    }
+    .form-nav {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        padding: 0 4rem;
+
     }
 }

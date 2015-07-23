@@ -6,6 +6,7 @@
     "formchimp": "^1.0.4",
     "foundation": "zurb/bower-foundation",
     "jquery-smooth-scroll": "^1.5.5",
-    "slick.js": "1.5.5"
+    "slick.js": "1.5.5",
+    "jquery-validation": "~1.14.0"
   }
 }
