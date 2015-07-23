@@ -328,3 +328,11 @@
     </form>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
+
+<div id="feedback-thanks" class="reveal-modal xlarge" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
+     role="dialog">
+    <h2 id="modalTitle">Succesful!</h2>
+
+    <p>Thank you very much for your support!</p>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
