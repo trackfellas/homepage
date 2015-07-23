@@ -1,33 +1,47 @@
 $(document).ready(function () {
-    if ($("#feedback-form").length > 0) {
-        $(".forward-button").click(function () {
-            var form = $("#feedback-form");
-            form.validate({
-                    errorElement: 'span',
-                    errorClass: 'validation-error',
-                    errorPlacement: function (error, element) {
-                        error.appendTo(element.closest($("div")));
-                    }
-            });
-                        if (form.valid() === true) {
-                            if ($("#page_one").is(":visible")) {
-                                current_fs = $("#page_one");
-                                next_fs = $("#page_two");
-                            } else if ($("#page_two").is(":visible")) {
-                                current_fs = $("#page_two");
-                                next_fs = $("#page_three");
-                            } else if ($("#page_two").is(":visible")) {
-                                current_fs = $("#page_two");
-                                next_fs = $("#page_three");
-                            } else if ($("#page_three").is(":visible")) {
-                                current_fs = $("#page_three");
-                                next_fs = $("#page_four");
-                            }
+        if ($("#feedback-form").length > 0) {
+            $(".forward-button").click(function () {
+                    var form = $("#feedback-form");
+                    form.validate({
+                        errorElement: 'span',
+                        errorClass: 'validation-error',
+                        errorPlacement: function (error, element) {
+                            error.appendTo(element.closest($("div")));
+                        },
+                        submitHandler: function (form) {
+                            $.ajax({
+                                url: 'https://docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/formResponse',  // whatever url to your action
+                                data: $(form).serialize(),
+                                type: "POST",
+                                dataType: "xml"  // the form data
 
-                            next_fs.show();
-                            current_fs.hide();
+                            });
+                            $('#feedbackModal').foundation('reveal', 'close');
+                            $('#feedback-thanks').foundation('reveal', 'open');
+                            return false;
+                            // this is critical to prevent the page from reloading
+
                         }
+                    });
+                    if (form.valid() === true) {
+                        if ($("#page_one").is(":visible")) {
+                            current_fs = $("#page_one");
+                            next_fs = $("#page_two");
+                        } else if ($("#page_two").is(":visible")) {
+                            current_fs = $("#page_two");
+                            next_fs = $("#page_three");
+                        } else if ($("#page_two").is(":visible")) {
+                            current_fs = $("#page_two");
+                            next_fs = $("#page_three");
+                        } else if ($("#page_three").is(":visible")) {
+                            current_fs = $("#page_three");
+                            next_fs = $("#page_four");
+                        }
+
+                        next_fs.show();
+                        current_fs.hide();
                     }
+                }
             )
             ;
 
@@ -96,11 +110,11 @@ $(document).ready(function () {
             });
         }
     }
-    )
-    ;
+)
+;
 
-    $(document).foundation({});
-    if ($("#about").length > 0) {
-        $("a").smoothScroll();
-    }
+$(document).foundation({});
+if ($("#about").length > 0) {
+    $("a").smoothScroll();
+}
 
