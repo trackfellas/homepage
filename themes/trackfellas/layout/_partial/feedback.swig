@@ -5,7 +5,7 @@
     <p>Do you have a minute to give us some feedback? We would really appreciate it. It will only take a minute.</p>
 
     <form action="https://docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/formResponse"
-          method="POST" id="feedback-form" target="_self" onsubmit="">
+          method="POST" id="feedback-form" target="_blank" onsubmit="">
         <div class="form-container" id="page_one">
             <div class="form-content">
                 <fieldset>
@@ -322,7 +322,7 @@
             <div class="form-nav">
                 <div id="page_threeback_btn" class="back-button">Back</div>
                 <input type="submit" name="submit" value="Submit" id="ss-submit"
-                       class="forward-button">
+                       class="forward-button" >
             </div>
         </div>
     </form>
