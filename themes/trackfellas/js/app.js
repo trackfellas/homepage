@@ -1,4 +1,51 @@
 $(document).ready(function () {
+    if ($("#feedback-form").length > 0) {
+        $(".forward-button").click(function () {
+                var form = $("#feedback-form");
+                form.validate({
+                    errorElement: 'span',
+                    errorClass: 'validation-error',
+                    errorPlacement: function (error, element) {
+                        error.appendTo(element.closest($("div")));
+                    }
+                });
+                if (form.valid() === true) {
+                    if ($("#page_one").is(":visible")) {
+                        current_fs = $("#page_one");
+                        next_fs = $("#page_two");
+                    } else if ($("#page_two").is(":visible")) {
+                        current_fs = $("#page_two");
+                        next_fs = $("#page_three");
+                    } else if ($("#page_two").is(":visible")) {
+                        current_fs = $("#page_two");
+                        next_fs = $("#page_three");
+                    } else if ($("#page_three").is(":visible")) {
+                        current_fs = $("#page_three");
+                        next_fs = $("#page_four");
+                    }
+
+                    next_fs.show();
+                    current_fs.hide();
+                }
+            }
+        )
+        ;
+
+        $(".back-button").click(function () {
+            if ($("#page_two").is(":visible")) {
+                current_fs = $("#page_two");
+                next_fs = $("#page_one");
+            } else if ($("#page_three").is(":visible")) {
+                current_fs = $("#page_three");
+                next_fs = $("#page_two");
+            } else if ($("#page_four").is(":visible")) {
+                current_fs = $("#page_four");
+                next_fs = $("#page_three");
+            }
+            next_fs.show();
+            current_fs.hide();
+        });
+    }
     if ($(".galerie").length > 0) {
         $(".galerie").slick({
             dots: false,
@@ -26,11 +73,9 @@ $(document).ready(function () {
                     slidesToScroll: 4,
                     arrows: true
                 }
-            },]
+            }]
         });
     }
-    ;
-
     if ($("#newsletter-form").length > 0) {
         $("#newsletter-form").formchimp({
             buttonText: "Thanks!",
@@ -39,8 +84,6 @@ $(document).ready(function () {
             successMessage: "Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you."
         });
     }
-    ;
-
     if ($("#blog").length > 0) {
         $.get("atom.xml", function (data) {
             var $data = $(data);
@@ -52,60 +95,11 @@ $(document).ready(function () {
             });
         });
     }
-    ;
+})
+;
 
-
-});
-
-$(document).foundation({
-    abide: {
-        validators: {
-            checkbox_limit: function (el, required, parent) {
-                var group = parent.closest('.checkbox-group');
-                var limit = group.attr('data-abide-validator-limit').split(',');
-                var countC = group.find(':checked').length;
-                if (countC >= limit[0] && countC <= limit[1]) {
-                    group.find('small.error').hide();
-                    //return true so abide can clear any invalid flags on this element
-                    return true;
-                } else {
-                    group.find('small.error').css({
-                        display: 'block'
-                    });
-                    //return false and let abide do its thing to make sure the form doesn't submit
-                    return false;
-                }
-            }
-        }
-    }
-});
+$(document).foundation({});
 if ($("#about").length > 0) {
     $("a").smoothScroll();
 }
-
-$('#page_two_btn').click(function() {
-    $('#page_one').hide();
-    $('#page_two').show();
-});
-$('#page_three_btn').click(function() {
-    $('#page_two').hide();
-    $('#page_three').show();
-});
-$('#page_four_btn').click(function() {
-    $('#page_three').hide();
-    $('#page_four').show();
-});
-$('#page_twoback_btn').click(function() {
-    $('#page_three').hide();
-    $('#page_two').show();
-});
-$('#page_oneback_btn').click(function() {
-    $('#page_two').hide();
-    $('#page_one').show();
-});
-$('#page_threeback_btn').click(function() {
-    $('#page_four').hide();
-    $('#page_three').show();
-});
-
 

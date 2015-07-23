@@ -1097,8 +1097,7 @@
         <h2>Feedback</h2>
 
         <p class="text-center">We hope we gave you some inspiration and tips for travelling on your own in Cuba. Please
-            leave <a
-                href="//docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/viewform">your feedback
+            leave <a href="#"data-reveal-id="feedbackModal">your feedback
                 here!</a></p>
     </div>
 

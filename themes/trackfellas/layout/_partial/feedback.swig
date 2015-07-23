@@ -5,34 +5,34 @@
     <p>Do you have a minute to give us some feedback? We would really appreciate it. It will only take a minute.</p>
 
     <form action="https://docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/formResponse"
-          method="POST" id="feedback-form" target="_self" onsubmit="" data-abide>
+          method="POST" id="feedback-form" target="_self" onsubmit="">
         <div class="form-container" id="page_one">
             <div class="form-content">
                 <fieldset>
                     <legend>1 of 4</legend>
                     <div class="row">
                         <div class="small-12 medium-6 columns">
+
                             <label for="entry_848149128">
                                 <span class="label-form-headline">Question 1: How did you find us or this trip?</span>
-                            </label>
-                            <small class="error">Please fill out this field.</small>
 
+                            </label>
                             <input type="text" name="entry.848149128" value="" id="entry_848149128"
                                    dir="auto" aria-label="How did you found us or this trip?" title="">
                         </div>
                         <div class="small-12 medium-6 columns">
+
                             <label for="entry_2132288080">
                                 <span class="label-form-headline">Question 2: How helpful was the information about this travel route?</span>
-                                Choose from 1 (not at all) - 5 (absolutely)
+
                             </label>
-                            <small class="error">Please check one box..</small>
                             <ul class="feedback-list"
                                 aria-label="How helpful was the information about this travel route? Choose from 1 (not at all) - 5 (absolutely) ">
                                 <li>
                                     <label>
                                         <input type="radio" name="entry.1018187351" value="1 (not at all)"
                                                id="group_1018187351_1" role="radio"
-                                               aria-label="1 (not at all)">
+                                               aria-label="1 (not at all)" required>
                                         1 (not at all)
                                     </label>
                                 </li>
@@ -64,6 +64,7 @@
                                     </label>
                                 </li>
                             </ul>
+                            <div id="errordiv"></div>
                         </div>
                     </div>
                 </fieldset>
@@ -80,6 +81,7 @@
                         <div class="medium-6 columns">
                             <label for="entry_1340875884">
                                 <span class="label-form-headline">Question 3: Would you travel the same route having now this information?</span>
+
                             </label>
                             <ul class="feedback-list"
                                 aria-label="Would you travel the same route having now this information? Choose from 1
@@ -87,7 +89,7 @@
                                 <li>
                                     <label><input type="radio" name="entry.807303112" value="1 (never)"
                                                   id="group_807303112_1" role="radio"
-                                                  aria-label="1 (never)">
+                                                  aria-label="1 (never)" required>
                                         1 (never)
                                     </label>
                                 </li>
@@ -120,7 +122,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <small class="error">You have checked an invalid number of boxes.</small>
+                            <div id="errordiv"></div>
                         </div>
                         <div class="medium-6 columns">
                             <label for="entry_715740726">
@@ -132,7 +134,7 @@
                                 <li>
                                     <label><input type="radio" name="entry.521179728" value="1 (nothing)"
                                                   id="group_521179728_1" role="radio"
-                                                  aria-label="1 (nothing)">
+                                                  aria-label="1 (nothing)" required>
                                         1 (nothing)
                                     </label>
                                 </li>
@@ -165,7 +167,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <small class="error">You have checked an invalid number of boxes.</small>
+                            <div id="errordiv"></div>
                         </div>
                     </div>
                 </fieldset>
@@ -190,7 +192,7 @@
                                 <li>
                                     <label><input type="radio" name="entry.773497269" value="1 (not at all)"
                                                   id="group_773497269_1" role="radio"
-                                                  aria-label="1 (not at all)">
+                                                  aria-label="1 (not at all)" required>
                                         1 (not at all )
                                     </label>
                                 </li>
@@ -223,6 +225,7 @@
                                     </label>
                                 </li>
                             </ul>
+                            <div id="errordiv"></div>
                         </div>
                         <div class="medium-7 columns">
                             <label for="entry_1633164414">
@@ -234,7 +237,7 @@
                         answer possible ">
                                 <li>
                                     <label><input type="checkbox" name="entry.451080218" value="Route on Map"
-                                                  id="group_451080218_1" role="checkbox">
+                                                  id="group_451080218_1" role="checkbox" required>
                                         Route on Map
                                     </label>
                                 </li>
@@ -289,6 +292,7 @@
                                     </label>
                                 </li>
                             </ul>
+                            <div id="errordiv"></div>
                         </div>
                     </div>
                 </fieldset>
@@ -318,7 +322,7 @@
             <div class="form-nav">
                 <div id="page_threeback_btn" class="back-button">Back</div>
                 <input type="submit" name="submit" value="Submit" id="ss-submit"
-                           class="forward-button">
+                       class="forward-button">
             </div>
         </div>
     </form>
