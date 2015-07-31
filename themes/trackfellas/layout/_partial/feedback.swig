@@ -2,7 +2,7 @@
      role="dialog">
     <h2 id="modalTitle">Feedback</h2>
 
-    <p>Do you have a minute to give us some feedback? We would really appreciate it. It will only take a minute.</p>
+    <p>Thanks for taking the time to give us some feedback! We really appreciate it. It will only take a minute.</p>
 
     <form action="https://docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/formResponse"
           method="POST" id="feedback-form" target="_blank" onsubmit="">
