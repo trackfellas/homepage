@@ -57,14 +57,4 @@ routedata:
       accommodation: 'Every house with a blue anchor in front can be rented by tourists. Houses with a red anchor are just for locals. Prices for accomodation can normally be negotiated in Casas Particulares.'
       healthcare: 'No special vaccination necessary, apart from tetanus and diphtheria. No malaria, but dengue fever occurs. Medical care is quite good. Nevertheless there is a general lack of medication in pharmacies, so better bring your own first-aid kit.'
       travelWarning: 'No travel warnings. Cuban citizens need a permission to make private business. Accommodation in private households without official permission might lead to problems with the police for the host and the guest, so better check the documents in advance.'
-    stop:
-      type: Big city, capital
-      name: Havana
-      rating: 4
-      date: 03.04. - 07.04.15
-      distance:
-      duration:
-      cost:
-      comment: Is a MUST see. It&#39;s beautiful and I would say the most important city BUT it is the dirtiest city I have seen in Cuba and also the smelliest.
-      tip:
 ---
