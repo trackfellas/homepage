@@ -21,14 +21,14 @@
         <h2>Traveler</h2>
         {{ image_tag( page.routedata.traveler.picture, {alt: page.routedata.traveler.name, class: 'routepic'}) }}
         <p class="text-center">
-            <strong>Name: </strong>{{ page.routedata.traveler.name }}<br>
-            <strong>Age: </strong>{{ page.routedata.traveler.age }}<br>
-            <strong>Location: </strong>{{ page.routedata.traveler.location.city }}
+            <strong>Name: </strong>{{ page.routedata.traveler.name }}
+            <strong>Age: </strong>{{ page.routedata.traveler.age }}
+            <strong>from: </strong>{{ page.routedata.traveler.location.city }}
             , {{ page.routedata.traveler.location.country }}<br>
-            <strong>Skills: </strong>{{ page.routedata.traveler.skills }}<br>
+            <strong>Skills: </strong>{{ page.routedata.traveler.skills }}, 
             <strong>Submitted Routes: </strong>{{ page.routedata.traveler.noRoutes }}<br>
         </p>
-        <h4><a href="mailto:{{ page.routedata.traveler.contactEmail }}" class="button primary">Contact me!</a></h4>
+        <h4><a href="mailto:{{ page.routedata.traveler.contactEmail }}" class="button primary">Contact me</a></h4>
     </div>
 </section>
 <section>
@@ -371,11 +371,6 @@
                         <strong>Comment:</strong> Nice 360° view over Havana; Good food and reasonable price for
                         tourists.</p>
 
-                    <a href="{{ url_for('img/cuba/havana_morro_castle.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_morro_castle.jpg', {alt: 'Morro Castle', class: 'descriptionpic'}) }}
-                    </a>
-
-
                     <p><strong>Entertainment:</strong> <em>Casa de la Musica</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -402,6 +397,10 @@
                         lighthouse is a symbol of Havana. If you come after 4 pm entry is $8 CUC but entitles you to
                         stay and watch the cannons being fired before sunset.</p>
                     <br>
+
+                    <a href="{{ url_for('img/cuba/havana_morro_castle.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_morro_castle.jpg', {alt: 'Morro Castle', class: 'descriptionpic'}) }}
+                    </a>
 
                     <p><strong>Sightseeing:</strong> <em>Santa Maria</em>
                         <i class="fa fa-star"></i>

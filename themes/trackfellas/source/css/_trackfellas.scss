@@ -24,15 +24,15 @@ body {
 
 @mixin content-sec-route {
     @include content-sec;
-    padding: 5.625rem 0 0 0;
+    padding: 4.375rem 0 0 0;
     p {
         padding-bottom: 0;
     }
 }
 
 ul.accordion {
-    margin-right: 0.625rem;
-    margin-left: 0.625rem;
+    margin-right: 2.563rem;
+    margin-left: 2.563rem;
 }
 
 .accordion-navigation {
@@ -64,15 +64,6 @@ ul.accordion {
     $float: right
     );
     @include content-sec-route;
-}
-
-.route-details-section {
-    @extend .big-content-route;
-    padding-top: 4.375rem;
-    h2 {
-        padding-bottom: 4.375rem;
-        margin-bottom: 0;
-    }
 }
 
 .normal-content {
@@ -128,7 +119,13 @@ ul.accordion {
     );
     margin-bottom: 1.5rem;
 }
-
+.route-details-section {
+    @extend .big-content-route;
+    padding-top: 2.5rem;
+    h2 {
+        margin-bottom: 1.875rem;
+    }
+}
 .small-content {
     @include grid-column(
     $columns: 6,
@@ -1098,7 +1095,7 @@ strong {
 }
 
 .descriptionpic {
-    margin: 1.5rem .5rem;
+    margin: 1rem .5rem 3rem .5rem;
 }
 
 // Feedback Form
