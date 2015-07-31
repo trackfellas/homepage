@@ -25,10 +25,10 @@
             <strong>Age: </strong>{{ page.routedata.traveler.age }}
             <strong>from: </strong>{{ page.routedata.traveler.location.city }}
             , {{ page.routedata.traveler.location.country }}<br>
-            <strong>Skills: </strong>{{ page.routedata.traveler.skills }}, 
+            <strong>Skills: </strong>{{ page.routedata.traveler.skills }},
             <strong>Submitted Routes: </strong>{{ page.routedata.traveler.noRoutes }}<br>
         </p>
-        <h4><a href="mailto:{{ page.routedata.traveler.contactEmail }}" class="button primary">Contact me</a></h4>
+        <h4><a href="mailto:{{ page.routedata.traveler.contactEmail }}" class="button primary round">CONTACT ME</a></h4>
     </div>
 </section>
 <section>
