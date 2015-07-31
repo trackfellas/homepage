@@ -340,8 +340,8 @@
      role="dialog">
     <h2 id="modalTitle">Have some feedback for us?</h2>
 
-    <p>THanks for coming to our site! Do you have some feedback for us, it is really quick and will only take a minute</p>
-    <a href="#"data-reveal-id="feedbackModal">Yes, take me to the form!</a>
-    <a class="close-reveal-modal" aria-label="Close">No, continue browsing</a>
+    <p>Thanks for coming to our site! Do you have some feedback for us, it is really quick, will only take a minute and help us tremendously to build a better platform for you!</p>
+    <br>
+    <a href="#" data-reveal-id="feedbackModal">Yes, take me to the form!</a>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>

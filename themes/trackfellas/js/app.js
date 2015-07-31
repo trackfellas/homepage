@@ -1,5 +1,8 @@
 $(document).ready(function () {
         if ($("#feedback-form").length > 0) {
+            setTimeout(function(){
+                $("#feedback-reminder").foundation('reveal', 'open');
+            }, 100000);
             $(".forward-button").click(function () {
                     var form = $("#feedback-form");
                     form.validate({
@@ -14,13 +17,10 @@ $(document).ready(function () {
                                 data: $(form).serialize(),
                                 type: "POST",
                                 dataType: "xml"  // the form data
-
                             });
                             $('#feedbackModal').foundation('reveal', 'close');
                             $('#feedback-thanks').foundation('reveal', 'open');
                             return false;
-                            // this is critical to prevent the page from reloading
-
                         }
                     });
                     if (form.valid() === true) {
