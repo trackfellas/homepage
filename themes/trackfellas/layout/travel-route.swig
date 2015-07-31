@@ -59,7 +59,7 @@
 </section>
 <section>
     <div class="normal-content-route">
-        <h2>Galerie</h2>
+        <h2>Gallery</h2>
 
         <div class="galerie">
             <div>
