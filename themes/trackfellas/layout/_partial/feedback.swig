@@ -2,7 +2,7 @@
      role="dialog">
     <h2 id="modalTitle">Feedback</h2>
 
-    <p>Do you have a minute to give us some feedback? We would really appreciate it. It will only take a minute.</p>
+    <p>Thanks for taking the time to give us some feedback! We really appreciate it. It will only take a minute.</p>
 
     <form action="https://docs.google.com/forms/d/1t5Qh1RJmjutaiRxtxsx1bITVY8XoJ_Bega2qlvvP2No/formResponse"
           method="POST" id="feedback-form" target="_blank" onsubmit="">
@@ -338,10 +338,10 @@
 </div>
 <div id="feedback-reminder" class="reveal-modal large" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
      role="dialog">
-    <h2 id="modalTitle">Have some feedback for us?</h2>
+    <h2 id="modalTitle">Do you have some feedback for us?</h2>
 
     <p>Thanks for coming to our site! Do you have some feedback for us, it is really quick, will only take a minute and help us tremendously to build a better platform for you!</p>
     <br>
-    <a href="#" data-reveal-id="feedbackModal">Yes, take me to the form!</a>
+    <a class="button primary" href="#" data-reveal-id="feedbackModal">Yes, take me to the form!</a>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>

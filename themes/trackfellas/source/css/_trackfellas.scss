@@ -2,7 +2,11 @@
 body {
     background: white;
 }
-
+p {
+    max-width: 56.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 @mixin content-sec {
     margin: 0 auto;
     padding: 3.75rem 0 3.75rem 0;
@@ -27,18 +31,25 @@ body {
     padding: 5.625rem 0 0 0;
     p {
         padding-bottom: 0;
+        text-align: center;
     }
 }
 
 ul.accordion {
-    margin-right: 0.625rem;
-    margin-left: 0.625rem;
+    margin-right: 0.5625rem;
+    margin-left: 0.5625rem;
 }
 
+@media #{$medium-up} {
+    ul.accordion {
+margin: 0 auto;
+        max-width:  61.25rem;
+    }
+}
 .accordion-navigation {
     padding-bottom: .1875rem;
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -64,15 +75,6 @@ ul.accordion {
     $float: right
     );
     @include content-sec-route;
-}
-
-.route-details-section {
-    @extend .big-content-route;
-    padding-top: 4.375rem;
-    h2 {
-        padding-bottom: 4.375rem;
-        margin-bottom: 0;
-    }
 }
 
 .normal-content {
@@ -128,7 +130,13 @@ ul.accordion {
     );
     margin-bottom: 1.5rem;
 }
-
+.route-details-section {
+    @extend .big-content-route;
+    padding-top: 3.75rem;
+    h2 {
+        margin-bottom: 1.875rem;
+    }
+}
 .small-content {
     @include grid-column(
     $columns: 6,
@@ -203,7 +211,7 @@ iframe {
 }
 
 footer {
-    background: $nikabraun;
+    background: $brown;
     color: white;
     padding: .5rem 0 .5rem 0;
     a {
@@ -238,14 +246,14 @@ strong {
 .top-bar-section li:not(.has-form) a:not(.button):hover {
     background: transparent;
     margin-bottom: -1px;
-    border-bottom: 1px solid $rot;
+    border-bottom: 1px solid $primary-color;
 }
 
 // Index page
 .line-dark {
     text-transform: uppercase;
     padding-bottom: 0.625rem;
-    border-bottom: 1px solid $nikagrau;
+    border-bottom: 1px solid $gray;
     margin-bottom: 2.5rem;
 }
 
@@ -257,7 +265,7 @@ strong {
 }
 
 #about h3 {
-    color: $nikagrau;
+    color: $gray;
 }
 
 #team h2, h3, h4 {
@@ -265,7 +273,7 @@ strong {
 }
 
 #signup {
-    background: $rot;
+    background: $primary-color;
 }
 
 .white {
@@ -277,7 +285,7 @@ strong {
 }
 
 #team {
-    background: $blau;
+    background: $secondary-color;
 }
 
 .teampic {
@@ -333,30 +341,34 @@ strong {
 // other special pages:
 
 .accordion-overview {
-    @extend .accordion-navigation
+    @extend .accordion-navigation;
+    $accordion-navigation-hover-bg-color: scale-color($secondary-color, $lightness: -5%);
+    $accordion-navigation-active-bg-color: scale-color($secondary-color, $lightness: -3%);
 }
 
 .accordion .accordion-overview > a {
-    background: $braun;
+    background: $secondary-color;
     color: #fff;
     display: block;
-    padding: 7px;
+    padding: 0.625rem;
+    text-align: center;
 }
 
 .accordion .accordion-overview > a:hover {
-    background: scale-color($braun, $lightness: -5%);
+    background: scale-color($secondary-color, $lightness: -5%);
 }
 
 .accordion .accordion-overview > a:after {
-    background: $braun;
+    background: $secondary-color;
+}
+.accordion .active.accordion-overview>a {
+    background: $secondary-color;
 }
 
-.accordion-overview {
-    @include accordion-navigation;
-    $accordion-navigation-hover-bg-color: scale-color($nikabraun, $lightness: -5%);
-    $accordion-navigation-active-bg-color: scale-color($braun, $lightness: -3%);
+.accordion .accordion-navigation > a {
+    padding: 0.625rem;
+    text-align: center;
 }
-
 .impressum {
     padding-top: 0;
     h2 {
@@ -381,7 +393,7 @@ strong {
 }
 
 .mc-success {
-    color: $blau;
+    color: $secondary-color;
 }
 
 .mc-error form {
@@ -765,13 +777,22 @@ strong {
 }
 
 .preview {
-    border: 1px dotted $nikagrau;
+    border: 1px dotted $gray;
     padding: 1.5rem;
 }
 
+
 //The accordion is closed
 .accordion-icon:before {
-    padding-left: 1rem;
+    float: right;
+    display: inline-block;
+    font-family: $font-awesome;
+    text-rendering: auto;
+    padding-right: 1.25rem;
+    line-height: .75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.9rem;
     content: "\f067";
 }
 
@@ -790,7 +811,7 @@ strong {
         width: auto;
     }
     .entry {
-        border-right: 1px solid $nikagrau;
+        border-right: 1px solid $gray;
         height: 10rem;
         padding-bottom: 0;
     }
@@ -1075,7 +1096,7 @@ strong {
 }
 
 .accordion-navigation .content h4 {
-    color: $nikagrau;
+    color: $gray;
 }
 
 .fa-arrow-down {
@@ -1098,7 +1119,8 @@ strong {
 }
 
 .descriptionpic {
-    margin: 1.5rem .5rem;
+    display: block;
+    margin: 1rem auto 3.5rem auto;
 }
 
 // Feedback Form
@@ -1133,13 +1155,13 @@ strong {
 }
 
 .validation-error {
-    background: $rot;
+    background: $primary-color;
     color: white;
     font-size: .6rem;
 }
 .label-form-headline {
     @extend h3;
-    color: $nikagrau;
+    color: $gray;
     font-size: 1.2rem;
     margin-top: 1rem;
     padding-bottom: 1.5rem;
@@ -1158,7 +1180,7 @@ strong {
 .forward-button {
     @include button;
     position: relative;
-    background: $rot;
+    background: $primary-color;
     float: right;
 
 }
@@ -1166,7 +1188,7 @@ strong {
 .back-button {
     @include button;
     position: relative;
-    background: $rot;
+    background: $primary-color;
     float: left;
 
 }
@@ -1183,7 +1205,7 @@ strong {
         top: 350px;
         left: 0;
         padding: 5px;
-        background: $blau;
+        background: $secondary-color;
         font-size: 1.5rem;
         font-family: $font-family-menu;
         height: 130px;
@@ -1191,6 +1213,16 @@ strong {
         a {
             transform: rotate(90deg);
             -webkit-transform: rotate(90deg);
+            color: white;
+            display: inline-block;
+            margin-top: 2.75rem;
+            margin-left: -1.8rem;
+
+        }
+        a:hover {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            font-size: 1.6rem;
             color: white;
             display: inline-block;
             margin-top: 2.75rem;
