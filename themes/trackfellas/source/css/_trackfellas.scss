@@ -31,6 +31,7 @@ p {
     padding: 5.625rem 0 0 0;
     p {
         padding-bottom: 0;
+        text-align: center;
     }
 }
 
@@ -340,7 +341,9 @@ strong {
 // other special pages:
 
 .accordion-overview {
-    @extend .accordion-navigation
+    @extend .accordion-navigation;
+    $accordion-navigation-hover-bg-color: scale-color($secondary-color, $lightness: -5%);
+    $accordion-navigation-active-bg-color: scale-color($secondary-color, $lightness: -3%);
 }
 
 .accordion .accordion-overview > a {
@@ -348,6 +351,7 @@ strong {
     color: #fff;
     display: block;
     padding: 0.625rem;
+    text-align: center;
 }
 
 .accordion .accordion-overview > a:hover {
@@ -360,13 +364,10 @@ strong {
 .accordion .active.accordion-overview>a {
     background: $secondary-color;
 }
-.accordion-overview {
-    @include accordion-navigation;
-    $accordion-navigation-hover-bg-color: scale-color($secondary-color, $lightness: -5%);
-    $accordion-navigation-active-bg-color: scale-color($secondary-color, $lightness: -3%);
-}
+
 .accordion .accordion-navigation > a {
     padding: 0.625rem;
+    text-align: center;
 }
 .impressum {
     padding-top: 0;
@@ -780,6 +781,7 @@ strong {
     padding: 1.5rem;
 }
 
+
 //The accordion is closed
 .accordion-icon:before {
     float: right;
@@ -1117,7 +1119,8 @@ strong {
 }
 
 .descriptionpic {
-    margin: 1rem .5rem 3rem .5rem;
+    display: block;
+    margin: 1rem auto 3.5rem auto;
 }
 
 // Feedback Form

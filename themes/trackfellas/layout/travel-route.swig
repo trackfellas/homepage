@@ -352,7 +352,7 @@
                         <strong>Cost:</strong> 25 CUC // 23 €
                         <br>
                         <strong>Comment:</strong> The apartment is nice for cuban standards. The house is very safe with
-                        a security guy st the front door. There is a bieatiful view from the bed
+                        a security guard at the front door. There is a beautiful view from the bed
                         room over old Havana and the sea including the sunset. Lots of things are in walking distance
                         and you are just 3 minutes away from the Malecon.
                     </p>
