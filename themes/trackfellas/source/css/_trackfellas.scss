@@ -535,6 +535,8 @@ strong {
 .galerie {
     margin-top: 1.25rem;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     max-width:  61.25rem;
 }
@@ -575,8 +577,8 @@ strong {
     font-size: 0px;
     cursor: pointer;
     background: transparent;
-    color: transparent;
-    top: 50%;
+    color: $primary-color;
+    top: 15%;
     margin-top: -10px;
     padding: 0;
     border: none;
@@ -584,7 +586,7 @@ strong {
     &:hover, &:focus {
         outline: none;
         background: transparent;
-        color: transparent;
+        color: $primary-color;
         &:before {
             opacity: $slick-opacity-on-hover;
         }
@@ -597,37 +599,24 @@ strong {
 .slick-prev:before, .slick-next:before {
     font-size: 20px;
     line-height: 1;
-    color: $slick-arrow-color;
+    color: $primary-color;
     opacity: $slick-opacity-default;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-    left: -25px;
-    [dir="rtl"] & {
-        left: auto;
-        right: -25px;
-    }
+    left: -45px;
     &:before {
-        content: url(<svg version="1.1" x="0px" y="0px" viewBox="0 0 34 109"><path fill="#303030" d="M31.9,53l2.1,1.5L2.5,109l-2.1-1.5L31.9,53z"/> <path fill="#303030" d="M34,54.5L31.9,56L0.4,1.5L2.5,0L34,54.5z"/> </svg>);
-        [dir="rtl"] & {
-            content: url(<svg version="1.1" x="0px" y="0px" viewBox="0 0 34 109"><path fill="#303030" d="M31.9,53l2.1,1.5L2.5,109l-2.1-1.5L31.9,53z"/> <path fill="#303030" d="M34,54.5L31.9,56L0.4,1.5L2.5,0L34,54.5z"/> </svg>);
-        }
+        content: url('../img/back.svg');
+
     }
 }
 
 .slick-next {
-    right: -25px;
-    [dir="rtl"] & {
-        left: -25px;
-        right: auto;
-    }
+    right: -35px;
     &:before {
-        content: $slick-next-character;
-        [dir="rtl"] & {
-            content: $slick-prev-character;
-        }
+        content: url('../img/for.svg');
     }
 }
 
