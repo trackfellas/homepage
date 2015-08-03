@@ -359,7 +359,7 @@
                     <a href="{{ url_for('img/cuba/havana_vieja_hostal.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_hostal.jpg', {alt: 'Hostel sea view', class: 'descriptionpic'}) }}
                     </a>
-
+                    <br>
                     <p><strong><i class="fa fa-trophy"></i> Food:</strong> <em>La Torre</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
