@@ -60,6 +60,7 @@
 <section>
     <div class="normal-content-route">
         <h2>Gallery</h2>
+        <p class="text-center">If you are more of a visual type, check out the pictures for this route.</p>
 
         <div class="galerie">
             <div>
