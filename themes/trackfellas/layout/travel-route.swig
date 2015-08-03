@@ -478,14 +478,18 @@
                         <strong>Date:</strong> 07.04.15
                         <br>
                         <strong>Comment:</strong> Great for a stopover for a few hours. Beautiful city.</p>
-
+                    <ul class="small-block-grid-2">
+                    <li>
                     <a href="{{ url_for('img/cuba/cienfuegos_car.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_car.jpg', {alt: 'Taxi cienfuegos', class:'descriptionpic'}) }}
                     </a>
+                    </li>
+                    <li>
                     <a href="{{ url_for('img/cuba/cienfuegos_malecon.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_malecon.jpg', {alt: 'House Malecon', class:'descriptionpic'}) }}
                     </a>
-
+                    </li>
+                    </ul>
                     <p><strong>Food:</strong> <em>Restaurante Bahia</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -554,13 +558,18 @@
                         <strong>Tip:</strong> You don&#39;t need to book in advance a Casa Particular, there are many
                         people waiting for you at the bus station!</p>
                     <br>
+                    <ul class="small-block-grid-2">
+                    <li>
                     <a href="{{ url_for('img/cuba/trinidad_car.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_car.jpg', {alt: 'Blue car in Trinidad', class: 'descriptionpic'}) }}
                     </a>
+                    </li>
+                    <li>
                     <a href="{{ url_for('img/cuba/trinidad_hombres.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_hombres.jpg', {alt: 'Hombres in Trinidad', class: 'descriptionpic'}) }}
                     </a>
-
+                    </li>
+                    </ul>
                     <p><strong>Accommodation:</strong> <em>Hostal Anita y Pirolo</em>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -624,12 +633,18 @@
                         <strong>Type:</strong> Historical sight
                         <br>
                         <strong>Transportation:</strong> By foot </p>
+                                            <ul class="small-block-grid-2">
+                                            <li>
                      <a href="{{ url_for('img/cuba/trinidad_plaza.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_plaza.jpg', {alt: 'Plaza Mayor in Trinidad', class:'descriptionpic'}) }}
                     </a>
+                    </li>
+                    <li>
                     <a href="{{ url_for('img/cuba/trinidad_house_arts.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_house_arts.jpg', {alt: 'Galeria de Arte Universal Benito Ortiz', class:'descriptionpic'}) }}
                     </a>
+                                        </li>
+                                        </ul>
                 </div>
             </li>
             <li class="accordion-navigation">
@@ -1021,13 +1036,18 @@
                         <br>
                         <strong>Tip:</strong> Better head east to isolated Baracoa with its rich nature, beaches and the
                         National Park Alejandro de Humboldt.</p>
+                        <ul class="small-block-grid-2">
+                        <li>
                     <a href="{{ url_for('img/cuba/guantanamo_architecture.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_guantanamo_architecture.jpg', {alt: 'City Centre Guantanamo', class: 'descriptionpic'}) }}
                     </a>
+                    </li>
+                    <li>
                     <a href="{{ url_for('img/cuba/guantanamo_haircutter.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_guantanamo_haircutter.jpg', {alt: 'Hairdesser in Guantanmo', class: 'descriptionpic'}) }}
                     </a>
-
+                    </li>
+                    </ul>
                     <p><strong>Food:</strong> <em>Los Ensueños</em>
                         <br>
                         <strong>Type:</strong> Restaurant
