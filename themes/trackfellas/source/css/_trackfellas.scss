@@ -535,103 +535,15 @@ strong {
 .galerie {
     margin-top: 1.25rem;
     margin-bottom: 0;
+    text-align: center;
+    max-width:  61.25rem;
 }
 
-.slick-slider {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    margin: 0;
-    padding: 0;
-
-    &:focus {
-        outline: none;
-    }
-
-    &.dragging {
-        cursor: pointer;
-        cursor: hand;
-    }
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-    transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-    position: relative;
-    left: 0;
-    top: 0;
-    display: block;
-
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-    }
-
-    &:after {
-        clear: both;
-    }
-
-    .slick-loading & {
-        visibility: hidden;
-    }
-}
-
-.slick-slide {
-    float: left;
-    height: 130px;
-    display: inline;
-    min-height: 1px;
-    [dir="rtl"] & {
-        float: right;
-    }
+.slide-image {
     img {
-        display: block;
-    }
-    &.slick-loading img {
-        display: none;
-    }
-
-    display: none;
-
-    &.dragging img {
-        pointer-events: none;
-    }
-
-    .slick-initialized & {
-        display: block;
-    }
-
-    .slick-loading & {
-        visibility: hidden;
-    }
-
-    .slick-vertical & {
-        display: block;
-        height: auto;
-        border: 1px solid transparent;
+        margin: 0 auto;
     }
 }
-
 @function slick-image-url($url) {
     @if function-exists(image-url) {
         @return image-url($url);
@@ -640,11 +552,14 @@ strong {
     }
 }
 
-/* Slider */
-
-.slick-list {
-    .slick-loading & {
-        background: #fff slick-image-url("../img/ajax-loader.gif") center center no-repeat;
+/* Icons */
+@if $slick-font-family == "slick" {
+    @font-face {
+        font-family: "slick";
+        src: slick-font-url("slick.eot");
+        src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+        font-weight: normal;
+        font-style: normal;
     }
 }
 
@@ -654,15 +569,15 @@ strong {
 .slick-next {
     position: absolute;
     display: block;
-    height: 120px;
-    width: 50px;
-    line-height: 0;
-    font-size: 45px;
+    height: 20px;
+    width: 20px;
+    line-height: 0px;
+    font-size: 0px;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 0;
-    margin: auto 0;
+    top: 50%;
+    margin-top: -10px;
     padding: 0;
     border: none;
     outline: none;
@@ -680,37 +595,38 @@ strong {
 }
 
 .slick-prev:before, .slick-next:before {
-    font-family: $font-awesome;
-    font-size: 120px;
+    font-size: 20px;
     line-height: 1;
     color: $slick-arrow-color;
     opacity: $slick-opacity-default;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-    left: -60px;
+    left: -25px;
     [dir="rtl"] & {
         left: auto;
-        right: 0;
+        right: -25px;
     }
     &:before {
-        content: "\f104";
+        content: url(<svg version="1.1" x="0px" y="0px" viewBox="0 0 34 109"><path fill="#303030" d="M31.9,53l2.1,1.5L2.5,109l-2.1-1.5L31.9,53z"/> <path fill="#303030" d="M34,54.5L31.9,56L0.4,1.5L2.5,0L34,54.5z"/> </svg>);
         [dir="rtl"] & {
-            content: "\f105";
+            content: url(<svg version="1.1" x="0px" y="0px" viewBox="0 0 34 109"><path fill="#303030" d="M31.9,53l2.1,1.5L2.5,109l-2.1-1.5L31.9,53z"/> <path fill="#303030" d="M34,54.5L31.9,56L0.4,1.5L2.5,0L34,54.5z"/> </svg>);
         }
     }
 }
 
 .slick-next {
-    right: -50px;
+    right: -25px;
     [dir="rtl"] & {
-        left: 0;
+        left: -25px;
         right: auto;
     }
     &:before {
-        content: "\f105";
+        content: $slick-next-character;
         [dir="rtl"] & {
-            content: "\f104";
+            content: $slick-prev-character;
         }
     }
 }
@@ -739,13 +655,14 @@ strong {
         cursor: pointer;
         button {
             border: 0;
+            border-radius: 80%;
             background: transparent;
             display: block;
             height: 20px;
             width: 20px;
             outline: none;
-            line-height: 0;
-            font-size: 0;
+            line-height: 0px;
+            font-size: 0px;
             color: transparent;
             padding: 5px;
             cursor: pointer;
@@ -762,11 +679,14 @@ strong {
                 content: $slick-dot-character;
                 width: 20px;
                 height: 20px;
+                font-family: $slick-font-family;
                 font-size: $slick-dot-size;
                 line-height: 20px;
                 text-align: center;
                 color: $slick-dot-color;
                 opacity: $slick-opacity-not-active;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
             }
         }
         &.slick-active button:before {
@@ -775,6 +695,7 @@ strong {
         }
     }
 }
+
 
 .preview {
     border: 1px dotted $gray;
@@ -1197,7 +1118,9 @@ strong {
     visibility: hidden;
 
 }
-
+.caption {
+    display: none;
+}
 @media #{$medium-up} {
     .feedback-side {
         position: fixed;

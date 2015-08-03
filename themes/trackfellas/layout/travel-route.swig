@@ -63,203 +63,215 @@
         <p class="text-center">If you are more of a visual type, check out the pictures for this route.</p>
 
         <div class="galerie">
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_vieja_capitol.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_capitol.jpg', {alt: 'Capitol Havana'}) }}
                 </a>
-                <caption>El Capitolio in Havana</caption>
+                <div class="caption">El Capitolio in Havana</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_vieja_cars.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_cars.jpg', {alt: 'Old Cars Havana'}) }}
                 </a>
-                <caption>One of the attractions in Cuba are the old american cars from the 50s & 60s</caption>
+                <div class="caption">One of the attractions in Cuba are the old american cars from the 50s & 60s</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_viaja.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_viaja.jpg', {alt: 'Carriage in Havana'}) }}
                 </a>
-                <caption>Horse carriage are also still part of the Cubas cityscape</caption>
+                <div class="caption">Horse carriage are also still part of the Cubas cityscape</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_vieja_streets.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_streets.jpg', {alt: 'Old Car in front of house facade'}) }}
                 </a>
-                <caption>The old colonial house facade have a special charm too</caption>
+                <div class="caption">The old colonial house facade have a special charm too</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_touristic_street.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_touristic_street.jpg', {alt: 'Touristic street'}) }}
                 </a>
-                <caption>Renovated houses in the touristic city center</caption>
+                <div class="caption">Renovated houses in the touristic city center</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_vieja_plaza.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_plaza.jpg', {alt: 'havana vieja plaza'}) }}
                 </a>
-                <caption>Plaza in havana vieja center</caption>
+                <div class="caption">Plaza in havana vieja center</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_che.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_che.jpg', {alt: 'havana plaza che'}) }}
                 </a>
-                <caption>Che Guevara can't be missed in Cuba</caption>
+                <div class="caption">Che Guevara can't be missed in Cuba</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_vieja_hostal.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_hostal.jpg', {alt: 'Hostel sea view'}) }}
                 </a>
-                <caption>Sea view from the Hostal</caption>
-            </div>
-            <div>
+                <div class="caption">Sea view from the Hostal</div>
+            </div class="slide-image">
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_morro_castle.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_morro_castle.jpg', {alt: 'Morro Castle'}) }}
                 </a>
-                <caption>Cannons pointing from the Morro castle to Havana vieja</caption>
+                <div class="caption">Cannons pointing from the Morro castle to Havana vieja</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/santa_maria.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_santa_maria.jpg', {alt: 'Beach santa Maria'}) }}
                 </a>
-                <caption>Chilled Beach east of Havana</caption>
+                <div class="caption">Chilled Beach east of Havana</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_transport.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_transport.jpg', {alt: 'Transportation Cuba'}) }}
                 </a>
-                <caption>Choose your favorite transportation vehicle: bicycle rickshaw, Taxi or Tuk Tuk</caption>
+                <div class="caption">Choose your favorite transportation vehicle: bicycle rickshaw, Taxi or Tuk Tuk</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cubabayamo_casa_de_la_nacionalidad_de_cuba.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_bayamo_casa_de_la_nacionalidad_de_cuba.jpg', {alt: 'Viaje'}) }}
                 </a>
-                <caption> Casa de la Nacionalidad in Bayamo</caption>
+                <div class="caption"> Casa de la Nacionalidad in Bayamo</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/cienfuegos_car.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_car.jpg', {alt: 'Taxi cienfuegos'}) }}
                 </a>
-                <caption>Taxi in Unesco's World Heritage Cienfuegos</caption>
+                <div class="caption">Taxi in Unesco's World Heritage Cienfuegos</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/cienfuegos_malecon.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_malecon.jpg', {alt: 'House Malecon'}) }}
                 </a>
-                <caption>Nice architecture along the malecon in the bay of Jagua</caption>
+                <div class="caption">Nice architecture along the malecon in the bay of Jagua</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/cienfuegos_restaurant.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_cienfuegos_restaurant.jpg', {alt: 'Restaurant Bahia'}) }}
                 </a>
-                <caption>Great restaurant and funny staff</caption>
+                <div class="caption">Great restaurant and funny staff</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/trinidad_car.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_car.jpg', {alt: 'Blue car in Trinidad'}) }}
                 </a>
-                <caption>Classic cars...</caption>
+                <div class="caption">Classic cars...</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/trinidad_hombres.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_hombres.jpg', {alt: 'Hombres in Trinidad'}) }}
                 </a>
-                <caption>... and classic hombres in magnificent Trinidad</caption>
+                <div class="caption">... and classic hombres in magnificent Trinidad</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/trinidad_hostal_view.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_hostal_view.jpg', {alt: 'View from rooftop terrace Anita y Pirolo'}) }}
                 </a>
-                <caption>... and stunning view over the surrounding landscape</caption>
+                <div class="caption">... and stunning view over the surrounding landscape</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/trinidad_24h_restaurant.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_24h_restaurant.jpg', {alt: 'Taberna La Botija in Trinidad'}) }}
                 </a>
-                <caption>Taberna with great food, open 24 hours with happy hour between 4 pm and 6 pm</caption>
+                <div class="caption">Taberna with great food, open 24 hours with happy hour between 4 pm and 6 pm</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/trinidad_house_arts.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_house_arts.jpg', {alt: 'Galeria de Arte Universal Benito Ortiz'}) }}
                 </a>
-                <caption>Inside the Art Gallery Benito Ortiz right at Plaza Mayor</caption>
+                <div class="caption">Inside the Art Gallery Benito Ortiz right at Plaza Mayor</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/trinidad_viazul.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_viazul.jpg', {alt: 'Bus connection between Trinidad and Santiago de Cuba'}) }}
                 </a>
-                <caption>Bus connection with Viazul from Trinidad to Santiago de Cuba</caption>
+                <div class="caption">Bus connection with Viazul from Trinidad to Santiago de Cuba</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/camaguey_architecture_center.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_camaguey_architecture_center.jpg', {alt: 'Camagüey historic city centre'}) }}
                 </a>
-                <caption>Another Unesco World Heritage City Center in Camagüey with nice architecture</caption>
+                <div class="caption">Another Unesco World Heritage City Center in Camagüey with nice architecture</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/camaguey_hostal.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_camaguey_hostal.jpg', {alt: 'Camagüey hostal'}) }}
                 </a>
-                <caption>Beautiful casa particulares including kitchen</caption>
+                <div class="caption">Beautiful casa particulares including kitchen</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/camaguey_restaurant_la_isabella.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_camaguey_restaurant_la_isabella.jpg', {alt: 'Camagüey restaurant la isabella'}) }}
                 </a>
-                <caption>Best pizza in town :)</caption>
+                <div class="caption">Best pizza in town :)</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/santiago_plaza_de_la_liberdad.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_plaza_de_la_liberdad.jpg', {alt: 'Propaganda Fidel'}) }}
                 </a>
-                <caption>Propaganda is a constant companion in Cuba</caption>
+                <div class="caption">Propaganda is a constant companion in Cuba</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/santiago_street.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_street.jpg', {alt: 'Street Santiago de Cuba'}) }}
                 </a>
-                <caption>View from the Casa Margerita on the streets of Santiago de Cuba. Note the blue (for tourists)
+                <div class="caption">View from the Casa Margerita on the streets of Santiago de Cuba. Note the blue (for tourists)
                     and red anchor (for locals) of the Casa particulares
-                </caption>
+                </div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/santiago_moncada.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_moncada.jpg', {alt: 'Cuartel Moncada'}) }}
                 </a>
-                <caption>Here started the revolution of Cuba. The bullet holes from the attacking guerillas are still
+                <div class="caption">Here started the revolution of Cuba. The bullet holes from the attacking guerillas are still
                     visible
-                </caption>
+                </div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/santiago_moncada.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_santa_ifigenia_mausoluem.jpg', {alt: 'Mausoleum of Jose Marti'}) }}
                 </a>
-                <caption>The opulent mausoleum of the national hero Jose Marti is one of more then 8000 graves on the
+                <div class="caption">The opulent mausoleum of the national hero Jose Marti is one of more then 8000 graves on the
                     Santa Ifigenia Cemetery
-                </caption>
+                </div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/santiago_statue_antonio_maceo_grajale.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_statue_antonio_maceo_grajale.jpg', {alt: 'Statue Antonio Maceo Grajale'}) }}
                 </a>
-                <caption>The biggest statue in whole Cuba shows another national hero Antonio Maceo Grajale</caption>
+                <div class="caption">The biggest statue in whole Cuba shows another national hero Antonio Maceo Grajale</div>
             </div>
-            <div>
+             <div class="slide-image">
+                     <a href="{{ url_for('img/cuba/trinidad_plaza.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_plaza.jpg', {alt: 'Plaza Mayor in Trinidad'}) }}
+                        <div class="caption">Panorama of Plaza Mayor, which still remains a strong reminder of colonial times</div>
+                    </a>
+             </div>
+            <div class="slide-image">
+                <a href="{{ url_for('img/cuba/havana_el_torre.jpg') }}" data-featherlight="image">
+                    {{ image_tag( 'img/cuba/thumbnails/thumb_havana_el_torre.jpg', {alt: 'Panorama view from la torre'}) }}
+                </a>
+                <div class="caption">Panorama from the 33. floor restaurant la torre in the highest building in Havana. Best place for a sundowner and a romantic dinner!</div>
+            </div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/santiago_cathedral.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_cathedral.jpg', {alt: 'Cathedral of Santiago de Cuba'}) }}
                 </a>
-                <caption>Majestic cathedral of Santiago de Cuba</caption>
+                <div class="caption">Majestic cathedral of Santiago de Cuba</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/guantanamo_architecture.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_guantanamo_architecture.jpg', {alt: 'City Centre Guantanamo'}) }}
                 </a>
-                <caption>Typical colonial architecture in Guantanamo's city center</caption>
+                <div class="caption">Typical colonial architecture in Guantanamo's city center</div>
             </div>
-            <div>
+            <div class="slide-image">
                 <a href="{{ url_for('img/cuba/guantanamo_restaurant.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_guantanamo_restaurant.jpg', {alt: 'Restaurant Los Ensueños'}) }}
                 </a>
-                <caption>Best restaurant in town with mojitos for just 1 CUC</caption>
+                <div class="caption">Best restaurant in town with mojitos for just 1 CUC</div>
             </div>
         </div>
     </div>
@@ -612,6 +624,9 @@
                         <strong>Type:</strong> Historical sight
                         <br>
                         <strong>Transportation:</strong> By foot </p>
+                     <a href="{{ url_for('img/cuba/trinidad_plaza.jpg') }}" data-featherlight="image">
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_plaza.jpg', {alt: 'Plaza Mayor in Trinidad', class:'descriptionpic'}) }}
+                    </a>
                     <a href="{{ url_for('img/cuba/trinidad_house_arts.jpg') }}" data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_house_arts.jpg', {alt: 'Galeria de Arte Universal Benito Ortiz', class:'descriptionpic'}) }}
                     </a>
