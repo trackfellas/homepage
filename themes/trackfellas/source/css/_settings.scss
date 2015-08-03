@@ -1455,8 +1455,8 @@ $topbar-dropdown-bg: rgba(255,255,255,0);
 // $topbar-dropdown-link-bg-hover: $oil;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
-$topbar-dropdown-toggle-color: $primary-color;
-// $topbar-dropdown-toggle-alpha: 0.4;
+$topbar-dropdown-toggle-color: $secondary-color;
+$topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $gray;
@@ -1490,10 +1490,10 @@ $topbar-link-padding: ($topbar-height / 7);
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: $white;
-//$topbar-menu-icon-color: $blue;
-//$topbar-menu-link-color-toggled: $blue;
-//$topbar-menu-icon-color-toggled: $blue;
+$topbar-menu-link-color: $primary-color;
+$topbar-menu-icon-color: $primary-color;
+$topbar-menu-link-color-toggled: $primary-color;
+$topbar-menu-icon-color-toggled: $primary-color;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
