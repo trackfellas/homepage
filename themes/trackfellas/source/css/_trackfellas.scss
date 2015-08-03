@@ -24,21 +24,21 @@ body {
 
 @mixin content-sec-route {
     @include content-sec;
-    padding: 4.375rem 0 0 0;
+    padding: 5.625rem 0 0 0;
     p {
         padding-bottom: 0;
     }
 }
 
 ul.accordion {
-    margin-right: 0.625rem;
-    margin-left: 0.625rem;
+    margin-right: 0.5625rem;
+    margin-left: 0.5625rem;
 }
 
 @media #{$medium-up} {
     ul.accordion {
-        margin-right: 2.563rem;
-        margin-left: 2.563rem;
+margin: 0 auto;
+        max-width:  61.25rem;
     }
 }
 .accordion-navigation {
@@ -127,7 +127,7 @@ ul.accordion {
 }
 .route-details-section {
     @extend .big-content-route;
-    padding-top: 2.5rem;
+    padding-top: 3.75rem;
     h2 {
         margin-bottom: 1.875rem;
     }
@@ -343,7 +343,7 @@ strong {
     background: $secondary-color;
     color: #fff;
     display: block;
-    padding: 0.9375rem;
+    padding: 0.625rem;
 }
 
 .accordion .accordion-overview > a:hover {
@@ -353,14 +353,16 @@ strong {
 .accordion .accordion-overview > a:after {
     background: $secondary-color;
 }
-
+.accordion .active.accordion-overview>a {
+    background: $secondary-color;
+}
 .accordion-overview {
     @include accordion-navigation;
     $accordion-navigation-hover-bg-color: scale-color($secondary-color, $lightness: -5%);
     $accordion-navigation-active-bg-color: scale-color($secondary-color, $lightness: -3%);
 }
 .accordion .accordion-navigation > a {
-    padding: 0.9375rem;
+    padding: 0.625rem;
 }
 .impressum {
     padding-top: 0;
@@ -776,7 +778,15 @@ strong {
 
 //The accordion is closed
 .accordion-icon:before {
-    padding-left: 1rem;
+    float: right;
+    display: inline-block;
+    font-family: $font-awesome;
+    text-rendering: auto;
+    padding-right: 1.25rem;
+    line-height: .75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.9rem;
     content: "\f067";
 }
 
@@ -1197,6 +1207,15 @@ strong {
             transform: rotate(90deg);
             -webkit-transform: rotate(90deg);
             color: white;
+            display: inline-block;
+            margin-top: 2.75rem;
+            margin-left: -1.8rem;
+
+        }
+        a:hover {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            color: $secondary-color;
             display: inline-block;
             margin-top: 2.75rem;
             margin-left: -1.8rem;

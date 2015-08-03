@@ -268,7 +268,7 @@
         <h2>Trip Details</h2>
         <ul class="accordion" data-accordion>
             <li class="accordion-overview">
-                <a href="#destination_overview"><h3>Destination Overview<span class="fa accordion-icon right"></span>
+                <a href="#destination_overview"><h3>Destination Overview<span class="accordion-icon"></span>
                     </h3></a>
 
                 <div id="destination_overview" class="content active">
@@ -297,7 +297,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="havana1" class="content">
 
@@ -428,7 +428,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa onestar"></span><span class="fa accordion-icon right"></span></h3></a>
+                        <span class="fa onestar"></span><span class="accordion-icon"></span></h3></a>
 
                 <div id="havanatocienfuegos" class="content">
                     <p><strong>Type:</strong> Transportation
@@ -457,7 +457,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="cienfuegos" class="content">
                     <p><strong>Type:</strong> Stopover
@@ -500,7 +500,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="cienfuegostotrinidad" class="content">
                     <p><strong>Type:</strong> Transportation
@@ -527,7 +527,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i><span class="fa accordion-icon right"></span></h3></a>
+                        <i class="fa fa-star"></i><span class="accordion-icon"></span></h3></a>
 
                 <div id="trinidad" class="content">
                     <p><strong>Type:</strong> Town
@@ -625,7 +625,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span>
+                        <span class="accordion-icon"></span>
                     </h3>
                 </a>
 
@@ -658,7 +658,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="camaguey" class="content">
                     <p><strong>Type:</strong> City
@@ -717,7 +717,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span>
+                        <span class="accordion-icon"></span>
 
                     </h3></a>
 
@@ -746,7 +746,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="bayamo" class="content">
                     <p><strong>Type:</strong> Town
@@ -805,7 +805,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="bayamotosantiagodecuba" class="content">
                     <p><strong>Type:</strong> Transportation
@@ -835,7 +835,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="santiagodecuba" class="content">
                     <p><strong>Type:</strong> City
@@ -966,7 +966,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="santiagodecubatoguantanamo" class="content">
                     <p><strong>Type:</strong> Transportation
@@ -991,7 +991,7 @@
                         <i class="fa fa-star-o"></i>
                         <i class="fa fa-star-o"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="guantanamo" class="content">
                     <p><strong>Type:</strong> Town
@@ -1034,7 +1034,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="guantanamotohavana" class="content">
                     <p><strong>Type:</strong> Transportation
@@ -1066,7 +1066,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
-                        <span class="fa accordion-icon right"></span><span class="divi"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="havana2" class="content">
                   <p> Information and recommendations see above.</p>
@@ -1074,7 +1074,7 @@
             </li>
             <li class="accordion-overview">
                 <a href="#highlights_andlowpoints"><h3>Highlights and low points
-                        <span class="fa accordion-icon right"></span></h3></a>
+                        <span class="accordion-icon"></span></h3></a>
 
                 <div id="highlights_andlowpoints" class="content">
                     <ul class="small-block-grid-1 medium-block-grid-2">
