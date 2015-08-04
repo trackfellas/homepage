@@ -1,6 +1,6 @@
 <aside>
        <div class="feedback-side">
-        <a href="#"data-reveal-id="feedbackModal">Feedback</a>
+        <a href="#" data-reveal-id="feedbackModal">Feedback</a>
            </div>
 </aside>
 {{ partial( '_partial/social') }}{# Partial for social sharing Link #}
@@ -110,7 +110,7 @@
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_hostal.jpg', {alt: 'Hostel sea view'}) }}
                 </a>
                 <div class="caption">Sea view from the Hostal</div>
-            </div class="slide-image">
+            </div>
             <div class="slide-image">
                 <a href="{{ url_for('img/cuba/havana_morro_castle.jpg') }}" data-featherlight="image">
                     {{ image_tag( 'img/cuba/thumbnails/thumb_havana_morro_castle.jpg', {alt: 'Morro Castle'}) }}
@@ -1032,7 +1032,7 @@
                         <strong>Comment:</strong> Guantanamo is very cute and nice to see for a stopover, there are no
                         tourists, VERY cheap, Pizza for 1 CUC, Mojitos 1,50 CUC. Most prices are in CUP (national
                         money). There is really not that much to do or see. I visited the family of my friend.
-                        I stayed in a casa particulares for locals, but you will find nice Bed&Breakfast in the center.
+                        I stayed in a casa particulares for locals, but you will find nice Bed&amp;Breakfast in the center.
                         <br>
                         <strong>Tip:</strong> Better head east to isolated Baracoa with its rich nature, beaches and the
                         National Park Alejandro de Humboldt.</p>
@@ -1132,7 +1132,7 @@
         <h2>Feedback</h2>
 
         <p class="text-center">We hope we gave you some inspiration and tips for travelling on your own in Cuba. Please
-            leave <a href="#"data-reveal-id="feedbackModal">your feedback
+            leave <a href="#" data-reveal-id="feedbackModal">your feedback
                 here!</a></p>
     </div>
 

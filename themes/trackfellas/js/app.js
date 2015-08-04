@@ -1,3 +1,14 @@
+$(document).foundation({});
+if ($("#about").length > 0) {
+    $("a").smoothScroll();
+};
+$(".accordion li > a").click(function () {
+    var self = this;
+    setTimeout(function () {
+        theOffset = $(self).offset();
+        $('body,html').animate({ scrollTop: theOffset.top - 100 });
+    }, 310);
+});
 $(document).ready(function () {
         if ($("#feedback-form").length > 0) {
             setTimeout(function(){
@@ -104,10 +115,5 @@ $(document).ready(function () {
         }
     }
 )
-;
 
-$(document).foundation({});
-if ($("#about").length > 0) {
-    $("a").smoothScroll();
-}
 

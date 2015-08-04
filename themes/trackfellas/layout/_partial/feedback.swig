@@ -1,6 +1,6 @@
 <div id="feedbackModal" class="reveal-modal xlarge" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
      role="dialog">
-    <h2 id="modalTitle">Feedback</h2>
+    <h2 id="modalTitle1">Feedback</h2>
 
     <p>Thanks for taking the time to give us some feedback! We really appreciate it. It will only take a minute.</p>
 
@@ -64,7 +64,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <div id="errordiv"></div>
+                            <div class="errordiv"></div>
                         </div>
                     </div>
                 </fieldset>
@@ -122,7 +122,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <div id="errordiv"></div>
+                            <div class="errordiv"></div>
                         </div>
                         <div class="medium-6 columns">
                             <label for="entry_715740726">
@@ -167,7 +167,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <div id="errordiv"></div>
+                            <div class="errordiv"></div>
                         </div>
                     </div>
                 </fieldset>
@@ -225,7 +225,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <div id="errordiv"></div>
+                            <div class="errordiv"></div>
                         </div>
                         <div class="medium-7 columns">
                             <label for="entry_1633164414">
@@ -292,7 +292,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <div id="errordiv"></div>
+                            <div class="errordiv"></div>
                         </div>
                     </div>
                 </fieldset>
@@ -310,7 +310,7 @@
                         <label for="entry_2050249864">
                             <span class="feedback-list">Do you miss anything in our route description? Feel free to leave us some comments here:</span>
                         </label>
-                        <textarea name="entry.2050249864" rows="6" cols="0" id="entry_2050249864"
+                        <textarea name="entry.2050249864" rows="6" cols="1" id="entry_2050249864"
                                   dir="auto"
                                   aria-label="Do you miss anything in our route description? Feel free to leave us some comments here:  "></textarea>
                         <input type="hidden" name="draftResponse" value="[,,&quot;8612712328336750143&quot;]">
@@ -331,14 +331,14 @@
 
 <div id="feedback-thanks" class="reveal-modal large" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
      role="dialog">
-    <h2 id="modalTitle">Succesful!</h2>
+    <h2 id="modalTitle2">Succesful!</h2>
 
     <p>Thank you very much for your support!</p>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 <div id="feedback-reminder" class="reveal-modal large" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
      role="dialog">
-    <h2 id="modalTitle">Do you have some feedback for us?</h2>
+    <h2 id="modalTitle3">Do you have some feedback for us?</h2>
 
     <p>Thanks for coming to our site! Do you have some feedback for us, it will only take a minute and you help us tremendously to build a better platform for you!</p>
     <br>
