@@ -189,11 +189,6 @@ html {
     max-width: 1920px;
 }
 
-iframe {
-    height: 29rem;
-    width: 100%;
-}
-
 .divider {
     height: 1px;
     border-right: 1px solid white;
@@ -1185,4 +1180,8 @@ strong {
         padding: 0 4rem;
 
     }
+}
+#travel-map {
+    height: 29rem;
+
 }
