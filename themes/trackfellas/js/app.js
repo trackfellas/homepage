@@ -67,6 +67,71 @@ $(document).ready(function () {
                 current_fs.hide();
             });
         }
+    if ($("#travel-map").length > 0) {
+        function initialize() {
+            var styles = [
+                {
+                    featureType: "landscape",
+                    elementType: "geometry",
+                    stylers: [
+                        { color: "#c5a77b"},
+                        { visibility: "simplified" },
+                        { lightness: "50"}
+                    ]
+                },
+                {
+                    featureType: "landscape.natural.landcover",
+                    elementType: "geometry",
+                    stylers: [
+                        { color: "#84dd9b"},
+                        { visibility: "simplified" }
+                    ]
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry",
+                    stylers: [
+                        { color: "#eb6e56"},
+                        { visibility: "simplified" }
+                    ]
+                },{
+                    featureType: "road",
+                    elementType: "labels",
+                    stylers: [
+                        { visibility: "off" }
+                    ]
+                },{
+                    featureType: "water",
+                    elementType: "geometry",
+                    stylers: [
+                        { color: "#82b4dd" },
+                        { lightness: "50"}
+                    ]
+                },
+
+            ];
+            var styledMap = new google.maps.StyledMapType(styles,
+                {name: "Trackfellas"});
+
+            var cuba = new google.maps.LatLng(21.44, -77.4);
+            var mapOptions = {
+                zoom: 7,
+                center: cuba,
+                mapTypeControlOptions: {
+                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+                }
+            }
+
+            var map = new google.maps.Map(document.getElementById('travel-map'), mapOptions);
+            map.mapTypes.set('map_style', styledMap);
+            map.setMapTypeId('map_style');
+            var ctaLayer = new google.maps.KmlLayer({
+                url: 'http://trackfellas.com/routes/cuba.kml'
+            });
+            ctaLayer.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    }
         if ($("#galerie").length > 0) {
             $("#galerie").slick({
                 dots: true,
@@ -143,7 +208,7 @@ $(document).ready(function () {
         }
         if ($("#blog").length > 0) {
             $.get("atom.xml", function (data) {
-                var $data = $(data);
+
                 $(data).find('entry').each(function () {
                     var id = $(this).find('id').text();
                     var title = $(this).find('title').text();
@@ -157,4 +222,5 @@ $(document).ready(function () {
 $(document).foundation({});
 if ($("#about").length > 0) {
     $("a").smoothScroll();
-};
+}
+

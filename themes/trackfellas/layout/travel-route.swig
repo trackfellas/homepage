@@ -34,7 +34,9 @@
 <section>
     <div class="big-content-route">
         <h2>Travel Route</h2>
-        <iframe src="{{ page.routedata.map.mapLink }}"></iframe>
+        <div id="travel-map">
+    </div>
+        {#<iframe src="{{ page.routedata.map.mapLink }}"></iframe>#}
     </div>
 </section>
 <section>
