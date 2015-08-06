@@ -63,7 +63,7 @@
 
         <p class="text-center">If you are more of a visual type, check out the pictures for this route.</p>
 
-        <div class="galerie">
+        <div id="galerie">
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/havana_vieja_capitol.jpg') }}" data-featherlight="image">
@@ -146,7 +146,7 @@
             </div>
             <div>
 
-                <div><a href="{{ url_for('img/cubabayamo_casa_de_la_nacionalidad_de_cuba.jpg') }}"
+                <div><a href="{{ url_for('img/cuba/bayamo_casa_de_la_nacionalidad_de_cuba.jpg') }}"
                         data-featherlight="image">
                         {{ image_tag( 'img/cuba/thumbnails/thumb_bayamo_casa_de_la_nacionalidad_de_cuba.jpg', {alt: 'Viaje', title: 'Casa de la Nacionalidad in Bayamo', class: 'slide-image'}) }}
                     </a></div>
