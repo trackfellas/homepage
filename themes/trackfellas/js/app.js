@@ -1,3 +1,10 @@
+$(".accordion li > a").click(function () {
+    var self = this;
+    setTimeout(function () {
+        theOffset = $(self).offset();
+        $('body,html').animate({ scrollTop: theOffset.top - 100 });
+    }, 310);
+});
 $(document).ready(function () {
         if ($("#feedback-form").length > 0) {
             setTimeout(function(){
@@ -60,34 +67,70 @@ $(document).ready(function () {
                 current_fs.hide();
             });
         }
-        if ($(".galerie").length > 0) {
-            $(".galerie").slick({
-                dots: false,
-                infinite: true,
-                slidesToShow: 3,
-                centerMode: true,
-                centerPadding: '10px',
-                accessibility: false,
+        if ($("#galerie").length > 0) {
+            $("#galerie").slick({
+                dots: true,
                 speed: 300,
-                arrows: false,
-                mobileFirst: true,
-                responsive: [{
-                    breakpoint: 640,
-                    settings: {
-                        centerMode: false,
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        arrows: true
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                slidesPerRow: 1,
+                rows: 1,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            slidesPerRow: 1,
+                            rows: 1
+                        }
+                    },
+                    {
+                        breakpoint: 680,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            slidesPerRow: 2,
+                            rows: 2,
+                            arrows: false
+                        }
                     }
-                }, {
-                    breakpoint: 1024,
-                    settings: {
-                        centerMode: false,
-                        slidesToShow: 4,
-                        slidesToScroll: 4,
-                        arrows: true
+                ]
+            });
+            $("#galerie").featherlightGallery({
+                filter: 'a',
+                afterContent: function() {
+                    var $slideshow = this,
+                        $gallery = $(this.$currentTarget).parents('#galerie'),
+                        $thumbs = $('> a', $gallery),
+                        $navigation = this.$navigation || $('<div>', {class:'navigation'}),
+                        caption = this.$currentTarget.find('img').attr('title');
+                    this.$instance.find('.caption').remove();
+                    $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
+                    if (!this.$navigation) {
+                        // Navigation
+                        $thumbs.each(function(){
+                            var $thumb = $('<a>', {alt:$(this).attr('alt'), href:'#'});
+                            $thumb.on('click', function(e){
+                                e.preventDefault();
+                                $slideshow.navigateTo($(this).index());
+                            });
+                            $navigation.append($thumb);
+                        });
+                        $('a:eq(0)', $navigation).addClass('active');
+                        this.$content.after($navigation);
                     }
-                }]
+
+                    this.$navigation = $navigation;
+                },
+                afterNavigateTo: function(index){
+                    var $navigation = $('.navigation', this.$content.parent()),
+                        $thumb = $('> a:eq('+index+')', $navigation);
+                    $thumb.addClass('active');
+                    $thumb.siblings().removeClass('active');
+                }
             });
         }
         if ($("#newsletter-form").length > 0) {
@@ -110,11 +153,8 @@ $(document).ready(function () {
             });
         }
     }
-)
-;
-
+);
 $(document).foundation({});
 if ($("#about").length > 0) {
     $("a").smoothScroll();
-}
-
+};
