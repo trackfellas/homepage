@@ -114,37 +114,46 @@ $font-family-sans-serif: $font-family-para;
 // We use these to define default font weights
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
+// Colors:
 
+// Primary
+$red			: #eb6e56;
+$dark-brown		: #675846;
+$light-brown	: #c5a77b;
+$yellow			: #f8e271;
+$turquoise  	: #80c8c9;
+
+// Secondary
+$brown			: #b07e48;
+$ochre			: #f3bc6b;
+$light-green	: #b9e08c;
+$green			: #84dd9b;
+$navy-blue		: #5d7784;
+$blue			: #82b4dd;
+$lilac			: #b18dbc;
+$rose			: #f5bacc;
+
+// Copy
+$gray			: #303030;
+$dark-gray		: #333333;
+$dark-brown		: #675846;
+$copy-red		: $red;
 $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
+
+
+// Old colors
 $aluminum    : #999999;
-// $jumbo       : #888888;
-// $monsoon     : #777777;
+
 $steel       : #666666;
-// $charcoal    : #555555;
-// $tuatara     : #444444;
 $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
-$blau       : #7fc8c9;
-$gelb		: #f9e270;
-$rot		: #eb6e56;
-$beige		: #c5a77b;
-$braun		: #7b4c25;
-$nikagrau	: #303030;
-$nikabraun	: #8b775f;
+
+
 // We use these as default colors throughout
-$primary-color: $rot;
-$secondary-color: $blau;
-$alert-color: $rot;
+$primary-color: $red;
+$secondary-color: $turquoise;
+$alert-color: $primary-color;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
@@ -155,13 +164,13 @@ $alert-color: $rot;
 $slick-font-path: "../fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
-$slick-arrow-color: $nikagrau !default;
-$slick-dot-color: $nikagrau !default;
-$slick-dot-color-active: $slick-dot-color !default;
+$slick-arrow-color: $primary-color !default;
+$slick-dot-color: $primary-color !default;
+$slick-dot-color-active: $primary-color !default;
 $slick-prev-character: "<" !default;
 $slick-next-character: ">" !default;
 $slick-dot-character: "•" !default;
-$slick-dot-size: 30px !default;
+$slick-dot-size: 20px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
@@ -186,7 +195,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 // We use these to control various global styles
 // $body-bg: $white;
-$body-font-color: $nikagrau;
+$body-font-color: $gray;
 $body-font-family: $font-family-para;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -260,8 +269,8 @@ $body-font-family: $font-family-para;
 $header-font-family: $font-family-head;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-$header-font-color: $nikagrau;
-$header-line-height: 1.4;
+$header-font-color: $gray;
+$header-line-height: 1;
 $header-top-margin: 0rem;
 $header-bottom-margin: 0rem;
 // $header-text-rendering: optimizeLegibility;
@@ -380,7 +389,7 @@ $list-side-margin: .625rem;
 // $include-html-accordion-classes: $include-html-classes;
 
 $accordion-navigation-padding: rem-calc(7);
-$accordion-navigation-bg-color: $rot    ;
+$accordion-navigation-bg-color: $primary-color    ;
 $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -25%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
 $accordion-navigation-font-color: $white    ;
@@ -493,9 +502,9 @@ $accordion-content-padding: 1.75rem;
 // $button-margin-bottom: rem-calc(20);
 
 // We use these to control button text styles.
-// $button-font-family: $body-font-family;
+$button-font-family: $font-family-bold;
 // $button-font-color: $white;
-// $button-font-color-alt: $oil;
+$button-font-color-alt: $primary-color;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
@@ -507,11 +516,11 @@ $accordion-content-padding: 1.75rem;
 // $button-function-factor: -20%;
 
 // We use these to control button border and hover styles.
-// $button-border-width: 0px;
-// $button-border-style: solid;
-$button-bg-color: $rot;
-// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
-// $button-border-color: $button-bg-hover;
+$button-border-width: 1px;
+$button-border-style: solid;
+$button-bg-color: $primary-color;
+$button-bg-hover: white;
+$button-border-color: $button-bg-color;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;
 // $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
@@ -520,8 +529,8 @@ $button-bg-color: $rot;
 // $alert-button-border-color: $alert-button-bg-hover;
 
 // We use this to set the default radius used throughout the core.
-// $button-radius: $global-radius;
-// $button-round: $global-rounded;
+// $button-radius: 2px;
+$button-round: 8px;
 
 // We use this to set default opacity and cursor for disabled buttons.
 // $button-disabled-opacity: 0.7;
@@ -1446,19 +1455,19 @@ $topbar-dropdown-bg: rgba(255,255,255,0);
 // $topbar-dropdown-link-bg-hover: $oil;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
-$topbar-dropdown-toggle-color: $rot;
-// $topbar-dropdown-toggle-alpha: 0.4;
+$topbar-dropdown-toggle-color: $secondary-color;
+$topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: $nikagrau;
-$topbar-link-color-hover: $rot;
+$topbar-link-color: $gray;
+$topbar-link-color-hover: $primary-color;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
 $topbar-link-font-size: rem-calc(17);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-//$topbar-link-bg-color-hover: $blau;
+//$topbar-link-bg-color-hover: $primary-color;
 $topbar-link-bg-hover: $white;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
@@ -1481,10 +1490,10 @@ $topbar-link-padding: ($topbar-height / 7);
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: $white;
-$topbar-menu-icon-color: $blau;
-$topbar-menu-link-color-toggled: $blau;
-$topbar-menu-icon-color-toggled: $blau;
+$topbar-menu-link-color: $primary-color;
+$topbar-menu-icon-color: $primary-color;
+$topbar-menu-link-color-toggled: $primary-color;
+$topbar-menu-icon-color-toggled: $primary-color;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
