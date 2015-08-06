@@ -1,0 +1,10 @@
+<svg version="1.1" id="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64.001px" height="109px" viewBox="0 0 64.001 109" enable-background="new 0 0 64.001 109" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#303030" d="M61.876,0l2.129,1.453L2.522,109.008l-2.129-1.454L61.876,0z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#303030" d="M64.005,107.546L61.876,109L0.393,1.453L2.522,0L64.005,107.546z"
+	/>
+<path display="none" fill-rule="evenodd" clip-rule="evenodd" fill="#303030" d="M64.001,107.554l-2.129,1.454L30.391,54.483
+	l2.129-1.453L64.001,107.554z"/>
+<path display="none" fill-rule="evenodd" clip-rule="evenodd" fill="#303030" d="M61.872,0l2.129,1.453L32.52,55.978l-2.129-1.454
+	L61.872,0z"/>
+</svg>
