@@ -99,6 +99,39 @@ $(document).ready(function () {
                     }
                 ]
             });
+            $("#galerie").featherlightGallery({
+                filter: 'a',
+                afterContent: function() {
+                    var $slideshow = this,
+                        $gallery = $(this.$currentTarget).parents('#galerie'),
+                        $thumbs = $('> a', $gallery),
+                        $navigation = this.$navigation || $('<div>', {class:'navigation'}),
+                        caption = this.$currentTarget.find('img').attr('title');
+                    this.$instance.find('.caption').remove();
+                    $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
+                    if (!this.$navigation) {
+                        // Navigation
+                        $thumbs.each(function(){
+                            var $thumb = $('<a>', {alt:$(this).attr('alt'), href:'#'});
+                            $thumb.on('click', function(e){
+                                e.preventDefault();
+                                $slideshow.navigateTo($(this).index());
+                            });
+                            $navigation.append($thumb);
+                        });
+                        $('a:eq(0)', $navigation).addClass('active');
+                        this.$content.after($navigation);
+                    }
+
+                    this.$navigation = $navigation;
+                },
+                afterNavigateTo: function(index){
+                    var $navigation = $('.navigation', this.$content.parent()),
+                        $thumb = $('> a:eq('+index+')', $navigation);
+                    $thumb.addClass('active');
+                    $thumb.siblings().removeClass('active');
+                }
+            });
         }
         if ($("#newsletter-form").length > 0) {
             $("#newsletter-form").formchimp({
@@ -125,36 +158,3 @@ $(document).foundation({});
 if ($("#about").length > 0) {
     $("a").smoothScroll();
 };
-$("#galerie").featherlightGallery({
-    filter: 'a',
-    afterContent: function() {
-        var $slideshow = this,
-            $gallery = $(this.$currentTarget).parents('#galerie'),
-            $thumbs = $('> a', $gallery),
-            $navigation = this.$navigation || $('<div>', {class:'navigation'}),
-            caption = this.$currentTarget.find('img').attr('title');
-        this.$instance.find('.caption').remove();
-        $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
-        if (!this.$navigation) {
-            // Navigation
-            $thumbs.each(function(){
-                var $thumb = $('<a>', {alt:$(this).attr('alt'), href:'#'});
-                $thumb.on('click', function(e){
-                    e.preventDefault();
-                    $slideshow.navigateTo($(this).index());
-                });
-                $navigation.append($thumb);
-            });
-            $('a:eq(0)', $navigation).addClass('active');
-            this.$content.after($navigation);
-        }
-
-        this.$navigation = $navigation;
-    },
-    afterNavigateTo: function(index){
-        var $navigation = $('.navigation', this.$content.parent()),
-            $thumb = $('> a:eq('+index+')', $navigation);
-        $thumb.addClass('active');
-        $thumb.siblings().removeClass('active');
-    }
-});

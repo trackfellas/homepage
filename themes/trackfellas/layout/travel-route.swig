@@ -74,14 +74,14 @@
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/havana_vieja_cars.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_cars.jpg', {alt: 'Old Cars Havana', title: 'One of the attractions in Cuba are the old american cars from the 50s & 60s', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_cars.jpg', {alt: 'Old Cars Havana', title: 'One of the attractions in Cuba are the old American cars from the 50s & 60s', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/havana_viaja.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_viaja.jpg', {alt: 'Carriage in Havana', title: 'Horse carriage are also still part of the Cubas cityscape', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_viaja.jpg', {alt: 'Carriage in Havana', title: 'Horse carriages are also still part of Cubas streets', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
@@ -102,7 +102,7 @@
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/havana_vieja_plaza.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_plaza.jpg', {alt: 'havana vieja plaza', title: 'Plaza in Havana vieja center', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_plaza.jpg', {alt: 'havana vieja plaza', title: 'Plaza in Havana vieja', class: 'slide-image'}) }}
                     </a>
                 </div>
 
@@ -118,7 +118,7 @@
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/havana_vieja_hostal.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_hostal.jpg', {alt: 'Hostel sea view', title: 'Sea view from the Hostal', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_vieja_hostal.jpg', {alt: 'Hostel sea view', title: 'Sea view from the hostal', class: 'slide-image'}) }}
                     </a>
                 </div>
 
@@ -133,14 +133,14 @@
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/santa_maria.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_santa_maria.jpg', {alt: 'Beach santa Maria', title: 'Chilled Beach east of Havana', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santa_maria.jpg', {alt: 'Beach santa Maria', title: 'Relaxing beach east of Havana', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/havana_transport.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_transport.jpg', {alt: 'Transportation Cuba', title: 'Choose your favorite transportation vehicle: bicycle rickshaw, Taxi or Tuk Tuk', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_transport.jpg', {alt: 'Transportation Cuba', title: 'Choose your favorite transportation vehicle: bicycle rickshaw, taxi or tuk tuk', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
@@ -190,7 +190,7 @@
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/trinidad_hostal_view.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_hostal_view.jpg', {alt: 'View from rooftop terrace Anita y Pirolo', title: '... and stunning view over the surrounding landscape', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_trinidad_hostal_view.jpg', {alt: 'View from rooftop terrace Anita y Pirolo', title: '... and a stunning view over the surrounding landscape', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
@@ -246,21 +246,21 @@
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/santiago_street.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_street.jpg', {alt: 'Street Santiago de Cuba', title: 'View from Casa Margerita on the streets of Santiago de Cuba. Note the blue - for tourists - and red anchor - for locals - of the Casa particulares', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_street.jpg', {alt: 'Street Santiago de Cuba', title: 'View from Casa Margerita on the streets of Santiago de Cuba. Note the blue - for tourists - and red anchor - for locals - of the Casa particular', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/santiago_moncada.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_moncada.jpg', {alt: 'Cuartel Moncada', title: 'Here started the revolution of Cuba. The bullet holes from the attacking guerillas are still visible', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_moncada.jpg', {alt: 'Cuartel Moncada', title: 'The Cuban revolution began right here. The bullet holes from the attacking guerillas are still visible', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/santiago_moncada.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_santa_ifigenia_mausoluem.jpg', {alt: 'Mausoleum of Jose Marti', title: 'The opulent mausoleum of the national hero Jose Marti is one of more then 8000 graves on the Santa Ifigenia Cemetery', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_santa_ifigenia_mausoluem.jpg', {alt: 'Mausoleum of Jose Marti', title: 'The opulent mausoleum of the national hero Jose Marti is one of more than 8000 graves on the Santa Ifigenia Cemetery', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
@@ -268,7 +268,7 @@
                 <div>
                     <a href="{{ url_for('img/cuba/santiago_statue_antonio_maceo_grajale.jpg') }}"
                        data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_statue_antonio_maceo_grajale.jpg', {alt: 'Statue Antonio Maceo Grajale', title: 'The biggest statue in all of Cuba shows another national hero Antonio Maceo Grajale', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_santiago_statue_antonio_maceo_grajale.jpg', {alt: 'Statue Antonio Maceo Grajale', title: 'The biggest statue in all of Cuba shows another national hero: Antonio Maceo Grajale', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
@@ -282,7 +282,7 @@
             <div>
                 <div>
                     <a href="{{ url_for('img/cuba/havana_el_torre.jpg') }}" data-featherlight="image">
-                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_el_torre.jpg', {alt: 'Panorama view from la torre', title: 'Panorama from the 33. floor restaurant la torre in the highest building in Havana. Best place for a sundowner and a romantic dinner!', class: 'slide-image'}) }}
+                        {{ image_tag( 'img/cuba/thumbnails/thumb_havana_el_torre.jpg', {alt: 'Panorama view from la torre', title: 'Panorama from the 33rd floor restaurant La Torre in the highest building in Havana. Best place for a sundowner and a romantic dinner!', class: 'slide-image'}) }}
                     </a>
                 </div>
             </div>
